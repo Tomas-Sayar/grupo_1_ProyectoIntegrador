@@ -22,8 +22,7 @@ buenos habitos alimenticios al mejor precio
 equipo de trabajo: 
 - Maria Fernanda Sanchez
 - Tomas Sayar
-- Federico Martinez
-- Josefina ?
+
 
 
 
