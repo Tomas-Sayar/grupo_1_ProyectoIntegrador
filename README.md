@@ -32,3 +32,8 @@ Referentes:
 - la panera rosa
 - dieteticas tommy
 - diteticas zentra
+Enlace a nuestro tablero de trabajo sprint 1
+https://trello.com/invite/b/yfgWYNl4/7a1ae3fa8741f3ab111b0cf3e0e8a661/proyectontegrador
+
+Enlace a nuestro tablero de trabajo sprint 2
+https://trello.com/invite/b/s7cPqR6c/1f40b2dc21619680fef0fcf4a388dda9/sprint-2
