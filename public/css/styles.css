@@ -1,3 +1,93 @@
-.title {
-	font-size: 10px;
+* {
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 12px;
+	padding: 0px;
+	margin: 0px;
+}
+
+/** header */
+/** inicio*/
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	margin-left: 2%;
+	margin-top: 2%;
+}
+
+.menu .fa-bars {
+	color: #ff740a;
+	margin-right: 5px;
+	margin-top: 0.5%;
+}
+
+.menu span {
+	font-weight: bold;
+}
+
+.search-bar {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	margin-right: 4%;
+	margin-left: 4%;
+	padding-bottom: 3%;
+	border-bottom: #01912d solid 1.5px;
+}
+
+/** menu principal*/
+
+.menu-principal {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 6%;
+	text-align: center;
+}
+
+.menu-principal .inicio {
+	font-size: 0.3em;
+}
+
+.fa-home {
+	font-size: 1.7rem;
+	color: #ff740a;
+}
+
+.fa-clipboard-list {
+	font-size: 1.7rem;
+	color: #ff740a;
+}
+
+.fa-shopping-cart {
+	font-size: 1.7rem;
+	color: #ff740a;
+}
+
+/** logo, titulo y eslogan*/
+
+.encabezado {
+	width: 100%;
+}
+
+.logo-carrot {
+	border-radius: 100%;
+	width: 45%;
+	vertical-align: middle;
+	float: left;
+}
+
+.carrot {
+	padding-top: 15%;
+}
+
+.carrot .titulo {
+	font-size: 3rem;
+	font-family: 'Caveat', cursive;
+	text-decoration: underline #ff740a 1.8px;
+}
+
+.carrot .eslogan {
+	font-size: 1.2rem;
+	color: #01912d;
 }
