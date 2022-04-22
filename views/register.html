@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Carrot</title>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nanum+Gothic&display=swap" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+	<header>
+		<section class="menu">
+			<i class="fas fa-bars"></i>
+			<span>INICIO</span>
+		</section>
+
+		<div class="search-bar">
+			<i class="fas fa-search"></i>
+		</div>
+
+		<section class="menu-principal">
+			<div class="inicio">
+				<i class="fas fa-home"></i>
+				<br>
+				<span>INICIO</span>
+			</div>
+			<div class="productos">
+				<i class="fas fa-clipboard-list"></i>
+				<br>
+				<span>PRODUCTOS</span>
+			</div>
+			<div class="carrito">
+				<i class="fas fa-shopping-cart"></i>
+				<br>
+				<span>CARRITO</span>
+			</div>
+		</section>
+
+		<section class="encabezado">
+			<div class="logo">
+				<img class="logo-carrot" src="img/logoCarrot.png" alt="logo">
+			</div>
+			<div class="carrot">
+				<span class="titulo">Carrot</span>
+				<br>
+				<span class="eslogan">mercado natural</span>
+			</div>
+		</section>
+
+	</header>
+<main>
+    <form action="./" method="get">
+            <h1>Registro de Usuario</h1>
+            <br>
+            <div>
+                <label for="nombre y apellido">Nombre y Apellido:</label>
+                <input type="text" name="nombreApellido" id="nombre y apellido" required placeholder="Fernanda Sánchez">
+                </div>
+                <br>
+            <div>
+        <label for="nombre de usuari@">Nombre de Usuario:</label>
+        <input type="text" name="Nombre de usuari@" id="nombre de usuari@" required placeholder="Ferchu">
+            </div>
+            <br>
+            <div>
+        <label for="fecha de nacimiento">Fecha de nacimiento:</label>
+        <input type="date" name="fecha de nacimiento" id="fecha de nacimiento" required placeholder="26/08/1988">
+            </div>
+            <br>
+            <div>
+        <label for="domicilio">Domicilio:</label>
+        <input type="text" name="domicilio" id="domicilio" required placeholder="Av.Santa Fe 999">
+            </div>
+            <br>
+    <div>
+        <label> Perfil del usuario</label>
+        <br>
+    <br>
+    <div>
+    <label for="comprador">Comprador</label>
+        <input type="radio" name="tipoDeUsuario" value="comprador"required checked>
+        <label for="vendedor">Vendedor</label>
+        <input type="radio" name="tipoDeUsuario" value="vendedor"required>
+    </div>
+        
+    </div>
+        <br>
+        <div>
+    <label for="categoría de interés">Categoría de interés</label>
+    <br>
+    <br>
+    <label>
+        <input type="checkbox" name="categoríaDeInteres" value="electro">
+        Electro
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="categoríaDeInteres" value="moda">
+        Moda
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="categoríaDeInteres" value="hogar">
+        Hogar
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="categoríaDeInteres" value="jugueteria">
+        Jugueteria
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" name="categoríaDeInteres" value="vida sana">
+        Vida sana
+    </label>
+    </div>
+    <br>
+    
+    <div>
+    <label>Seleccionar una imagen para el perfil:
+    <input type="file" name="Foto de Perfil" accept=".jpg" required>
+    </label>
+    </div>
+    <br>
+    <div>
+    <label for="contraseña">Contraseña:</label>
+    <input type="password" name="passwordDeUsuario" required placeholder="Palacio88">
+    </div>
+    <br>
+    
+    <div>
+        <label for="contraseña">Confirmar contraseña:</label>
+        <input type="password" name="passwordconfirmacionDeUsuario" required placeholder="Palacio88">
+        </div>
+        <br>
+    
+    <div>
+        <button type=" submit">Enviar</button>
+        <button type="reset">Borrar</button>
+    </div>
+    
+    </form>
+    </main>
+    <br>
+    <footer>
+        <ul type = "none">
+                       
+                    <li>
+                        <p class="icono">
+                        <i class="fas fa-credit-card"></i></p>
+                        <h3>Pagá con tarjeta o en efectivo</h3>
+        <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+        puntos de pago. ¡Y siempre es seguro!
+        </p>
+        </li>
+        <br>
+        <li>
+            <p class="icono">
+            <i class="fas fa-gift"></i></p>
+        <h3>Envío gratis desde $ 2.500</h3>
+         <p>
+              Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+            productos. Es un beneficio de Mercado Puntos.
+         </p>
+         </li>
+         <br>
+        <li> 
+            <p class="icono">
+            <i class="fas fa-user-shield"></i></p>
+            <h3>Seguridad, de principio a fin</h3>
+        <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+            porque estás siempre protegid@.
+        </p>
+        </li>
+        <br>
+        <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+     </footer>
+            
+    </body>
+    </html>
