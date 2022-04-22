@@ -91,3 +91,98 @@
 	font-size: 1.2rem;
 	color: #01912d;
 }
+
+/**main*/
+
+.carrusel1 img {
+	width: 100%;
+}
+
+.circulos {
+	display: flex;
+	border-bottom: #01912d solid 1.5px;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 90%;
+	padding-bottom: 20%;
+	margin-left: 5%;
+}
+
+.circulos .circulo {
+	border-radius: 100%;
+	border: #01912d 1px solid;
+	width: 1%;
+	height: 1%;
+	margin: 1.5%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	padding-right: 0.5%;
+	padding-left: 0.5%;
+}
+
+.circulos .circulo-relleno {
+	border-radius: 100%;
+	border: #01912d 1px solid;
+	background-color: #01912d;
+	width: 1%;
+	height: 1%;
+	margin: 1.5%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	padding-right: 0.5%;
+	padding-left: 0.5%;
+}
+
+.destacado .titulo {
+	font-size: 3rem;
+	text-align: center;
+	margin-top: 4%;
+	margin-bottom: 10%;
+	font-family: 'Caveat', cursive;
+}
+
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+
+article {
+	width: 75%;
+	border: #01912d solid 1px;
+	margin-bottom: 6%;
+}
+
+article img {
+	width: 100%;
+	border-bottom: lightgray solid 1px;
+}
+
+article .info {
+	margin-left: 7%;
+	margin-right: 7%;
+	margin-bottom: 3%;
+	margin-top: 5%;
+}
+
+article .info h1 {
+	font-size: 1.3rem;
+	margin-bottom: 2%;
+}
+
+article .info .precio {
+	font-size: 1.6rem;
+	color: #ff740a;
+	text-align: center;
+	margin-top: 5%;
+}
+
+.ver-mas-productos {
+	margin-top: 7%;
+	font-size: 2rem;
+	color: white;
+	background-color: #ffb300;
+	border: #01912d solid 1px;
+	padding: 3%;
+}
