@@ -1,10 +1,11 @@
 * {
-	font-family: 'Nanum Gothic', sans-serif;
+	font-family: cursive, sans-serif;
 	font-size: 12px;
 	padding: 0px;
 	margin: 0px;
 }
 
+/*!------------------------------ home ------------------------------*/
 /** header */
 /** inicio*/
 .menu {
@@ -21,12 +22,7 @@
 	margin-top: 0.5%;
 }
 
-.menu span {
-	font-weight: bold;
-}
-
 .search-bar {
-	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;
 	margin-right: 4%;
@@ -49,19 +45,23 @@
 	font-size: 0.3em;
 }
 
+.menu-principal .inicio span {
+	text-decoration: none;
+}
+
 .fa-home {
 	font-size: 1.7rem;
-	color: #ff740a;
+	color: orange;
 }
 
 .fa-clipboard-list {
 	font-size: 1.7rem;
-	color: #ff740a;
+	color: orange;
 }
 
 .fa-shopping-cart {
 	font-size: 1.7rem;
-	color: #ff740a;
+	color: orange;
 }
 
 /** logo, titulo y eslogan*/
@@ -72,24 +72,27 @@
 
 .logo-carrot {
 	border-radius: 100%;
-	width: 45%;
+	width: 40%;
 	vertical-align: middle;
 	float: left;
+	margin: 0% 0% 0% 7%;
 }
 
 .carrot {
-	padding-top: 15%;
+	padding-top: 10%;
 }
 
 .carrot .titulo {
-	font-size: 3rem;
-	font-family: 'Caveat', cursive;
-	text-decoration: underline #ff740a 1.8px;
+	font-size: 4rem;
+	font-family: fantasy;
+	color: orange;
+	margin: -2%;
 }
 
 .carrot .eslogan {
 	font-size: 1.2rem;
-	color: #01912d;
+	color: lightgreen;
+	padding: 8% 10%;
 }
 
 /**main*/
@@ -100,7 +103,7 @@
 
 .circulos {
 	display: flex;
-	border-bottom: #01912d solid 1.5px;
+	border-bottom: orange solid 1.5px;
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 90%;
@@ -110,7 +113,7 @@
 
 .circulos .circulo {
 	border-radius: 100%;
-	border: #01912d 1px solid;
+	border: orange 1px solid;
 	width: 1%;
 	height: 1%;
 	margin: 1.5%;
@@ -122,8 +125,8 @@
 
 .circulos .circulo-relleno {
 	border-radius: 100%;
-	border: #01912d 1px solid;
-	background-color: #01912d;
+	border: orange 1px solid;
+	background-color: orange;
 	width: 1%;
 	height: 1%;
 	margin: 1.5%;
@@ -149,14 +152,16 @@
 }
 
 article {
-	width: 75%;
-	border: #01912d solid 1px;
+	width: 60%;
+	border: orange solid 6px;
+	background-color: orange;
 	margin-bottom: 6%;
 }
 
 article img {
 	width: 100%;
 	border-bottom: lightgray solid 1px;
+	background-color: white;
 }
 
 article .info {
@@ -173,7 +178,7 @@ article .info h1 {
 
 article .info .precio {
 	font-size: 1.6rem;
-	color: #ff740a;
+	color: blanchedalmond;
 	text-align: center;
 	margin-top: 5%;
 }
@@ -187,4 +192,156 @@ article .info .precio {
 	padding: 3%;
 }
 
-/**Detalles del producto*/
+/**footer*/
+
+footer {
+	padding: 13%;
+	text-align: center;
+	border-top: rgb(0, 255, 68) solid 2px;
+	margin-top: 20%;
+	background-color: rgba(0, 255, 68, 0.7);
+}
+
+/*!-----------------------Detalles del Producto----------------------*/
+
+/**Main*/
+
+h2 {
+	margin-top: 35%;
+	margin-bottom: 5%;
+	font-size: 1.5em;
+	margin-left: 5%;
+}
+
+.product-details {
+	width: 90%;
+	margin-left: 5%;
+}
+
+.product-details img {
+	width: 100%;
+	border: #ff740a solid 2px;
+	margin-bottom: 8%;
+}
+
+.product-details .info-product-details .descrip {
+	font-size: 1.2rem;
+	text-align: justify;
+	margin-bottom: 5%;
+}
+
+.product-details .info-product-details .descrip::first-letter {
+	color: #ff740a;
+	font-size: 1.5rem;
+}
+
+.product-details .info-product-details .precio {
+	font-size: 1.8rem;
+	text-align: center;
+	width: 100%;
+	color: #ff740a;
+}
+
+.boton-agregar {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 12%;
+	width: 100%;
+}
+
+.boton-agregar p {
+	background-color: #ff740a;
+	border: #01912d 2px solid;
+	color: white;
+	font-size: 2rem;
+	padding: 2%;
+}
+
+.boton-compartir {
+	font-size: 1.5rem;
+	margin-top: 10%;
+	margin-left: 5%;
+}
+
+.compartir {
+	margin-top: 3%;
+	width: 35%;
+	margin-left: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.compartir .fa-instagram {
+	font-size: 2.5em;
+	color: #ffb300;
+}
+
+.compartir .fa-twitter {
+	font-size: 2.5em;
+	color: #ffb300;
+}
+
+.compartir .fa-facebook {
+	font-size: 2.5em;
+	color: #ffb300;
+}
+
+/*? Articulos relacionados */
+
+.titulo-art-relacionado {
+	font-size: 2rem;
+	text-align: center;
+	margin-top: 25%;
+	margin-bottom: 5%;
+}
+
+.productos-relacionados {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.articulo-relacionado {
+	width: 40%;
+	border: orange solid 3px;
+	background-color: orange;
+	margin-bottom: 6%;
+}
+
+.articulo-relacionado img {
+	width: 100%;
+	border-bottom: lightgray solid 1px;
+	background-color: white;
+}
+
+.articulo-relacionado .info {
+	margin-left: 7%;
+	margin-right: 7%;
+	margin-bottom: 3%;
+	margin-top: 5%;
+}
+
+.articulo-relacionado .info h1 {
+	font-size: 1rem;
+	margin-bottom: 2%;
+}
+
+.articulo-relacionado .info .precio {
+	font-size: 1.5rem;
+	color: blanchedalmond;
+	text-align: center;
+	margin-top: 5%;
+}
+
+.articulo-relacionado .info .agregar {
+	font-size: 1rem;
+	color: white;
+	background-color: #ff740a;
+	border: #01912d 1px solid;
+	text-align: center;
+	margin-top: 5%;
+	padding: 5%;
+}
