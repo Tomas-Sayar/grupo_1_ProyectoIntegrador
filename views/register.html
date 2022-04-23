@@ -16,7 +16,7 @@
 	<header>
 		<section class="menu">
 			<i class="fas fa-bars"></i>
-			<span>INICIO</span>
+			<span>Crear Cuenta</span>
 		</section>
 
 		<div class="search-bar">
@@ -53,101 +53,107 @@
 		</section>
 
 	</header>
-<main>
-    <form action="./" method="get">
-            <h1>Registro de Usuario</h1>
-            <br>
-            <div>
-                <label for="nombre y apellido">Nombre y Apellido:</label>
-                <input type="text" name="nombreApellido" id="nombre y apellido" required placeholder="Fernanda Sánchez">
-                </div>
-                <br>
-            <div>
-        <label for="nombre de usuari@">Nombre de Usuario:</label>
-        <input type="text" name="Nombre de usuari@" id="nombre de usuari@" required placeholder="Ferchu">
-            </div>
-            <br>
-            <div>
-        <label for="fecha de nacimiento">Fecha de nacimiento:</label>
-        <input type="date" name="fecha de nacimiento" id="fecha de nacimiento" required placeholder="26/08/1988">
-            </div>
-            <br>
-            <div>
-        <label for="domicilio">Domicilio:</label>
-        <input type="text" name="domicilio" id="domicilio" required placeholder="Av.Santa Fe 999">
-            </div>
-            <br>
-    <div>
-        <label> Perfil del usuario</label>
-        <br>
-    <br>
-    <div>
-    <label for="comprador">Comprador</label>
-        <input type="radio" name="tipoDeUsuario" value="comprador"required checked>
-        <label for="vendedor">Vendedor</label>
-        <input type="radio" name="tipoDeUsuario" value="vendedor"required>
-    </div>
-        
-    </div>
-        <br>
-        <div>
-    <label for="categoría de interés">Categoría de interés</label>
-    <br>
-    <br>
-    <label>
-        <input type="checkbox" name="categoríaDeInteres" value="electro">
-        Electro
-    </label>
-    <br>
-    <label>
-        <input type="checkbox" name="categoríaDeInteres" value="moda">
-        Moda
-    </label>
-    <br>
-    <label>
-        <input type="checkbox" name="categoríaDeInteres" value="hogar">
-        Hogar
-    </label>
-    <br>
-    <label>
-        <input type="checkbox" name="categoríaDeInteres" value="jugueteria">
-        Jugueteria
-    </label>
-    <br>
-    <label>
-        <input type="checkbox" name="categoríaDeInteres" value="vida sana">
-        Vida sana
-    </label>
-    </div>
-    <br>
-    
-    <div>
-    <label>Seleccionar una imagen para el perfil:
-    <input type="file" name="Foto de Perfil" accept=".jpg" required>
-    </label>
-    </div>
-    <br>
-    <div>
-    <label for="contraseña">Contraseña:</label>
-    <input type="password" name="passwordDeUsuario" required placeholder="Palacio88">
-    </div>
-    <br>
-    
-    <div>
-        <label for="contraseña">Confirmar contraseña:</label>
-        <input type="password" name="passwordconfirmacionDeUsuario" required placeholder="Palacio88">
-        </div>
-        <br>
-    
-    <div>
-        <button type=" submit">Enviar</button>
-        <button type="reset">Borrar</button>
-    </div>
-    
-    </form>
-    </main>
-    <br>
-    <footer>
+
+    <main>
+		<form action="./" method="get">
+
+			<div class="titulo-contenedor">
+				<h1>Registro de Usuario</h1>
+			</div>
+
+			<div class="formgroup">
+				<div>
+					<label for="nombre y apellido">Nombre y Apellido:</label>
+					<input class="form-control" type="text" name="nombreApellido" id="nombre y apellido" required placeholder="Fernanda Sánchez">
+					</div>
+					<br>
+				<div>
+			<label for="nombre de usuari@">Nombre de Usuario:</label>
+			<input class="form-control" type="text" name="Nombre de usuari@" id="nombre de usuari@" required placeholder="Ferchu">
+				</div>
+				<br>
+				<div>
+			<label for="fecha de nacimiento">Fecha de nacimiento:</label>
+			<input class="form-control" type="date" name="fecha de nacimiento" id="fecha de nacimiento" required placeholder="26/08/1988">
+				</div>
+				<br>
+				<div>
+			<label for="domicilio">Domicilio:</label>
+			<input class="form-control" type="text" name="domicilio" id="domicilio" required placeholder="Av.Santa Fe 999">
+				</div>
+				<br>
+		<div>
+			<label> Perfil del usuario</label>
+			<br>
+		<br>
+		<div>
+		<label for="comprador">Comprador</label>
+			<input type="radio" name="tipoDeUsuario" value="comprador"required checked>
+			<label for="vendedor">Vendedor</label>
+			<input type="radio" name="tipoDeUsuario" value="vendedor"required>
+		</div>
+			
+		</div>
+			<br>
+			<div>
+		<label for="categoría de interés">Categoría de interés</label>
+		<br>
+		<br>
+		<label>
+			<input type="checkbox" name="categoríaDeInteres" value="electro">
+			Electro
+		</label>
+		<br>
+		<label>
+			<input type="checkbox" name="categoríaDeInteres" value="moda">
+			Moda
+		</label>
+		<br>
+		<label>
+			<input type="checkbox" name="categoríaDeInteres" value="hogar">
+			Hogar
+		</label>
+		<br>
+		<label>
+			<input type="checkbox" name="categoríaDeInteres" value="jugueteria">
+			Jugueteria
+		</label>
+		<br>
+		<label>
+			<input type="checkbox" name="categoríaDeInteres" value="vida sana">
+			Vida sana
+		</label>
+		</div>
+		<br>
+		
+		<div>
+		<label>Seleccionar una imagen para el perfil:
+		<input class="form-control" type="file" name="Foto de Perfil" accept=".jpg" required>
+		</label>
+		</div>
+		<br>
+		<div>
+		<label for="contraseña">Contraseña:</label>
+		<input class="form-control" type="password" name="passwordDeUsuario" required placeholder="Palacio88">
+		</div>
+		<br>
+		
+		<div>
+			<label for="contraseña">Confirmar contraseña:</label>
+			<input class="form-control" type="password" name="passwordconfirmacionDeUsuario" required placeholder="Palacio88">
+			</div>
+			<br>
+		
+		<div>
+			<button type=" submit">Enviar</button>
+			<button type="reset">Borrar</button>
+		</div>
+		
+			</div>
+		</form>
+		</main>
+		<br>
+		<footer>
 		<ul type = "none">
 				   <li>
 						<p class="icono">
