@@ -14,3 +14,7 @@ app.listen(3000, () => {
 app.get('/', (req, res) => {
 	res.sendFile(path.resolve('./views/index.html'));
 });
+
+app.get('/detalles-del-producto', (req, res) => {
+	res.sendFile(path.resolve('./views/detalles.html'));
+});
