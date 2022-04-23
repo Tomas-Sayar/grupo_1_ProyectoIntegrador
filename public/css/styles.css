@@ -193,3 +193,20 @@ footer{
 	padding: 13%;
 	text-align: center;
 }
+
+
+/* Pagina de registro*/
+
+h1{
+	font-size: 6vw;
+	display: flex;
+	text-align: center;
+	padding: 5% 10% 8% 18%;
+	width: 100%;
+}
+
+label{
+	width: 100%;
+	font-size: 158%;
+	margin-bottom: 5%;
+}
