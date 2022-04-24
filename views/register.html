@@ -54,7 +54,7 @@
 
 	</header>
 
-    <main>
+	<main>
 		<form action="./" method="get">
 
 			<div class="titulo-contenedor">
@@ -64,128 +64,139 @@
 			<div class="formgroup">
 				<div>
 					<label for="nombre y apellido">Nombre y Apellido:</label>
-					<input class="form-control" type="text" name="nombreApellido" id="nombre y apellido" required placeholder="Fernanda Sánchez">
-					</div>
+					<input class="form-control" type="text" name="nombreApellido" id="nombre y apellido" required
+						placeholder="Fernanda Sánchez">
+				</div>
+				<br>
+				<div>
+					<label for="nombre de usuari@">Nombre de Usuario:</label>
+					<input class="form-control" type="text" name="Nombre de usuari@" id="nombre de usuari@" required
+						placeholder="Ferchu">
+				</div>
+				<br>
+				<div>
+					<label for="fecha de nacimiento">Fecha de nacimiento:</label>
+					<input class="form-control" type="date" name="fecha de nacimiento" id="fecha de nacimiento" required
+						placeholder="26/08/1988">
+				</div>
+				<br>
+				<div>
+					<label for="domicilio">Domicilio:</label>
+					<input class="form-control" type="text" name="domicilio" id="domicilio" required
+						placeholder="Av.Santa Fe 999">
+				</div>
+				<br>
+				<div>
+					<label> Perfil del usuario</label>
 					<br>
-				<div>
-			<label for="nombre de usuari@">Nombre de Usuario:</label>
-			<input class="form-control" type="text" name="Nombre de usuari@" id="nombre de usuari@" required placeholder="Ferchu">
+					<br>
+					<div>
+						<label for="comprador">Comprador</label>
+						<input type="radio" name="tipoDeUsuario" value="comprador" required checked>
+						<label for="vendedor">Vendedor</label>
+						<input type="radio" name="tipoDeUsuario" value="vendedor" required>
+					</div>
+
 				</div>
 				<br>
 				<div>
-			<label for="fecha de nacimiento">Fecha de nacimiento:</label>
-			<input class="form-control" type="date" name="fecha de nacimiento" id="fecha de nacimiento" required placeholder="26/08/1988">
+					<label for="categoría de interés">Categoría de interés</label>
+					<br>
+					<br>
+					<label>
+						<input type="checkbox" name="categoríaDeInteres" value="electro">
+						Electro
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" name="categoríaDeInteres" value="moda">
+						Moda
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" name="categoríaDeInteres" value="hogar">
+						Hogar
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" name="categoríaDeInteres" value="jugueteria">
+						Jugueteria
+					</label>
+					<br>
+					<label>
+						<input type="checkbox" name="categoríaDeInteres" value="vida sana">
+						Vida sana
+					</label>
+				</div>
+				<br>
+
+				<div>
+					<label>Seleccionar una imagen para el perfil:
+						<input class="form-control" type="file" name="Foto de Perfil" accept=".jpg" required>
+					</label>
 				</div>
 				<br>
 				<div>
-			<label for="domicilio">Domicilio:</label>
-			<input class="form-control" type="text" name="domicilio" id="domicilio" required placeholder="Av.Santa Fe 999">
+					<label for="contraseña">Contraseña:</label>
+					<input class="form-control" type="password" name="passwordDeUsuario" required
+						placeholder="Palacio88">
 				</div>
 				<br>
-		<div>
-			<label> Perfil del usuario</label>
-			<br>
-		<br>
-		<div>
-		<label for="comprador">Comprador</label>
-			<input type="radio" name="tipoDeUsuario" value="comprador"required checked>
-			<label for="vendedor">Vendedor</label>
-			<input type="radio" name="tipoDeUsuario" value="vendedor"required>
-		</div>
-			
-		</div>
-			<br>
-			<div>
-		<label for="categoría de interés">Categoría de interés</label>
-		<br>
-		<br>
-		<label>
-			<input type="checkbox" name="categoríaDeInteres" value="electro">
-			Electro
-		</label>
-		<br>
-		<label>
-			<input type="checkbox" name="categoríaDeInteres" value="moda">
-			Moda
-		</label>
-		<br>
-		<label>
-			<input type="checkbox" name="categoríaDeInteres" value="hogar">
-			Hogar
-		</label>
-		<br>
-		<label>
-			<input type="checkbox" name="categoríaDeInteres" value="jugueteria">
-			Jugueteria
-		</label>
-		<br>
-		<label>
-			<input type="checkbox" name="categoríaDeInteres" value="vida sana">
-			Vida sana
-		</label>
-		</div>
-		<br>
-		
-		<div>
-		<label>Seleccionar una imagen para el perfil:
-		<input class="form-control" type="file" name="Foto de Perfil" accept=".jpg" required>
-		</label>
-		</div>
-		<br>
-		<div>
-		<label for="contraseña">Contraseña:</label>
-		<input class="form-control" type="password" name="passwordDeUsuario" required placeholder="Palacio88">
-		</div>
-		<br>
-		
-		<div>
-			<label for="contraseña">Confirmar contraseña:</label>
-			<input class="form-control" type="password" name="passwordconfirmacionDeUsuario" required placeholder="Palacio88">
-			</div>
-			<br>
-		
-		<div>
-			<button type=" submit">Enviar</button>
-			<button type="reset">Borrar</button>
-		</div>
-		
+
+				<div>
+					<label for="contraseña">Confirmar contraseña:</label>
+					<input class="form-control" type="password" name="passwordconfirmacionDeUsuario" required
+						placeholder="Palacio88">
+				</div>
+				<br>
+
+				<div>
+					<button type=" submit">Enviar</button>
+					<button type="reset">Borrar</button>
+				</div>
+
 			</div>
 		</form>
-		</main>
-		<br>
-		<footer>
-		<ul type = "none">
-				   <li>
-						<p class="icono">
-						<i class="fas fa-credit-card"></i></p>
-						<h3>Pagá con tarjeta,efectivo o mercado pago</h3>
-		<p>Con Carrot, podes pagar con tarjeta de crédito, débito, mercado pago o efectivo ¡Y siempre es seguro!
-		</p>
-		</li>
-		<br>
-		<li>
-			<p class="icono">
-			<i class="fas fa-gift"></i></p>
-		<h3>Envío gratis desde $ 2.500</h3>
-		 <p>
-			  Solo por estar registrad@ en Carrot tenés un 5% de descuento en todas tus compras y envíos gratis en miles de
-			productos.
-		 </p>
-		 </li>
-		 <br>
-		<li> 
-			<p class="icono">
-			<i class="fas fa-user-shield"></i></p>
-			<h3>Seguridad, de principio a fin</h3>
-		<p>¿No te gusta? ¡Devolvelo! En Carrot, no hay nada que no puedas hacer,
-			porque estás siempre protegid@.
-		</p>
-		</li>
-		<br>
-		<p>Copyright © 1999-2020 Carrot S.R.L.</p>
-				</footer>
-			</body>
-		</html>
+	</main>
+	<br>
+	<footer>
+		<ul type="none">
+			<li>
+				<p class="icono">
+					<i class="fas fa-credit-card"></i>
+				</p>
+				<h3>Pagá con tarjeta,efectivo o mercado pago</h3>
+				<p>Con Carrot, podes pagar con tarjeta de crédito, débito, mercado pago o efectivo ¡Y siempre es seguro!
+				</p>
+			</li>
+			<br>
+			<li>
+				<p class="icono">
+					<i class="fas fa-gift"></i>
+				</p>
+				<h3>Envío gratis desde $ 2.500</h3>
+				<p>
+					Solo por estar registrad@ en Carrot tenés un 5% de descuento en todas tus compras y envíos gratis en
+					miles de
+					productos.
+				</p>
+			</li>
+			<br>
+			<li>
+				<p class="icono">
+					<i class="fas fa-user-shield"></i>
+				</p>
+				<h3>Seguridad, de principio a fin</h3>
+				<p>¿No te gusta? ¡Devolvelo! En Carrot, no hay nada que no puedas hacer,
+					porque estás siempre protegid@.
+				</p>
+			</li>
+			<br>
+			<p>Copyright © 1999-2020 Carrot S.R.L.</p>
+	</footer>
+</body>
+
+</html>
 </body>
 
 </html>

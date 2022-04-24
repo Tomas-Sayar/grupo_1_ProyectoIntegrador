@@ -195,11 +195,22 @@ article .info .precio {
 /**footer*/
 
 footer {
-	padding: 13%;
+	border-top: #01912d 2px solid;
+	background-color: aquamarine;
+	margin-top: 25%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 	text-align: center;
-	border-top: rgb(0, 255, 68) solid 2px;
-	margin-top: 20%;
-	background-color: rgba(0, 255, 68, 0.7);
+}
+
+h6 {
+	margin-top: 3%;
+	font-size: 1.2rem;
+}
+
+.mas-info {
+	display: flex;
+	flex-direction: column;
 }
 
 /*!-----------------------Detalles del Producto----------------------*/
@@ -346,10 +357,9 @@ h2 {
 	padding: 5%;
 }
 
+/** Pagina de registro*/
 
-/* Pagina de registro*/
-
-h1{
+h1 {
 	font-size: 6vw;
 	display: flex;
 	text-align: center;
@@ -357,7 +367,7 @@ h1{
 	width: 100%;
 }
 
-label{
+label {
 	width: 100%;
 	font-size: 158%;
 	margin-bottom: 5%;
