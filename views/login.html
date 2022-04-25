@@ -5,14 +5,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carrot</title>
+    <title>Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nanum+Gothic&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
-<body>
     <header>
         <section class="menu">
             <i class="fas fa-bars"></i>
@@ -54,66 +53,74 @@
 
     </header>
 
+
+    <br>
     <main>
         <form action="./" method="get">
-            <h1>Login de usuario</h1>
+            <h1 class="login">Login de usuario</h1>
+            <br>
+            <br>
             <div>
                 <label for="usuario">Nombre de Usuario</label>
+                <br>
                 <input type="text" name="usuario" id="usuario" required>
                 <span class="feedback"></span>
             </div>
             <br>
             <div>
                 <label for="contraseña">Contraseña</label>
+                <br>
                 <input type="password" name="contraseña" id="contraseña" required>
                 <span class="feedback"></span>
+                <span class="resetearContraseña">
+                <a href="/account/reset">¿Olvidaste tu contraseña?</a>
+                </span>
             </div>
             <br>
             <div>
-                <button type="submit" required>Enviar</button>
+                <button type="submit" required>INICIAR SESIÓN</button>
                 <span class="feedback"></span>
             </div>
         </form>
     </main>
+<br>
+<br>
+<footer>
 
-    <footer>
-        <ul type="none">
-            <li>
-                <p class="icono">
-                    <i class="fas fa-credit-card"></i>
-                </p>
-                <h3>Pagá con tarjeta,efectivo o mercado pago</h3>
-                <p>Con Carrot, podes pagar con tarjeta de crédito, débito, mercado pago o efectivo ¡Y siempre es seguro!
-                </p>
-            </li>
-            <br>
-            <li>
-                <p class="icono">
-                    <i class="fas fa-gift"></i>
-                </p>
-                <h3>Envío gratis desde $ 2.500</h3>
-                <p>
-                    Solo por estar registrad@ en Carrot tenés un 5% de descuento en todas tus compras y envíos gratis en
-                    miles de
-                    productos.
-                </p>
-            </li>
-            <br>
-            <li>
-                <p class="icono">
-                    <i class="fas fa-user-shield"></i>
-                </p>
-                <h3>Seguridad, de principio a fin</h3>
-                <p>¿No te gusta? ¡Devolvelo! En Carrot, no hay nada que no puedas hacer,
-                    porque estás siempre protegid@.
-                </p>
-            </li>
-            <br>
-            <p>Copyright © 1999-2020 Carrot S.R.L.</p>
-    </footer>
-</body>
+    <h6>Seguinos</h6>
+    <div class="redes-sociales">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook"></i>
+    </div>
 
-</html>
+    <h6>Mas info</h6>
+    <div class="mas-info">
+        <span>Pedidos online</span>
+        <span>Zonas de entrega</span>
+        <span>Formas de pago</span>
+    </div>
+
+    <h6>Contactanos</h6>
+    <div class="contacto">
+        <div>
+            <i class="fab fa-instagram"></i>
+            <span>DieteticasCarrot</span>
+        </div>
+        <div>
+            <i class="fab fa-twitter"></i>
+            <span>DieteticasCarrot</span>
+        </div>
+        <div>
+            <i class="fab fa-facebook"></i>
+            <span>DieteticasCarrot</span>
+        </div>
+    </div>
+
+    <h6>Informacion legal</h6>
+    <p>Copyright © 1999-2022 MercadoLibre S.R.L.</p>
+</footer>
+
 </body>
 
 </html>
