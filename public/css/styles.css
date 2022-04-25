@@ -64,8 +64,8 @@
 	color: orange;
 }
 span {
-	font-size:initial;
-	font-size:14px;
+	font-size: initial;
+	font-size: 14px;
 }
 /** logo, titulo y eslogan*/
 
@@ -106,7 +106,7 @@ main {
 	width: 100%;
 }
 
-h1.titulo{
+h1.titulo {
 	background-color: orange;
 }
 .circulos {
@@ -216,22 +216,21 @@ h6 {
 	margin-top: 3%;
 	font-size: 167%;
 }
-.redes-sociales{
-	font-size: 191%
+.redes-sociales {
+	font-size: 191%;
 }
 .mas-info {
 	display: flex;
 	flex-direction: column;
 }
-.fa-instagram{
+.fa-instagram {
 	font-size: 100%;
 }
-.fa-twitter{
-	font-size: 100%
-}
-.fa-facebook{
+.fa-twitter {
 	font-size: 100%;
-
+}
+.fa-facebook {
+	font-size: 100%;
 }
 /*!-----------------------Detalles del Producto----------------------*/
 
@@ -242,6 +241,7 @@ h2 {
 	margin-bottom: 5%;
 	font-size: 1.5em;
 	margin-left: 5%;
+	color: black;
 }
 
 .product-details {
@@ -259,6 +259,7 @@ h2 {
 	font-size: 1.2rem;
 	text-align: justify;
 	margin-bottom: 5%;
+	color: black;
 }
 
 .product-details .info-product-details .descrip::first-letter {
@@ -293,6 +294,7 @@ h2 {
 	font-size: 1.5rem;
 	margin-top: 10%;
 	margin-left: 5%;
+	color: black;
 }
 
 .compartir {
@@ -305,7 +307,7 @@ h2 {
 }
 
 .compartir .fa-instagram {
-	font-size: large;
+	font-size: 2.5em;
 	color: #ffb300;
 }
 
@@ -370,7 +372,7 @@ h2 {
 .articulo-relacionado .info .agregar {
 	font-size: 1rem;
 	color: white;
-	background-color:orange;
+	background-color: orange;
 	border: white 3px solid;
 	text-align: center;
 	margin-top: 5%;
@@ -379,23 +381,16 @@ h2 {
 
 /** Pagina de registro*/
 
-h1 {
+h1.Crear-Cuenta {
+	background-color: orange;
 	font-size: 6vw;
-	text-align: center;
-	padding: 5% 10% 8% 18%;
+	box-sizing: border-box;
 	width: 100%;
-	background-color: orange;
-}
-h1.Crear-Cuenta{
-	background-color: orange;
-font-size: 6vw;
-box-sizing: border-box;
-width: 100%;
-text-align: center;
-display: flex;
-padding: 5%;
-margin-bottom: revert;
-    margin-top: 16%;
+	text-align: center;
+	display: flex;
+	padding: 5%;
+	margin-bottom: revert;
+	margin-top: 16%;
 }
 
 label {
@@ -403,25 +398,24 @@ label {
 	font-size: 158%;
 	margin-bottom: 5%;
 }
-.botones{
+.botones {
 	display: flex;
 	flex-direction: column;
 }
-.tipoUsuario{
+.tipoUsuario {
 	padding: 5%;
 	display: inline;
 	flex-direction: inherit;
 }
-.minorista{
-		display: flex;
-
-	}
+.minorista {
+	display: flex;
+}
 /* login*/
-h1.login{
+h1.login {
 	background-color: orange;
-font-size: 5vw;
-box-sizing: border-box;
-display: flex;
+	font-size: 5vw;
+	box-sizing: border-box;
+	display: flex;
 }
 label {
 	width: 100%;
@@ -431,24 +425,24 @@ label {
 	line-height: 4rem;
 }
 input {
-width: 100%;
-color:black;
-padding: 4%;
-margin: solid black 1%;
-display: flex;
+	width: 100%;
+	color: black;
+	padding: 4%;
+	margin: solid black 1%;
+	display: flex;
 }
 
-button{
+button {
 	background-color: orange;
-    color: white;
-    border: gray;
-font-size: 1.5rem;
-justify-content: space-around;
-    padding: 2% 5%;
-    margin: 3% 22%;
+	color: white;
+	border: gray;
+	font-size: 1.5rem;
+	justify-content: space-around;
+	padding: 2% 5%;
+	margin: 3% 22%;
 	border-radius: 1rem;
 }
 
-a{
+a {
 	color: rgb(130, 121, 121);
 }
