@@ -384,6 +384,18 @@ h1 {
 	text-align: center;
 	padding: 5% 10% 8% 18%;
 	width: 100%;
+	background-color: orange;
+}
+h1.Crear-Cuenta{
+	background-color: orange;
+font-size: 6vw;
+box-sizing: border-box;
+width: 100%;
+text-align: center;
+display: flex;
+padding: 5%;
+margin-bottom: revert;
+    margin-top: 16%;
 }
 
 label {
@@ -391,7 +403,19 @@ label {
 	font-size: 158%;
 	margin-bottom: 5%;
 }
+.botones{
+	display: flex;
+	flex-direction: column;
+}
+.tipoUsuario{
+	padding: 5%;
+	display: inline;
+	flex-direction: inherit;
+}
+.minorista{
+		display: flex;
 
+	}
 /* login*/
 h1.login{
 	background-color: orange;
@@ -408,6 +432,8 @@ label {
 input {
 width: 100%;
 color:black;
+padding: 4%;
+margin: solid black 1%;
 }
 
 button{
