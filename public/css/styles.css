@@ -3,6 +3,7 @@
 	font-size: 12px;
 	padding: 0px;
 	margin: 0px;
+	box-sizing: border-box;
 }
 
 /*!------------------------------ home ------------------------------*/
@@ -12,8 +13,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
-	margin-left: 2%;
-	margin-top: 2%;
+	margin: 6% 0% 6% 2%;
 }
 
 .menu .fa-bars {
@@ -28,7 +28,7 @@
 	margin-right: 4%;
 	margin-left: 4%;
 	padding-bottom: 3%;
-	border-bottom: #01912d solid 1.5px;
+	border-bottom: orange solid 2.5px;
 }
 
 /** menu principal*/
@@ -63,7 +63,10 @@
 	font-size: 1.7rem;
 	color: orange;
 }
-
+span {
+	font-size:initial;
+	font-size:14px;
+}
 /** logo, titulo y eslogan*/
 
 .encabezado {
@@ -96,11 +99,16 @@
 }
 
 /**main*/
-
+main {
+	color: white;
+}
 .carrusel1 img {
 	width: 100%;
 }
 
+h1.titulo{
+	background-color: orange;
+}
 .circulos {
 	display: flex;
 	border-bottom: orange solid 1.5px;
@@ -188,31 +196,43 @@ article .info .precio {
 	font-size: 2rem;
 	color: white;
 	background-color: #ffb300;
-	border: #01912d solid 1px;
+	border: lightgray solid 1px;
 	padding: 3%;
 }
 
 /**footer*/
 
 footer {
-	border-top: #01912d 2px solid;
-	background-color: aquamarine;
+	border-top: white 2px solid;
+	background-color: orange;
 	margin-top: 25%;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	text-align: center;
+	color: white;
 }
 
 h6 {
 	margin-top: 3%;
-	font-size: 1.2rem;
+	font-size: 167%;
 }
-
+.redes-sociales{
+	font-size: 191%
+}
 .mas-info {
 	display: flex;
 	flex-direction: column;
 }
+.fa-instagram{
+	font-size: 100%;
+}
+.fa-twitter{
+	font-size: 100%
+}
+.fa-facebook{
+	font-size: 100%;
 
+}
 /*!-----------------------Detalles del Producto----------------------*/
 
 /**Main*/
@@ -231,7 +251,7 @@ h2 {
 
 .product-details img {
 	width: 100%;
-	border: #ff740a solid 2px;
+	border: rgb(230, 103, 19) solid 2px;
 	margin-bottom: 8%;
 }
 
@@ -262,8 +282,8 @@ h2 {
 }
 
 .boton-agregar p {
-	background-color: #ff740a;
-	border: #01912d 2px solid;
+	background-color: orange;
+	border: orangered 2px solid;
 	color: white;
 	font-size: 2rem;
 	padding: 2%;
@@ -285,7 +305,7 @@ h2 {
 }
 
 .compartir .fa-instagram {
-	font-size: 2.5em;
+	font-size: large;
 	color: #ffb300;
 }
 
@@ -350,8 +370,8 @@ h2 {
 .articulo-relacionado .info .agregar {
 	font-size: 1rem;
 	color: white;
-	background-color: #ff740a;
-	border: #01912d 1px solid;
+	background-color:orange;
+	border: white 3px solid;
 	text-align: center;
 	margin-top: 5%;
 	padding: 5%;
@@ -361,7 +381,6 @@ h2 {
 
 h1 {
 	font-size: 6vw;
-	display: flex;
 	text-align: center;
 	padding: 5% 10% 8% 18%;
 	width: 100%;
@@ -371,4 +390,37 @@ label {
 	width: 100%;
 	font-size: 158%;
 	margin-bottom: 5%;
+}
+
+/* login*/
+h1.login{
+	background-color: orange;
+font-size: 5vw;
+box-sizing: border-box;
+}
+label {
+	width: 100%;
+	font-size: solid 158%;
+	margin-bottom: 5%;
+	color: black;
+	line-height: 4rem;
+}
+input {
+width: 100%;
+color:black;
+}
+
+button{
+	background-color: orange;
+    color: white;
+    border: gray;
+font-size: 1.5rem;
+justify-content: space-around;
+    padding: 2% 5%;
+    margin: 3% 22%;
+	border-radius: 1rem;
+}
+
+a{
+	color: rgb(130, 121, 121);
 }
