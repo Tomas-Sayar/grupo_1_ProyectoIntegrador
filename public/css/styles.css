@@ -447,3 +447,14 @@ button {
 a {
 	color: rgb(130, 121, 121);
 }
+
+/*!Media Querys*/
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 1024px) {
+}
