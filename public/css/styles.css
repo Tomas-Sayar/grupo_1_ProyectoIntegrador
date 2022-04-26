@@ -251,7 +251,7 @@ h2 {
 
 .product-details img {
 	width: 100%;
-	border: rgb(230, 103, 19) solid 2px;
+	border: orange solid 2px;
 	margin-bottom: 8%;
 }
 
@@ -263,7 +263,7 @@ h2 {
 }
 
 .product-details .info-product-details .descrip::first-letter {
-	color: #ff740a;
+	color: orange;
 	font-size: 1.5rem;
 }
 
@@ -271,7 +271,7 @@ h2 {
 	font-size: 1.8rem;
 	text-align: center;
 	width: 100%;
-	color: #ff740a;
+	color:orange;
 }
 
 .boton-agregar {
@@ -284,7 +284,7 @@ h2 {
 
 .boton-agregar p {
 	background-color: orange;
-	border: orangered 2px solid;
+	border: white 2px solid;
 	color: white;
 	font-size: 2rem;
 	padding: 2%;
@@ -413,9 +413,10 @@ label {
 /* login*/
 h1.login {
 	background-color: orange;
-	font-size: 5vw;
+	font-size: 6vw;
 	box-sizing: border-box;
-	display: flex;
+	padding: 3%;
+	margin-top: 16%;
 }
 label {
 	width: 100%;
@@ -427,7 +428,7 @@ label {
 input {
 	width: 100%;
 	color: black;
-	padding: 4%;
+	padding: 2%;
 	margin: solid black 1%;
 	display: flex;
 }
