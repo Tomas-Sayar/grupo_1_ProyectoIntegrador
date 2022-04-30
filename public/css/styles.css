@@ -271,7 +271,7 @@ h2 {
 	font-size: 1.8rem;
 	text-align: center;
 	width: 100%;
-	color:orange;
+	color: orange;
 }
 
 .boton-agregar {
@@ -328,6 +328,7 @@ h2 {
 	text-align: center;
 	margin-top: 25%;
 	margin-bottom: 5%;
+	color: black;
 }
 
 .productos-relacionados {
