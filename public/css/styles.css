@@ -164,12 +164,14 @@ article {
 	border: orange solid 6px;
 	background-color: orange;
 	margin-bottom: 6%;
+	border-radius: 10%;
 }
 
 article img {
 	width: 100%;
 	border-bottom: lightgray solid 1px;
 	background-color: white;
+	border-radius: 10%;
 }
 
 article .info {
