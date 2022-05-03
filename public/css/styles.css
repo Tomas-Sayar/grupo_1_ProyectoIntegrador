@@ -249,12 +249,14 @@ h2 {
 .product-details {
 	width: 90%;
 	margin-left: 5%;
+	border-radius: 10%;
 }
 
 .product-details img {
 	width: 100%;
 	border: orange solid 2px;
 	margin-bottom: 8%;
+	border-radius: 10%;
 }
 
 .product-details .info-product-details .descrip {
@@ -345,12 +347,14 @@ h2 {
 	border: orange solid 3px;
 	background-color: orange;
 	margin-bottom: 6%;
+	border-radius: 10%;
 }
 
 .articulo-relacionado img {
 	width: 100%;
 	border-bottom: lightgray solid 1px;
 	background-color: white;
+	border-radius: 12%;
 }
 
 .articulo-relacionado .info {
@@ -380,6 +384,7 @@ h2 {
 	text-align: center;
 	margin-top: 5%;
 	padding: 5%;
+	border-radius: 5%;
 }
 
 /** Pagina de registro*/
