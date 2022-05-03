@@ -28,6 +28,11 @@ app.get('/frutos-secos', (req, res) => {
 	res.sendFile(path.resolve('./views/frutos-secos.html'));
 });
 
+/*carrito*/
+app.get('/carrito', (req, res) => {
+	res.sendFile(path.resolve('./views/carrito.html'));
+});
+
 app.get('/miel-liquida', (req, res) => {
 	res.sendFile(path.resolve('./views/miel-liquida.html'));
 });

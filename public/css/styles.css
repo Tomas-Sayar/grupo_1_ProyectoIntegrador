@@ -456,6 +456,33 @@ a {
 	color: rgb(130, 121, 121);
 }
 
+/*carrito*/
+h2.carrito{
+	color: black;
+	font-size: 3rem;
+	width: 100%;
+	height: auto;
+	background-color: orange;
+	text-align: center;
+	margin-left: 0%;
+}
+ul.carro img{
+	width: 40%;
+}
+ul.carro{
+	color:black;
+}
+
+.info-carro{
+	background-color: red;
+	text-align: right;
+	width: 60%;
+}
+
+
+
+
+
 /*!Media Querys*/
 
 @media (min-width: 480px) {
