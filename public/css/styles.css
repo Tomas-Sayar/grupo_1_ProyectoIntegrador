@@ -458,7 +458,7 @@ a {
 
 /*carrito*/
 h2.carrito{
-	color: black;
+	color:white;
 	font-size: 2.4rem;
 	width: 100%;
 	height: auto;
@@ -471,9 +471,8 @@ ul.carro img{
 }
 .info-carro{
 	color: orange;
-	width: 80%;
+	width: 100%;
 	margin-top: 6%;
-	margin-left: -3%;
 	font-size:1.2rem;
 }
 .sub-precio{
@@ -484,12 +483,26 @@ ul.carro img{
 	width: 100%;
 
 }
+input.number{
+margin-left: -18%;
+    margin-right: -18%;
+	padding: 0% 15%;
+}
 .carrito-precio{
 	color:black;
 	font-size: small;
 	width: 50%;
-	margin-top: 14%;
-	margin-left: -79%;
+	margin-top: 19%;
+    margin-left: -14%;
+}
+.menos-mas{
+color: black;
+display: flex;
+max-width: 28%;
+}
+.fa-minus{
+	color: white;
+    margin-left: 30%;
 }
 .sub-carrito-precio{
 	font-size: small;
@@ -512,7 +525,13 @@ li{
 	display: flex;
 	margin-top: 10%;
 }
-
+.fa-trash-alt{
+	color: orange;
+	margin-top: 28%;
+    font-size: 200%;
+width: 100%;
+background-color: white;
+}
 
 /*!Media Querys*/
 

@@ -23,14 +23,18 @@ app.get('/Registro', (req, res) => {
 	res.sendFile(path.resolve('./views/register.html'));
 });
 
-/**detalles del producto*/
-app.get('/frutos-secos', (req, res) => {
-	res.sendFile(path.resolve('./views/frutos-secos.html'));
+app.get('/Login', (req, res) => {
+	res.sendFile(path.resolve('./views/login.html'));
 });
 
 /*carrito*/
 app.get('/carrito', (req, res) => {
 	res.sendFile(path.resolve('./views/carrito.html'));
+});
+
+/**detalles del producto*/
+app.get('/frutos-secos', (req, res) => {
+	res.sendFile(path.resolve('./views/frutos-secos.html'));
 });
 
 app.get('/miel-liquida', (req, res) => {
