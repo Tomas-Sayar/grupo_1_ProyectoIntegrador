@@ -459,7 +459,7 @@ a {
 /*carrito*/
 h2.carrito{
 	color: black;
-	font-size: 3rem;
+	font-size: 2.4rem;
 	width: 100%;
 	height: auto;
 	background-color: orange;
@@ -469,18 +469,49 @@ h2.carrito{
 ul.carro img{
 	width: 40%;
 }
-ul.carro{
-	color:black;
-}
-
 .info-carro{
-	background-color: red;
-	text-align: right;
-	width: 60%;
+	color: orange;
+	width: 80%;
+	margin-top: 6%;
+	margin-left: -3%;
+	font-size:1.2rem;
 }
+.sub-precio{
+	display: flex;
+	color: black;
+	margin-top: 25%;
+	font-size: small;
+	width: 100%;
 
+}
+.carrito-precio{
+	color:black;
+	font-size: small;
+	width: 50%;
+	margin-top: 14%;
+	margin-left: -79%;
+}
+.sub-carrito-precio{
+	font-size: small;
+	font-size: 18px;
+	width: 50%;
 
-
+}
+.Subtotal{
+	font-size: 1.5rem;
+    margin-top: 1%;
+	color: black;
+	width: 50%;
+}
+.finalizar{
+	background-color: orange;
+	color: white;
+	margin-top: 20%;
+}
+li{
+	display: flex;
+	margin-top: 10%;
+}
 
 
 /*!Media Querys*/
