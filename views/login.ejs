@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<%- include("./partials/head") %>
+
+    <body>
+        <!-- HEADER -->
+        <%- include("./partials/header") %>
+
+            <br>
+            <main>
+                <form action="./" method="get">
+                    <h1 class="login">Login de usuario</h1>
+                    <br>
+                    <br>
+                    <div>
+                        <label for="usuario">Nombre de Usuario</label>
+                        <br>
+                        <input type="text" name="usuario" id="usuario" required>
+                        <span class="feedback"></span>
+                    </div>
+                    <br>
+                    <div>
+                        <label for="contraseña">Contraseña</label>
+                        <br>
+                        <input type="password" name="contraseña" id="contraseña" required>
+                        <span class="feedback"></span>
+                        <span class="resetearContraseña">
+                            <a href="/account/reset">¿Olvidaste tu contraseña?</a>
+                        </span>
+                    </div>
+                    <br>
+                    <div>
+                        <button type="submit" required>INICIAR SESIÓN</button>
+                        <span class="feedback"></span>
+                    </div>
+                </form>
+            </main>
+            <br>
+            <br>
+
+            <footer>
+
+                <h6>Seguinos</h6>
+                <div class="redes-sociales">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+
+                <h6>Mas info</h6>
+                <div class="mas-info">
+                    <span>Pedidos online</span>
+                    <span>Zonas de entrega</span>
+                    <span>Formas de pago</span>
+                </div>
+
+                <h6>Contactanos</h6>
+                <div class="contacto">
+                    <div>
+                        <i class="fas fa-phone"></i>
+                        <span>1128561209</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-envelope"></i>
+                        <span>hola@carrot.com</span>
+                    </div>
+                    <div>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Av. Santa Fe 1254C1059ABT CABA</span>
+                    </div>
+                </div>
+
+                <h6>Informacion legal</h6>
+                <p>Copyright © 1999-2022 Carrot S.R.L.</p>
+            </footer>
+    </body>
+
+</html>
