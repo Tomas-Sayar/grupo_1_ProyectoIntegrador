@@ -4,6 +4,7 @@
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
+	max-width: 100%;
 }
 
 /*!------------------------------ home ------------------------------*/
@@ -492,8 +493,8 @@ margin-left: -18%;
 	color:black;
 	font-size: small;
 	width: 50%;
-	margin-top: 19%;
-    margin-left: -14%;
+	margin-top: 24%;
+    margin-left: -20%;
 }
 .menos-mas{
 color: black;
@@ -539,6 +540,10 @@ background-color: white;
 }
 
 @media (min-width: 768px) {
+article{
+	width: 20%;
+	margin: 1%;
+}	
 }
 
 @media (min-width: 1024px) {
