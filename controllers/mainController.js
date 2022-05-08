@@ -10,6 +10,9 @@ const controller = {
     register: (req, res) => {
         res.render("register");
     },
+    product: (req, res) => {
+        res.render("product-details");
+    },
 };
 
 module.exports = controller;

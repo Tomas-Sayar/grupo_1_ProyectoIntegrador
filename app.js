@@ -23,7 +23,10 @@ app.listen(3000, () => {
 
 // ROUTERS
 app.use('/', mainRouter);
-
 app.use('/login', mainRouter);
-
 app.use('/register', mainRouter);
+
+app.use('/product', mainRouter);
+
+
+
