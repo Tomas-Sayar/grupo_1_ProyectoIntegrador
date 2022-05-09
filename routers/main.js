@@ -12,5 +12,4 @@ router.get('/register', mainController.register);
 router.get('/product', mainController.product);
 
 
-
 module.exports = router;

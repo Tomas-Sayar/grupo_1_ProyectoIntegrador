@@ -2,11 +2,10 @@ const express = require('express');
 const app = express();
 
 const path = require('path');
-
 const publicPath = path.resolve(__dirname, './public');
 
 const mainRouter = require('./routers/main');
-
+const productRouter = require('./routers/product');
 
 
 // APP CONFIG 
@@ -25,4 +24,5 @@ app.use('/', mainRouter);
 app.use('/login', mainRouter);
 app.use('/register', mainRouter);
 
-app.use('/product', mainRouter);
+//TODO: solucionar error en el ruteador de product-details
+app.use('/product', productRouter);
