@@ -9,7 +9,6 @@ const mainRouter = require('./routers/main');
 
 
 
-
 // APP CONFIG 
 app.use(express.static(publicPath));
 app.set('view engine', 'ejs');
