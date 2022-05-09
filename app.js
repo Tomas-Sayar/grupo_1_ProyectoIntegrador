@@ -24,5 +24,5 @@ app.listen(3000, () => {
 app.use('/', mainRouter);
 app.use('/login', mainRouter);
 app.use('/register', mainRouter);
-
+app.use('/carrito', mainRouter);
 app.use('/product', mainRouter);
