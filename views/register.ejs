@@ -1,166 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Registro de Usuario</title>
-	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nanum+Gothic&display=swap" rel="stylesheet">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-	<link rel="stylesheet" href="./css/styles.css" />
-</head>
+<!-- HEAD -->
+<%- include("./partials/head") %>
 
-<body>
-	<header>
-		<section class="menu">
-			<i class="fas fa-bars"></i>
-			<span>Crear Cuenta</span>
-		</section>
+	<body>
+		<!-- HEADER -->
+		<%- include("./partials/header") %>
 
-		<div class="search-bar">
-			<i class="fas fa-search"></i>
-		</div>
+			<main>
+				<form action="./" method="get">
 
-		<section class="menu-principal">
-			<div class="inicio">
-				<i class="fas fa-home"></i>
-				<br>
-				<span>INICIO</span>
-			</div>
-			<div class="productos">
-				<i class="fas fa-clipboard-list"></i>
-				<br>
-				<span>PRODUCTOS</span>
-			</div>
-			<div class="carrito">
-				<i class="fas fa-shopping-cart"></i>
-				<br>
-				<span>CARRITO</span>
-			</div>
-		</section>
-
-		<section class="encabezado">
-			<div class="logo">
-				<img class="logo-carrot" src="img/logoCarrot.png" alt="logo">
-			</div>
-			<div class="carrot">
-				<span class="titulo">Carrot</span>
-				<br>
-				<span class="eslogan">mercado natural</span>
-			</div>
-		</section>
-
-	</header>
-
-	<main>
-		<form action="./" method="get">
-
-			<div class="titulo-contenedor">
-				<h1 class="Crear-Cuenta">Crear cuenta</h1>
-			</div>
-
-			<class="formgroup">
-				<div>
-					<label for="nombre y apellido">Nombre y Apellido:</label>
-					<input class="form-control" type="text" name="nombreApellido" id="nombre y apellido" required
-						placeholder="ej:Fernanda Sánchez">
-				</div>
-				<br>
-				<div>
-					<label for="nombre de usuari@">Nombre de Usuario:</label>
-					<input class="form-control" type="text" name="Nombre de usuari@" id="nombre de usuari@" required
-						placeholder="ej:Ferchu">
-				</div>
-				<br>
-				<div>
-					<label for="fecha de nacimiento">Fecha de nacimiento:</label>
-					<input class="form-control" type="date" name="fecha de nacimiento" id="fecha de nacimiento" required
-						placeholder="ej:26/08/1988">
-				</div>
-				<br>
-				<div>
-					<label for="domicilio">Domicilio:</label>
-					<input class="form-control" type="text" name="domicilio" id="domicilio" required
-						placeholder="ej:Av.Santa Fe 999">
-				</div>
-				<br>
-				<div>
-					<label> Perfil del usuario:</label>
-					<br>
-					<div class="tipoUsuario">
-						<label for="minorista" class="minorista">Minorista</label>
-						<input type="radio" name="tipoDeUsuario" value="minorista" class= "minorista" required checked>
-						<label for="mayorista">Mayorista</label>
-						<input type="radio" name="tipoDeUsuario" value="mayorista" class= "mayorista" required>
+					<div class="titulo-contenedor">
+						<h1 class="Crear-Cuenta">Crear cuenta</h1>
 					</div>
-					</div>
-				<br>
-					<label>Seleccionar una imagen para el perfil:
-						<input class="form-control" type="file" name="Foto de Perfil" accept=".jpg" required>
-					</label>
-				</div>
-				<br>
-				<div>
-					<label for="contraseña">Contraseña:</label>
-					<input class="form-control" type="password" name="passwordDeUsuario" required
-						placeholder="ej:Palacio88">
-				</div>
-				<br>
 
-				<div>
-					<label for="contraseña">Confirmar contraseña:</label>
-					<input class="form-control" type="password" name="passwordconfirmacionDeUsuario" required
-						placeholder="ej:Palacio88">
-				</div>
-				<br>
-<div class= "botones">
-					<button type=" submit">Crear cuenta</button> 
-					<button type="reset">Borrar</button>
-</div>
+					<class="formgroup">
+						<div>
+							<label for="nombre y apellido">Nombre y Apellido:</label>
+							<input class="form-control" type="text" name="nombreApellido" id="nombre y apellido"
+								required placeholder="ej:Fernanda Sánchez">
+						</div>
+						<br>
+						<div>
+							<label for="nombre de usuari@">Nombre de Usuario:</label>
+							<input class="form-control" type="text" name="Nombre de usuari@" id="nombre de usuari@"
+								required placeholder="ej:Ferchu">
+						</div>
+						<br>
+						<div>
+							<label for="fecha de nacimiento">Fecha de nacimiento:</label>
+							<input class="form-control" type="date" name="fecha de nacimiento" id="fecha de nacimiento"
+								required placeholder="ej:26/08/1988">
+						</div>
+						<br>
+						<div>
+							<label for="domicilio">Domicilio:</label>
+							<input class="form-control" type="text" name="domicilio" id="domicilio" required
+								placeholder="ej:Av.Santa Fe 999">
+						</div>
+						<br>
+						<div>
+							<label> Perfil del usuario:</label>
+							<br>
+							<div class="tipoUsuario">
+								<label for="minorista" class="minorista">Minorista</label>
+								<input type="radio" name="tipoDeUsuario" value="minorista" class="minorista" required
+									checked>
+								<label for="mayorista">Mayorista</label>
+								<input type="radio" name="tipoDeUsuario" value="mayorista" class="mayorista" required>
+							</div>
+						</div>
+						<br>
+						<label>Seleccionar una imagen para el perfil:
+							<input class="form-control" type="file" name="Foto de Perfil" accept=".jpg" required>
+						</label>
+						</div>
+						<br>
+						<div>
+							<label for="contraseña">Contraseña:</label>
+							<input class="form-control" type="password" name="passwordDeUsuario" required
+								placeholder="ej:Palacio88">
+						</div>
+						<br>
 
-			
-		</form>
-	</main>
-	<br>
-	<br>
+						<div>
+							<label for="contraseña">Confirmar contraseña:</label>
+							<input class="form-control" type="password" name="passwordconfirmacionDeUsuario" required
+								placeholder="ej:Palacio88">
+						</div>
+						<br>
+						<div class="botones">
+							<button type=" submit">Crear cuenta</button>
+							<button type="reset">Borrar</button>
+						</div>
 
-	<footer>
 
-		<h6>Seguinos</h6>
-		<div class="redes-sociales">
-			<i class="fab fa-instagram"></i>
-			<i class="fab fa-twitter"></i>
-			<i class="fab fa-facebook"></i>
-		</div>
+				</form>
+			</main>
+			<br>
+			<br>
 
-		<h6>Mas info</h6>
-		<div class="mas-info">
-			<span>Pedidos online</span>
-			<span>Zonas de entrega</span>
-			<span>Formas de pago</span>
-		</div>
+			<!-- FOOTER -->
+			<%- include("./partials/footer"), %>
 
-		<h6>Contactanos</h6>
-		<div class="contacto">
-			<div>
-				<i class="fas fa-phone"></i>
-				<span>1128561209</span>
-			</div>
-			<div>
-				<i class="fas fa-envelope"></i>
-				<span>hola@carrot.com</span>
-			</div>
-			<div>
-				<i class="fas fa-map-marker-alt"></i>
-				<span>Av. Santa Fe 1254C1059ABT CABA</span>
-			</div>
-		</div>
-
-		<h6>Informacion legal</h6>
-		<p>Copyright © 1999-2022 Carrot S.R.L.</p>
-	</footer>
-</body>
+	</body>
 
 </html>

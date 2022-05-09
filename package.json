@@ -1,23 +1,24 @@
 {
-  "name": "dietetica-carrot",
-  "version": "1.0.0",
-  "description": "proyecto integrador grupo 1. E-Commerce",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Tomas-Sayar/grupo_1_ProyectoIntegrador.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Tomas-Sayar/grupo_1_ProyectoIntegrador/issues"
-  },
-  "homepage": "https://github.com/Tomas-Sayar/grupo_1_ProyectoIntegrador#readme",
-  "dependencies": {
-    "express": "^4.17.3"
-  }
+	"name": "dietetica-carrot",
+	"version": "1.0.0",
+	"description": "proyecto integrador grupo 1. E-Commerce",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Tomas-Sayar/grupo_1_ProyectoIntegrador.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Tomas-Sayar/grupo_1_ProyectoIntegrador/issues"
+	},
+	"homepage": "https://github.com/Tomas-Sayar/grupo_1_ProyectoIntegrador#readme",
+	"dependencies": {
+		"ejs": "^3.1.7",
+		"express": "^4.17.3"
+	}
 }
