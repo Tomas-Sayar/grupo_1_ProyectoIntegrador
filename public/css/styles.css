@@ -15,6 +15,7 @@
 	flex-wrap: wrap;
 	width: 100%;
 	margin: 6% 0% 6% 2%;
+	display: none;
 }
 
 .menu .fa-bars {
@@ -30,6 +31,7 @@
 	margin-left: 4%;
 	padding-bottom: 3%;
 	border-bottom: orange solid 2.5px;
+	display: none;
 }
 
 /** menu principal*/
@@ -208,7 +210,7 @@ article .info .precio {
 footer {
 	border-top: white 2px solid;
 	background-color: orange;
-	margin-top: 25%;
+	margin-top: 15%;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	text-align: center;
@@ -279,26 +281,10 @@ h2 {
 	color: orange;
 }
 
-.boton-agregar {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin-top: 12%;
-	width: 100%;
-}
-
-.boton-agregar p {
-	background-color: orange;
-	border: white 2px solid;
-	color: white;
-	font-size: 2rem;
-	padding: 2%;
-}
-
 .boton-compartir {
 	font-size: 1.5rem;
 	margin-top: 10%;
-	margin-left: 5%;
+	margin-left: 11%;
 	color: black;
 }
 
@@ -537,13 +523,40 @@ background-color: white;
 /*!Media Querys*/
 
 @media (min-width: 480px) {
+	
 }
 
 @media (min-width: 768px) {
+	.carrusel1 img {
+		height: 36em;
+	}
 article{
 	width: 20%;
 	margin: 1%;
-}	
+}
+footer{
+	display: flex;
+	justify-content: space-around;
+	line-height: 240%;
+}
+/*product*/
+.boton-agregar {
+	margin: 12% 30%;
+	}
+	.product-details{
+		display: flex;
+	}
+	.info-product-details {
+		margin-top: 16%;
+		margin-left: 5%;
+	}
+	.product-details img {
+		width: 50%;
+}
+.info-product-details{
+
+}
+
 }
 
 @media (min-width: 1024px) {

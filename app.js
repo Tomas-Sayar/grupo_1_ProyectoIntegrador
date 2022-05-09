@@ -24,5 +24,6 @@ app.use('/', mainRouter);
 app.use('/login', mainRouter);
 app.use('/register', mainRouter);
 
-//TODO: solucionar error en el ruteador de product-details
-app.use('/product', productRouter);
+
+app.use('/carrito', mainRouter);
+app.use('/product', mainRouter);
