@@ -543,7 +543,10 @@ background-color: white;
 article{
 	width: 20%;
 	margin: 1%;
-}	
+}
+.carrusel1 img{
+}
+
 }
 
 @media (min-width: 1024px) {
