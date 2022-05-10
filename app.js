@@ -5,7 +5,6 @@ const path = require('path');
 const publicPath = path.resolve(__dirname, './public');
 
 const mainRouter = require('./routers/main');
-const productRouter = require('./routers/product');
 
 
 // APP CONFIG 
@@ -21,9 +20,3 @@ app.listen(3000, () => {
 
 // ROUTERS
 app.use('/', mainRouter);
-app.use('/login', mainRouter);
-app.use('/register', mainRouter);
-
-
-app.use('/carrito', mainRouter);
-app.use('/product', mainRouter);

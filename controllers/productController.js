@@ -1,5 +1,5 @@
 
-let product = [
+let products = [
     {
         titulo: "Frutos secos: almendras",
         decripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
@@ -35,7 +35,7 @@ let product = [
 
 const controller = {
     product: (req, res) => {
-        res.render("product-details", product);
+        res.render("product-details", { products });
     },
 }
 
