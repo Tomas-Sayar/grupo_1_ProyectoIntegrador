@@ -17,7 +17,19 @@
 	margin: 6% 0% 6% 2%;
 	display: none;
 }
-
+.iniciar{
+	color: orange;
+	display: flex;
+    justify-content: end;
+    width: 98%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+.fa-user-circle {
+    font-size: 200%;
+    color: orange;
+	
+}
 .menu .fa-bars {
 	color: #ff740a;
 	margin-right: 5px;
@@ -89,16 +101,16 @@ span {
 }
 
 .carrot .titulo {
-	font-size: 4rem;
+	font-size: 500%;
 	font-family: fantasy;
 	color: orange;
 	margin: -2%;
 }
 
 .carrot .eslogan {
-	font-size: 1.2rem;
+	font-size: 164%;
 	color: lightgreen;
-	padding: 8% 10%;
+	padding: 15% 4%;
 }
 
 /**main*/
@@ -527,8 +539,17 @@ background-color: white;
 }
 
 @media (min-width: 768px) {
+	.carrot {
+		padding-top: 15%;
+	}
+	.menu-principal {
+		margin-bottom: -3%;
+	}
 	.carrusel1 img {
 		height: 36em;
+	}
+	.circulos{
+		padding-bottom: 5%;
 	}
 article{
 	width: 20%;
@@ -553,8 +574,8 @@ footer{
 	.product-details img {
 		width: 50%;
 }
-.info-product-details{
-
+.ver-mas-productos{
+	margin-left: 40%;
 }
 
 }
