@@ -1,36 +1,36 @@
 
-let product = {
-    frutosSecos: {
-        precio: "$1000",
-        decripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+let product = [
+    {
         titulo: "Frutos secos: almendras",
-    },
-    mielLiquida: {
-        precio: "$1000",
         decripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-        titulo: "Miel liquida Beepture de 500g",
-    },
-    latasScotch: {
         precio: "$1000",
+    },
+    {
+        titulo: "Miel liquida 'Beepture' de 500g",
         decripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+        precio: "$1000",
+    },
+    {
         titulo: "6x Latas Scotch antares",
-    },
-    panMixSemillas: {
-        precio: "$1000",
         decripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+        precio: "$1000",
+    },
+    {
         titulo: "Pan mix de semillas",
-    },
-    quinua: {
-        precio: "$1000",
         decripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-        titulo: "Quinua Molicusco",
-    },
-    tostaditasArroz: {
         precio: "$1000",
+    },
+    {
+        titulo: "Quinua 'Molicusco'",
         decripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+        precio: "$1000",
+    },
+    {
         titulo: "Tostaditas de arroz sin Tacc",
+        decripcion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+        precio: "$1000",
     },
-}
+];
 
 
 const controller = {
