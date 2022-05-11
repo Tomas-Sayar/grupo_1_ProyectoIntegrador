@@ -13,6 +13,8 @@
 .menu-usuario{
 	display: flex;
 	max-width: 100%;
+	margin-bottom: -4%;
+	margin-top: -5%;
 	
 }
 .menu {
@@ -28,8 +30,10 @@
 }
 .fa-user-circle {
     font-size: 200%;
-    color: orange;
-	
+    color: orange;	
+}
+.fa-user-circle:hover{
+transform: scale(1.5);
 }
 .menu .fa-bars {
 	color: #ff740a;
@@ -54,9 +58,12 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-top: 6%;
 	text-align: center;
 }
+.menu-principal :hover{
+transform: scale(1.3);
+}
+
 
 .menu-principal .inicio {
 	font-size: 0.3em;
@@ -92,28 +99,29 @@ span {
 
 .logo-carrot {
 	border-radius: 100%;
-	width: 40%;
-	vertical-align: middle;
-	float: left;
-	margin: 0% 0% 0% 7%;
+    width: 28%;
+    vertical-align: middle;
+    float: left;
+    margin: -2% -8% -3% 23%;
 }
 
 .carrot {
-	padding-top: 10%;
+	padding-top: 6%;
 }
 
 .carrot .titulo {
-	font-size: 500%;
+	font-size: 320%;
 	font-family: fantasy;
 	color: orange;
-	margin: -2%;
+	margin: 5%;
 }
 
 .carrot .eslogan {
-	font-size: 164%;
-	color: lightgreen;
-	padding: 15% 4%;
+    color: lightgreen;
+    padding: 0% 12%;
+    margin-bottom: -37%;
 }
+
 
 /**main*/
 main {
@@ -132,7 +140,7 @@ h1.titulo {
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 90%;
-	padding-bottom: 20%;
+	padding-bottom: 8%;
 	margin-left: 5%;
 }
 
@@ -217,19 +225,27 @@ article .info .precio {
 	background-color: #ffb300;
 	border: lightgray solid 1px;
 	padding: 3%;
+transform: rotate;
 }
 
 /**footer*/
 
 footer {
-	border-top: white 2px solid;
+	border-top: orange 2px solid;
 	background-color: orange;
-	margin-top: 15%;
+	margin-top: 10%;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	text-align: center;
-	color: white;
+	color: orange;
+	background-image: url('../img/fondozana2.jpg');
+	background-size: 40%;
 }
+footer div :hover{
+	color: white;
+	background-color: orange;
+	cursor: pointer;
+	}
 
 h6 {
 	margin-top: 3%;
@@ -262,6 +278,7 @@ h2 {
 	margin-left: 5%;
 	color: black;
 }
+
 
 .product-details {
 	width: 90%;
@@ -422,11 +439,14 @@ label {
 /* login*/
 h1.login {
 	background-color: orange;
-	font-size: 6vw;
-	box-sizing: border-box;
-	padding: 3%;
-	margin-top: 16%;
+    font-size: 3vw;
+    box-sizing: border-box;
+    padding: 1%;
+    margin-top: 13%;
+    display: flex;
+    justify-content: center;
 }
+
 label {
 	width: 100%;
 	font-size: solid 158%;
@@ -437,9 +457,8 @@ label {
 input {
 	width: 100%;
 	color: black;
-	padding: 2%;
+	padding: 1%;
 	margin: solid black 1%;
-	display: flex;
 }
 
 button {
@@ -451,6 +470,11 @@ button {
 	padding: 2% 5%;
 	margin: 3% 22%;
 	border-radius: 1rem;
+    box-sizing: border-box;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+
 }
 
 a {
@@ -537,13 +561,16 @@ background-color: white;
 /*!Media Querys*/
 
 @media (min-width: 480px) {
-	
+	article:hover{
+		transform: scale(1.3);
+		
+	}
 }
 
 @media (min-width: 768px) {
-	.carrot {
+	/*.carrot {
 		padding-top: 15%;
-	}
+	}*/
 	.menu-principal {
 		margin-bottom: -3%;
 	}
