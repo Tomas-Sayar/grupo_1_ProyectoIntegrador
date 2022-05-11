@@ -237,7 +237,7 @@ footer {
 	padding-top: 5%;
 	padding-bottom: 5%;
 	text-align: center;
-	color: orange;
+	color: black;
 	background-image: url('../img/fondozana2.jpg');
 	background-size: 40%;
 }
@@ -409,14 +409,14 @@ h2 {
 
 h1.Crear-Cuenta {
 	background-color: orange;
-	font-size: 6vw;
-	box-sizing: border-box;
-	width: 100%;
-	text-align: center;
-	display: flex;
-	padding: 5%;
-	margin-bottom: revert;
-	margin-top: 16%;
+    font-size: 200%;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-bottom: revert;
+    margin-top: 16%;
+    justify-content: center;
 }
 
 label {
@@ -426,20 +426,28 @@ label {
 }
 .botones {
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 }
 .tipoUsuario {
-	padding: 5%;
 	display: inline;
 	flex-direction: inherit;
 }
 .minorista {
 	display: flex;
 }
+.mayorista {
+	display: flex;
+}
+
+.tipoUsuario {
+	background-color: blue;
+}
+
+
 /* login*/
 h1.login {
 	background-color: orange;
-    font-size: 3vw;
+    font-size: 200%;
     box-sizing: border-box;
     padding: 1%;
     margin-top: 13%;
@@ -452,13 +460,20 @@ label {
 	font-size: solid 158%;
 	margin-bottom: 5%;
 	color: black;
-	line-height: 4rem;
+	margin-left: 5%;
 }
 input {
-	width: 100%;
+	width: 90%;
 	color: black;
 	padding: 1%;
 	margin: solid black 1%;
+	display: flex;
+	justify-content: center;
+	margin:1% 4%;
+}
+div.button{
+	display: flex;
+	justify-content: center;
 }
 
 button {
@@ -467,18 +482,16 @@ button {
 	border: gray;
 	font-size: 1.5rem;
 	justify-content: space-around;
-	padding: 2% 5%;
-	margin: 3% 22%;
+	padding: 2%;
 	border-radius: 1rem;
     box-sizing: border-box;
-    padding: 1%;
-    display: flex;
-    justify-content: center;
-
+	margin-top: 3%;
 }
 
 a {
 	color: rgb(130, 121, 121);
+	display: flex;
+	justify-content: center;
 }
 
 /*carrito*/
@@ -545,7 +558,10 @@ max-width: 28%;
 	background-color: orange;
 	color: white;
 	margin-top: 20%;
+	cursor: pointer;
+	display: inline-block;
 }
+
 li{
 	display: flex;
 	margin-top: 10%;
@@ -557,7 +573,10 @@ li{
 width: 100%;
 background-color: white;
 }
-
+a{
+	display: flex;
+    justify-content: center;
+}
 /*!Media Querys*/
 
 @media (min-width: 480px) {
@@ -602,9 +621,6 @@ footer{
 	}
 	.product-details img {
 		width: 50%;
-}
-.ver-mas-productos{
-	margin-left: 40%;
 }
 
 }
