@@ -12,7 +12,11 @@ router.get('/register', mainController.register);
 
 router.get('/carrito', mainController.carrito);
 
+<<<<<<< HEAD
 router.get('/product', productController.product);
+=======
+router.get('/productCreate', mainController.productCreate);
+>>>>>>> d06980dd60aedc5d48894d69b6acd80d80e91346
 
 
 module.exports = router;

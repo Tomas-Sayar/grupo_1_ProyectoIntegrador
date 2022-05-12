@@ -13,6 +13,8 @@
 .menu-usuario{
 	display: flex;
 	max-width: 100%;
+	margin-bottom: -4%;
+	margin-top: -5%;
 	
 }
 .menu {
@@ -28,8 +30,10 @@
 }
 .fa-user-circle {
     font-size: 200%;
-    color: orange;
-	
+    color: orange;	
+}
+.fa-user-circle:hover{
+transform: scale(1.5);
 }
 .menu .fa-bars {
 	color: #ff740a;
@@ -54,9 +58,12 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-top: 6%;
 	text-align: center;
 }
+.menu-principal :hover{
+transform: scale(1.3);
+}
+
 
 .menu-principal .inicio {
 	font-size: 0.3em;
@@ -92,28 +99,29 @@ span {
 
 .logo-carrot {
 	border-radius: 100%;
-	width: 40%;
-	vertical-align: middle;
-	float: left;
-	margin: 0% 0% 0% 7%;
+    width: 28%;
+    vertical-align: middle;
+    float: left;
+    margin: -2% -8% -3% 23%;
 }
 
 .carrot {
-	padding-top: 10%;
+	padding-top: 6%;
 }
 
 .carrot .titulo {
-	font-size: 500%;
+	font-size: 320%;
 	font-family: fantasy;
 	color: orange;
-	margin: -2%;
+	margin: 5%;
 }
 
 .carrot .eslogan {
-	font-size: 164%;
-	color: lightgreen;
-	padding: 15% 4%;
+    color: lightgreen;
+    padding: 0% 12%;
+    margin-bottom: -37%;
 }
+
 
 /**main*/
 main {
@@ -132,7 +140,7 @@ h1.titulo {
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 90%;
-	padding-bottom: 20%;
+	padding-bottom: 8%;
 	margin-left: 5%;
 }
 
@@ -217,19 +225,27 @@ article .info .precio {
 	background-color: #ffb300;
 	border: lightgray solid 1px;
 	padding: 3%;
+transform: rotate;
 }
 
 /**footer*/
 
 footer {
-	border-top: white 2px solid;
+	border-top: orange 2px solid;
 	background-color: orange;
-	margin-top: 15%;
+	margin-top: 10%;
 	padding-top: 5%;
 	padding-bottom: 5%;
 	text-align: center;
-	color: white;
+	color: black;
+	background-image: url('../img/fondozana2.jpg');
+	background-size: 40%;
 }
+footer div :hover{
+	color: white;
+	background-color: orange;
+	cursor: pointer;
+	}
 
 h6 {
 	margin-top: 3%;
@@ -263,6 +279,7 @@ h2 {
 	color: black;
 }
 
+
 .product-details {
 	width: 90%;
 	margin-left: 5%;
@@ -274,6 +291,10 @@ h2 {
 	border: orange solid 2px;
 	margin-bottom: 8%;
 	border-radius: 10%;
+	transition: all 1s;
+}
+.product-details img:hover{
+	transform: rotate(-360deg);
 }
 
 .product-details .info-product-details .descrip {
@@ -293,22 +314,21 @@ h2 {
 	text-align: center;
 	width: 100%;
 	color: orange;
+
 }
 
 .boton-compartir {
 	font-size: 1.5rem;
 	margin-top: 10%;
-	margin-left: 11%;
+	margin-left: 6%;
 	color: black;
 }
 
 .compartir {
-	margin-top: 3%;
+	margin-top: 1%;
 	width: 35%;
-	margin-left: 5%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	margin-left: 7%;
+	
 }
 
 .compartir .fa-instagram {
@@ -350,7 +370,9 @@ h2 {
 	margin-bottom: 6%;
 	border-radius: 10%;
 }
-
+.articulo-relacionado:hover{
+	transform: scale(1.3);
+}
 .articulo-relacionado img {
 	width: 100%;
 	border-bottom: lightgray solid 1px;
@@ -392,14 +414,14 @@ h2 {
 
 h1.Crear-Cuenta {
 	background-color: orange;
-	font-size: 6vw;
-	box-sizing: border-box;
-	width: 100%;
-	text-align: center;
-	display: flex;
-	padding: 5%;
-	margin-bottom: revert;
-	margin-top: 16%;
+    font-size: 200%;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin-bottom: revert;
+    margin-top: 16%;
+    justify-content: center;
 }
 
 label {
@@ -409,37 +431,54 @@ label {
 }
 .botones {
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 }
 .tipoUsuario {
-	padding: 5%;
 	display: inline;
 	flex-direction: inherit;
 }
 .minorista {
 	display: flex;
 }
+.mayorista {
+	display: flex;
+}
+
+.tipoUsuario {
+	background-color: blue;
+}
+
+
 /* login*/
 h1.login {
 	background-color: orange;
-	font-size: 6vw;
-	box-sizing: border-box;
-	padding: 3%;
-	margin-top: 16%;
+    font-size: 200%;
+    box-sizing: border-box;
+    padding: 1%;
+    margin-top: 13%;
+    display: flex;
+    justify-content: center;
 }
+
 label {
 	width: 100%;
 	font-size: solid 158%;
 	margin-bottom: 5%;
 	color: black;
-	line-height: 4rem;
+	margin-left: 5%;
 }
 input {
-	width: 100%;
+	width: 90%;
 	color: black;
-	padding: 2%;
+	padding: 1%;
 	margin: solid black 1%;
 	display: flex;
+	justify-content: center;
+	margin:1% 4%;
+}
+div.button{
+	display: flex;
+	justify-content: center;
 }
 
 button {
@@ -448,13 +487,16 @@ button {
 	border: gray;
 	font-size: 1.5rem;
 	justify-content: space-around;
-	padding: 2% 5%;
-	margin: 3% 22%;
+	padding: 2%;
 	border-radius: 1rem;
+    box-sizing: border-box;
+	margin-top: 3%;
 }
 
 a {
 	color: rgb(130, 121, 121);
+	display: flex;
+	justify-content: center;
 }
 
 /*carrito*/
@@ -466,6 +508,21 @@ h2.carrito{
 	background-color: orange;
 	text-align: center;
 	margin-left: 0%;
+	margin-top: 10%;
+}
+h4.sub-carrito{
+	display: flex;
+	color: gray;
+	display: flex;
+    color: gray;
+	display: none;
+}
+
+.sub-carrito p {
+    font-size: 1.8rem;
+    padding: 5px -3px;
+    margin-left: 208px;
+	display: none;
 }
 ul.carro img{
 	width: 40%;
@@ -482,28 +539,32 @@ ul.carro img{
 	margin-top: 25%;
 	font-size: small;
 	width: 100%;
+	text-align: center;
 
 }
 input.number{
-margin-left: -18%;
-    margin-right: -18%;
-	padding: 0% 15%;
+	padding: 0% 5%;
+    margin: 0px;
+    margin-top: 3%;
 }
 .carrito-precio{
 	color:black;
 	font-size: small;
-	width: 50%;
-	margin-top: 24%;
-    margin-left: -20%;
+	width: 100%;
+	text-align: center;
+	margin-top: 32%;
+    margin-left: -35%;
+
 }
 .menos-mas{
 color: black;
 display: flex;
-max-width: 28%;
+max-width: 30%;
+justify-content: center;
 }
 .fa-minus{
 	color: white;
-    margin-left: 30%;
+    margin-left: 37%;
 }
 .sub-carrito-precio{
 	font-size: small;
@@ -521,10 +582,12 @@ max-width: 28%;
 	background-color: orange;
 	color: white;
 	margin-top: 20%;
+	cursor: pointer;
+	display: inline-block;
 }
+
 li{
 	display: flex;
-	margin-top: 10%;
 }
 .fa-trash-alt{
 	color: orange;
@@ -533,17 +596,45 @@ li{
 width: 100%;
 background-color: white;
 }
+a{
+	display: flex;
+    justify-content: center;
+}
+/*-----------------PRODUCT-CREATE-FORM--------------------------------------------------*/
+
+h2.products-title{
+	margin-top: 15%;
+	text-align: center;
+    margin-left: 0%;
+}
+textarea#description.form-input{
+	margin-top: 5%;
+    width: 50%;
+    height: 13rem;
+    padding: 1%;
+    text-align: -webkit-match-parent;
+    display: inline-table;
+}
+
+
+
+
+
+
 
 /*!Media Querys*/
 
 @media (min-width: 480px) {
-	
+	article:hover{
+		transform: scale(1.3);
+		
+	}
 }
 
 @media (min-width: 768px) {
-	.carrot {
+	/*.carrot {
 		padding-top: 15%;
-	}
+	}*/
 	.menu-principal {
 		margin-bottom: -3%;
 	}
@@ -576,11 +667,24 @@ footer{
 	.product-details img {
 		width: 50%;
 }
-.ver-mas-productos{
-	margin-left: 40%;
+/*carrito*/
+ul.carro img {
+	width: 17%;
+    height: 5%;
 }
-
+h4.sub-carrito{
+	display: flex;
 }
-
+.sub-carrito p{
+	display: block;
+}
+h2.carrito {
+	text-align: justify;
+}
+.menos-mas {
+    width: 12%;
+    margin-top: -18%;
+}
+}
 @media (min-width: 1024px) {
 }

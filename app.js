@@ -19,4 +19,13 @@ app.listen(3000, () => {
 
 
 // ROUTERS
+<<<<<<< HEAD
 app.use('/', mainRouter);
+=======
+app.use('/', mainRouter);
+app.use('/login', mainRouter);
+app.use('/register', mainRouter);
+app.use('/carrito', mainRouter);
+app.use('/product', mainRouter);
+app.use('/productCreate', mainRouter);
+>>>>>>> d06980dd60aedc5d48894d69b6acd80d80e91346

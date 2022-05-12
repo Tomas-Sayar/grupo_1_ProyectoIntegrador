@@ -1,69 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalles del Producto</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css" />
-</head>
+<!-- HEAD -->
+<%- include("./partials/head") %>
 
-<body>
-    <header>
-        <section class="menu">
-            <i class="fas fa-bars"></i>
-            <span>INICIO</span>
-        </section>
+	<body>
+		<!-- HEADER -->
+		<%- include("./partials/header") %>
 
-        <div class="search-bar">
-            <i class="fas fa-search"></i>
-        </div>
-
-        <section class="menu-principal">
-            <a href="/">
-                <div class="inicio">
-                    <a href="/">
-                        <i class="fas fa-home"></i>
-                    </a>
-                    <br>
-                    <span>INICIO</span>
-                </div>
-            </a>
-            <div class="productos">
-                <i class="fas fa-clipboard-list"></i>
-                <br>
-                <span>PRODUCTOS</span>
-            </div>
-            <div class="carrito">
-                <i class="fas fa-shopping-cart"></i>
-                <br>
-                <span>CARRITO</span>
-            </div>
-        </section>
-
-        <section class="encabezado">
-            <div class="logo">
-                <img class="logo-carrot" src="img/logoCarrot.png" alt="logo">
-            </div>
-            <div class="carrot">
-                <span class="titulo">Carrot</span>
-                <br>
-                <span class="eslogan">mercado natural</span>
-            </div>
-        </section>
-
-    </header>
-<form class="carrito-form" action="" method="post">
 <main>
+    <form class="carrito-form" action="" method="post">
     <section class="carro">
     <h2 class="carrito">Mi Carrito</h2>
 
 <ul class="carro">
 
+<h4 class="sub-carrito">
+    <p>Producto</p>
+    <p>Precio</p>
+    <p>Cantidad</p>
+    <p>Subtotal</p>
+ </h4>
    <li>    
         <img src="img/frutos-secos-image.jpg" alt="frutosSecos">
     <h4 class="info-carro">Frutos secos: almendras</h4>
@@ -86,6 +43,8 @@
 <a href="/">
 <button class="finalizar">FINALIZAR COMPRA</button>
 </a>
+
+
 </section>
 
 
