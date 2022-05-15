@@ -271,7 +271,7 @@ h6 {
 /**Main*/
 
 h2 {
-	margin-top: 35%;
+	margin-top: 14%;
 	margin-bottom: 5%;
 	font-size: 1.5em;
 	margin-left: 5%;
@@ -280,13 +280,13 @@ h2 {
 
 
 .product-details {
-	width: 90%;
+	width: 100%;
 	margin-left: 5%;
 	border-radius: 10%;
 }
 
 .product-details img {
-	width: 100%;
+	width: 60%;
 	border: orange solid 2px;
 	margin-bottom: 8%;
 	border-radius: 10%;
