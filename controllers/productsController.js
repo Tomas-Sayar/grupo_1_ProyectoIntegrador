@@ -14,8 +14,8 @@ const relatedProducts = JSON.parse(fs.readFileSync(relatedProductsFilePath, 'utf
 
 
 let controller = {
-    product: (req, res) => {
-        res.render("product-details", { products: products }, { relatedProducts: relatedProducts });
+    detail: (req, res) => {
+        res.render("product-details", { products: products });
     }
 }
 
