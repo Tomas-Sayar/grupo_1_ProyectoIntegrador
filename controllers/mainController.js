@@ -18,9 +18,6 @@ const controller = {
     register: (req, res) => {
         res.render("register");
     },
-    product: (req, res) => {
-        res.render("product-details");
-    },
     carrito: (req, res) => {
         res.render("carrito");
     },
@@ -28,5 +25,6 @@ const controller = {
         res.render("product-create-form");
     },
 };
+
 
 module.exports = controller;

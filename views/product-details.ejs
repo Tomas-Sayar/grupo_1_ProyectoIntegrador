@@ -17,15 +17,15 @@
 
                     <div class="product-details">
 
-                        <img src="img/miel-liquida-image.jpg" alt="mielLiquida">
+                        <img src="<%= products[0].img %> " alt="mielLiquida">
 
                         <div class="info-product-details">
                             <p class="descrip">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptatum quae nam, voluptatibus illo repellat amet
-                                laboriosam.
+                                <%= products.descripcion %>
                             </p>
-                            <p class="precio">$1000</p>
+                            <p class="precio">
+                                <%= products[0].precio %>
+                            </p>
                             <a href="/carrito">
                                 <button class="boton-agregar">Agregar al carrito</button>
                             </a>
@@ -48,54 +48,12 @@
 
                     <div class="articulo-relacionado">
                         <a href="">
-                            <img src="img/frutos-secos-image.jpg" alt="frutos-secos">
+                            <img src="" alt="frutos-secos">
                         </a>
                         <div class="info">
                             <h1>Frutos secos: almendras</h1>
                             <p class="descripcion">
                                 Frutos secos "El Nogal"
-                            </p>
-                            <p class="precio">$1000</p>
-                            <p class="agregar">Agregar al carrito</p>
-                        </div>
-                    </div>
-
-                    <div class="articulo-relacionado">
-                        <a href="detalles-del-producto">
-                            <img src="img/pan-mix-semillas.jpg" alt="pan-mix-semillas">
-                        </a>
-                        <div class="info">
-                            <h1>Pan mix de semillas</h1>
-                            <p class="descripcion">
-                                Pan mix de semillas "Campos verdes" 650g
-                            </p>
-                            <p class="precio">$1000</p>
-                            <p class="agregar">Agregar al carrito</p>
-                        </div>
-                    </div>
-
-                    <div class="articulo-relacionado">
-                        <a href="detalles-del-producto">
-                            <img src="img/quinua-image.jpg" alt="quinua">
-                        </a>
-                        <div class="info">
-                            <h1>Quinua</h1>
-                            <p class="descripcion">
-                                Quinua "Molicusco"
-                            </p>
-                            <p class="precio">$1000</p>
-                            <p class="agregar">Agregar al carrito</p>
-                        </div>
-                    </div>
-
-                    <div class="articulo-relacionado">
-                        <a href="detalles-del-producto">
-                            <img src="img/scotch-6latas-antares.jpg" alt="6latas-scotch-antares">
-                        </a>
-                        <div class="info">
-                            <h1>x6 Latas Scotch antares</h1>
-                            <p class="descripcion">
-                                Pack de 6 latas scotch antares 650ml
                             </p>
                             <p class="precio">$1000</p>
                             <p class="agregar">Agregar al carrito</p>
