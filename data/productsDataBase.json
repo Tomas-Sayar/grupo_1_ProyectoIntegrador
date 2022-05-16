@@ -1,0 +1,38 @@
+[
+	{
+		"titulo": "Frutos secos: almendras",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/frutos-secos-image.jpg"
+	},
+	{
+		"titulo": "Miel liquida 'Beepture' de 500g",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/miel-liquida-image.jpg"
+	},
+	{
+		"titulo": "6x Latas Scotch antares",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/scotch-6latas-antares.jpg"
+	},
+	{
+		"titulo": "Pan mix de semillas",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/pan-mix-semillas.jpg"
+	},
+	{
+		"titulo": "Quinua 'Molicusco'",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/quinua-image.jpg"
+	},
+	{
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/tostaditas-arroz-sin-tacc.jpg"
+	}
+]

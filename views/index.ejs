@@ -24,89 +24,29 @@
 					<h1 class="titulo">Destacados</h1>
 
 					<section class="products">
-
-						<article>
-							<a href="/product">
-								<img src="img/frutos-secos-image.jpg" alt="frutos-secos">
-							</a>
-							<div class="info">
-								<h1>Frutos secos: almendras</h1>
-								<p class="descripcion">
-									Frutos secos "El Nogal"
-								</p>
-								<p class="precio">$1000</p>
-							</div>
-						</article>
-
-						<article>
-							<a href="product">
-								<img src="img/miel-liquida-image.jpg" alt="miel-liquida">
-							</a>
-							<div class="info">
-								<h1>Miel Liquida</h1>
-								<p class="descripcion">
-									Miel liquida "Beepture" 500g
-								</p>
-								<p class="precio">$1000</p>
-							</div>
-						</article>
-
-						<article>
-							<a href="product">
-								<img src="img/pan-mix-semillas.jpg" alt="pan-mix-semillas">
-							</a>
-							<div class="info">
-								<h1>Pan mix de semillas</h1>
-								<p class="descripcion">
-									Pan mix de semillas "Campos verdes" 650g
-								</p>
-								<p class="precio">$1000</p>
-							</div>
-						</article>
-
-						<article>
-							<a href="product">
-								<img src="img/quinua-image.jpg" alt="quinua">
-							</a>
-							<div class="info">
-								<h1>Quinua</h1>
-								<p class="descripcion">
-									Quinua "Molicusco"
-								</p>
-								<p class="precio">$1000</p>
-							</div>
-						</article>
-
-						<article>
-							<a href="product">
-								<img src="img/scotch-6latas-antares.jpg" alt="6latas-scotch-antares">
-							</a>
-							<div class="info">
-								<h1>x6 Latas Scotch antares</h1>
-								<p class="descripcion">
-									Pack de 6 latas scotch antares 650ml
-								</p>
-								<p class="precio">$1000</p>
-							</div>
-						</article>
-
-						<article>
-							<a href="product">
-								<img src="img/tostaditas-arroz-sin-tacc.jpg" alt="tostaditas-arroz-sin-tacc">
-							</a>
-							<div class="info">
-								<h1>Tostaditas de arroz sin Tacc</h1>
-								<p class="descripcion">
-									Tostaditas de arroz sin Tac "Crackines" 120g
-								</p>
-								<p class="precio">$1000</p>
-							</div>
-						</article>
-</section>
-<a href="/products">
-	<button class="ver-mas-productos">Ver más productos</button>
-</a>
-</section>
+						<% products.forEach(products=> { %>
+							<article>
+								<a href="/product">
+									<img src="<%= products.img %>" alt="frutos-secos">
+								</a>
+								<div class="info">
+									<h1>
+										<%= products.titulo %>
+									</h1>
+									<p class="descripcion">
+										<%= products.decripcion %>
+									</p>
+									<p class="precio">
+										<%= products.precio %>
+									</p>
+								</div>
+							</article>
+							<% }); %>
+					</section>
+					<a href="/products">
+						<button class="ver-mas-productos">Ver más productos</button>
+					</a>
+				</section>
 			</main>
 
 			<!-- FOOTER -->
