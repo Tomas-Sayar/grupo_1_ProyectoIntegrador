@@ -613,6 +613,10 @@ textarea#description.form-input{
     text-align: -webkit-match-parent;
     display: inline-table;
 }
+.section-button{
+	display: flex;
+	justify-content: center;
+}
 
 
 
