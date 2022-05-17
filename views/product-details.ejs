@@ -12,19 +12,19 @@
 
                 <section class="detalles">
                     <h2>
-                        <%=products[0].titulo%>
+                        <%=products[req.params.id].titulo%>
                     </h2>
 
                     <div class="product-details">
 
-                        <img src="<%= products[0].img %> " alt="mielLiquida">
+                        <img src="<%= products[req.params.id].img %> " alt="mielLiquida">
 
                         <div class="info-product-details">
                             <p class="descrip">
-                                <%= products[0].descripcion %>
+                                <%= products[req.params.id].descripcion %>
                             </p>
                             <p class="precio">
-                                <%= products[0].precio %>
+                                <%= products[req.params.id].precio %>
                             </p>
                             <a href="/carrito">
                                 <button class="boton-agregar">Agregar al carrito</button>
