@@ -6,7 +6,9 @@
 	box-sizing: border-box;
 	max-width: 100%;
 }
-
+a {
+	text-decoration: none;
+}
 /*!------------------------------ home ------------------------------*/
 /** header */
 /** inicio*/
@@ -433,19 +435,15 @@ label {
 	justify-content: center;
 }
 .tipoUsuario {
-	display: inline;
-	flex-direction: inherit;
+	
 }
 .minorista {
-	display: flex;
+	width: 5%;
 }
 .mayorista {
-	display: flex;
+	width: 5%;
 }
 
-.tipoUsuario {
-	background-color: blue;
-}
 
 
 /* login*/
