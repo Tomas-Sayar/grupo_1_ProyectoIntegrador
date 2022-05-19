@@ -181,3 +181,529 @@
 		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
 	}
 ]
+//
+[{
+	"id": 1,
+	"Nombre": "Mix Clásico Con Maní - 200 gr",
+	"Descripción": "magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque",
+	"Precio": "$285.82",
+	"Imagen": "Frutos Secos.jpg",
+	"Categoria": "Frutos Secos",
+	"Descuento": 13,
+	"Tipo": "en oferta"
+  }, 
+  {
+	"id": 2,
+	"Nombre": "Chips de Banana - 200 gr",
+	"Descripción": "dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis",
+	"Precio": "$200.35",
+	"Imagen": "Frutos Secos.jpg",
+	"Categoria": "Frutos Secos",
+	"Descuento": 14,
+	"Tipo": "mas-vendido"
+  },
+   {
+	"id": 3,
+	"Nombre": "Mix Tropical - 200 gr",
+	"Descripción": "quis lectus suspendisse potenti in eleifend quam a odio in hac",
+	"Precio": "$193.50",
+	"Imagen": "Frutos Secos.jpg",
+	"Categoria": "Frutos Secos",
+	"Descuento": 19,
+	"Tipo": "mas-vendido"
+  },
+   {
+	"id": 4,
+	"Nombre": "Mix Nacional Con Banana - 200 gr",
+	"Descripción": "vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat",
+	"Precio": "$208.00",
+	"Imagen": "Frutos Secos.jpg",
+	"Categoria": "Frutos Secos",
+	"Descuento": 19,
+	"Tipo": "mas-vendido"
+  }, 
+  {
+	"id": 5,
+	"Nombre": "Castaña de Caju Natural - 100 gr",
+	"Descripción": "lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat",
+	"Precio": "$221.05",
+	"Imagen": "Frutos Secos.jpg",
+	"Categoria": "Frutos Secos",
+	"Descuento": 14,
+	"Tipo": "mas-vendido"
+  }, 
+  {
+	"id": 6,
+	"Nombre": "Mani Pelado Tostado Con Sal - 250 gr",
+	"Descripción": "integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non",
+	"Precio": "$266.30",
+	"Imagen": "Frutos Secos.jpg",
+	"Categoria": "Frutos Secos",
+	"Descuento": 14,
+	"Tipo": "mas-vendido"
+  }, 
+  {
+	"id": 7,
+	"Nombre": "Mix Clásico Con Maní - 200 gr",
+	"Descripción": "sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia",
+	"Precio": "$153.81",
+	"Imagen": "Frutos Secos.jpg",
+	"Categoria": "Frutos Secos",
+	"Descuento": 20,
+	"Tipo": "mas-vendido"
+  },
+   {
+	"id": 8,
+	"Nombre": "Mani Pelado Tostado Sin Sal - 500 gr",
+	"Descripción": "duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus",
+	"Precio": "$269.64",
+	"Imagen": "Frutos Secos.jpg",
+	"Categoria": "Frutos Secos",
+	"Descuento": 20,
+	"Tipo": "nuevo"
+  }, 
+  {
+	"id": 9,
+	"Nombre": "Mani Pelado Tostado Con Sal - 500 gr",
+	"Descripción": "magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus",
+	"Precio": "$202.29",
+	"Imagen": "Frutos Secos.jpg",
+	"Categoria": "Frutos Secos",
+	"Descuento": 11,
+	"Tipo": "nuevo"
+  },
+   {
+	"id": 10,
+	"Nombre": "Mani Pelado Tostado Sin Sal - 250 gr",
+	"Descripción": "mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor",
+	"Precio": "$295.76",
+	"Imagen": "Frutos Secos.jpg",
+	"Categoria": "Frutos Secos",
+	"Descuento": 10,
+	"Tipo": "en oferta"
+  },
+   {
+	"id": 11,
+	"Nombre": "Pasas Jumbo Sin Semillas - 250 gr",
+	"Descripción": "est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante",
+	"Precio": "$287.35",
+	"Imagen": "Frutos Secos.jpg",
+	"Categoria": "Frutos Secos",
+	"Descuento": 12,
+	"Tipo": "en oferta"
+  },
+   {
+	"id": 12,
+	"Nombre": "Mani Pelado Tostado Sin Sal - 500 gr",
+	"Descripción": "nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum",
+	"Precio": "$258.42",
+	"Imagen": "Frutos Secos.jpg",
+	"Categoria": "Frutos Secos",
+	"Descuento": 19,
+	"Tipo": "mas-vendido"
+  },
+{
+  "id": 13,
+  "Nombre": "Granola Serraceno Sin TACC - 200 gr - Crudencio",
+  "Descripción": "quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante",
+  "Precio": "$201.39",
+  "Imagen": "Granolas.jpg",
+  "Categoria": null,
+  "Descuento": 17,
+  "Tipo": "En oferta"
+},
+ {
+  "id": 14,
+  "Nombre": "Granola Original Crunch Horneada - 1 kg",
+  "Descripción": null,
+  "Precio": "$170.00",
+  "Imagen": "Granolas.jpg",
+  "Categoria": null,
+  "Descuento": 17,
+  "Tipo": "Nuevo"
+}, 
+{
+  "id": 15,
+  "Nombre": "Granola Original Crunch Horneada - 350 gr",
+  "Descripción": null,
+  "Precio": "$167.34",
+  "Imagen": "Granolas.jpg",
+  "Categoria": null,
+  "Descuento": 11,
+  "Tipo": "Nuevo"
+}, 
+{
+  "id": 16,
+  "Nombre": "Granola Fit Crunch Horneada - 1 kg",
+  "Descripción": null,
+  "Precio": "$178.62",
+  "Imagen": "Granolas.jpg",
+  "Categoria": null,
+  "Descuento": 13,
+  "Tipo": "Más vendido"
+},
+ {
+  "id": 17,
+  "Nombre": "Granola Fit Crunch Horneada - 350 gr",
+  "Descripción": null,
+  "Precio": "$151.52",
+  "Imagen": "Granolas.jpg",
+  "Categoria": null,
+  "Descuento": 13,
+  "Tipo": "En oferta"
+}, 
+{
+  "id": 18,
+  "Nombre": "Granola Taste Crunch Horneada - 1 kg",
+  "Descripción": null,
+  "Precio": "$214.80",
+  "Imagen": "Granolas.jpg",
+  "Categoria": null,
+  "Descuento": 16,
+  "Tipo": "Más vendido"
+},
+ {
+  "id": 19,
+  "Nombre": "Granola Vegan Horneada - 350 gr",
+  "Descripción": null,
+  "Precio": "$275.28",
+  "Imagen": "Granolas.jpg",
+  "Categoria": null,
+  "Descuento": 11,
+  "Tipo": "Más vendido"
+}, 
+{
+  "id": 20,
+  "Nombre": "Granola Original Bites Horneada - 200 gr",
+  "Descripción": "platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie",
+  "Precio": "$255.84",
+  "Imagen": "Granolas.jpg",
+  "Categoria": null,
+  "Descuento": 18,
+  "Tipo": "Más vendido"
+},
+ {
+  "id": 21,
+  "Nombre": "Granola Coconut Horneada -200 gr",
+  "Descripción": "in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices",
+  "Precio": "$163.74",
+  "Imagen": "Granolas.jpg",
+  "Categoria": null,
+  "Descuento": 20,
+  "Tipo": "Nuevo"
+},
+ {
+  "id": 22,
+  "Nombre": "Granola Almendras",
+  "Descripción": null,
+  "Precio": "$281.94",
+  "Imagen": "Granolas.jpg",
+  "Categoria": null,
+  "Descuento": 12,
+  "Tipo": "Nuevo"
+}, 
+{
+  "id": 23,
+  "Nombre": "Avena y Arándanos - 240 gr - Integra",
+  "Descripción": "luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis",
+  "Precio": "$282.74",
+  "Imagen": "Granolas.jpg",
+  "Categoria": null,
+  "Descuento": 17,
+  "Tipo": "En oferta"
+}, 
+{
+  "id": 24,
+  "Nombre": "Granola Almendras Avena Chips de Chocolate - 240 gr - Integra",
+  "Descripción": "hac habitasse platea dictumst etiam faucibus cursus urna ut tellus",
+  "Precio": "$282.09",
+  "Imagen": "Granolas.jpg",
+  "Categoria": null,
+  "Descuento": 15,
+  "Tipo": "En oferta"
+}, 
+{
+  "id": 25,
+  "Nombre": "Granola almendras",
+  "Descripción": "eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum",
+  "Precio": "$298.34",
+  "Imagen": "Granolas.jpg",
+  "Categoria": null,
+  "Descuento": 17,
+  "Tipo": "Más vendido"
+},
+{
+	"id": 26,
+	"Nombre": "Bolitas de chocolate - 250 GR",
+	"Precio": "$178.75",
+	"Imagen": "Cereales.jpg",
+	"Categoria": "Cereales",
+	"Descuento": 17,
+	"Tipo": "Más vendido"
+  }, 
+  {
+	"id": 27,
+	"Nombre": "Almohaditas rellenas de Frutilla - 250 gr",
+	"Descripción": "condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu",
+	"Precio": "$279.16",
+	"Imagen": "Cereales.jpg",
+	"Categoria": "Cereales",
+	"Descuento": 14,
+	"Tipo": "En oferta"
+  },
+   {
+	"id": 28,
+	"Nombre": "Almohaditas rellenas de Avellana - 250 gr",
+	"Descripción": "quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante",
+	"Precio": "$252.36",
+	"Imagen": "Cereales.jpg",
+	"Categoria": "Cereales",
+	"Descuento": 14,
+	"Tipo": "Nuevo"
+  },
+   {
+	"id": 29,
+	"Nombre": "Almohaditas rellenas de Limon - 250 gr",
+	"Descripción": "eu est congue elementum in hac habitasse platea dictumst morbi",
+	"Precio": "$284.01",
+	"Imagen": "Cereales.jpg",
+	"Categoria": "Cereales",
+	"Descuento": 15,
+	"Tipo": "Nuevo"
+  }, 
+  {
+	"id": 30,
+	"Nombre": "Copos de Maiz - 250 gr",
+	"Precio": "$258.62",
+	"Imagen": "Cereales.jpg",
+	"Categoria": "Cereales",
+	"Descuento": 11,
+	"Tipo": "En oferta"
+  }, 
+  {
+	"id": 31,
+	"Nombre": "Copos de Maiz Azucarados - 250 gr",
+	"Descripción": "augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
+	"Precio": "$294.11",
+	"Imagen": "Cereales.jpg",
+	"Categoria": "Cereales",
+	"Descuento": 19,
+	"Tipo": "Nuevo"
+  }, 
+  {
+	"id": 32,
+	"Nombre": "Almohaditas Rellenas de Chocolate - 250 gr",
+	"Descripción": "commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing",
+	"Precio": "$194.73",
+	"Imagen": "Cereales.jpg",
+	"Categoria": "Cereales",
+	"Descuento": 17,
+	"Tipo": "Más vendido"
+  }, 
+  {
+	"id": 33,
+	"Nombre": "Almohaditas Rellenas de Chocolate Blanco - 250 gr",
+	"Descripción": "donec ut mauris eget massa tempor convallis nulla neque libero",
+	"Precio": "$275.64",
+	"Imagen": "Cereales.jpg",
+	"Categoria": "Cereales",
+	"Descuento": 19,
+	"Tipo": "En oferta"
+  },
+   {
+	"id": 34,
+	"Nombre": "Almohaditas de Salvado - 250 gr",
+	"Descripción": "sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi",
+	"Precio": "$183.12",
+	"Imagen": "Cereales.jpg",
+	"Categoria": "Cereales",
+	"Descuento": 10,
+	"Tipo": "Nuevo"
+  },
+   {
+	"id": 35,
+	"Nombre": "All Bran de Salvado - 250 gr",
+	"Precio": "$159.36",
+	"Imagen": "Cereales.jpg",
+	"Categoria": "Cereales",
+	"Descuento": 19,
+	"Tipo": "Más vendido"
+  }, 
+  {
+	"id": 36,
+	"Nombre": "Almohaditas Rellenas de Maní - 250 gr",
+	"Precio": "$271.58",
+	"Imagen": "Cereales.jpg",
+	"Categoria": "Cereales",
+	"Descuento": 13,
+	"Tipo": "Más vendido"
+  }, 
+  {
+	"id": 37,
+	"Nombre": "Avena Súper Instantánea - 500 gr",
+	"Descripción": "nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor",
+	"Precio": "$246.83",
+	"Imagen": "Cereales.jpg",
+	"Categoria": "Cereales",
+	"Descuento": 12,
+	"Tipo": "En oferta"
+  }, 
+  {
+	"id": 38,
+	"Nombre": "Avena Tradicional - 500 gr",
+	"Precio": "$193.91",
+	"Imagen": "Cereales.jpg",
+	"Categoria": "Cereales",
+	"Descuento": 14,
+	"Tipo": "Nuevo"
+  }, 
+  {
+	"id": 39,
+	"Nombre": "Almohaditas de Arroz rellenas de Avellana - 250 gr",
+	"Descripción": "orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras",
+	"Precio": "$258.18",
+	"Imagen": "Cereales.jpg",
+	"Categoria": "Cereales",
+	"Descuento": 13,
+	"Tipo": "Nuevo"
+  }, 
+  {
+	"id": 40,
+	"Nombre": "Almohaditas de Arroz Rellenas de Chocolate - 250 gr",
+	"Precio": "$155.04",
+	"Imagen": "Cereales.jpg",
+	"Categoria": "Cereales",
+	"Descuento": 20,
+	"Tipo": "Nuevo"
+  }, 
+  {
+	"id": 41,
+	"Nombre": "Almohaditas de Arroz Rellenas de Limon - 250 gr",
+	"Descripción": "porttitor pede justo eu massa donec dapibus duis at velit",
+	"Precio": "$171.55",
+	"Imagen": "Cereales.jpg",
+	"Categoria": "Cereales",
+	"Descuento": 13,
+	"Tipo": "En oferta"
+  },
+  {
+	"id": 42,
+	"Nombre": "Bebida Vegetal de Almendras Natural - 1 LITRO - COCOON",
+	"Descripción": null,
+	"Precio": "$176.96",
+	"Imagen": "Leches.jpg",
+	"Categoria": "Leches",
+	"Descuento": 16,
+	"Tipo": "En oferta"
+  }, 
+  {
+	"id": 43,
+	"Nombre": "Bebida Vegetal de Almendras Natural Sin Azucar - 1 LItro - Cocoon",
+	"Descripción": null,
+	"Precio": "$275.25",
+	"Imagen": "Leches.jpg",
+	"Categoria": "Leches",
+	"Descuento": 16,
+	"Tipo": "Nuevo"
+  },
+   {
+	"id": 44,
+	"Nombre": "Bebida de Extracto Vegetales - 1 Litro - Not Milk",
+	"Descripción": "at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae",
+	"Precio": "$206.05",
+	"Imagen": "Leches.jpg",
+	"Categoria": "Leches",
+	"Descuento": 15,
+	"Tipo": "Más vendido"
+  },
+   {
+	"id": 45,
+	"Nombre": "Bebida Vegetal de Almendras Natural Sin Azucar - 1 LItro - Vrink",
+	"Descripción": "ligula sit amet eleifend pede libero quis orci nullam molestie nibh in lectus",
+	"Precio": "$295.58",
+	"Imagen": "Leches.jpg",
+	"Categoria": "Leches",
+	"Descuento": 20,
+	"Tipo": "Más vendido"
+  }, 
+  {
+	"id": 46,
+	"Nombre": "Bebida Vegetal de Almendras Natural - 1 Litro - Vrink",
+	"Descripción": null,
+	"Precio": "$228.20",
+	"Imagen": "Leches.jpg",
+	"Categoria": "Leches",
+	"Descuento": 13,
+	"Tipo": "En oferta"
+  },
+   {
+	"id": 47,
+	"Nombre": "Bebida Vegetal de Almendras sabor Vainilla - 1 Litro - Vrink",
+	"Descripción": null,
+	"Precio": "$166.02",
+	"Imagen": "Leches.jpg",
+	"Categoria": "Leches",
+	"Descuento": 16,
+	"Tipo": "Más vendido"
+  }, 
+  {
+	"id": 48,
+	"Nombre": "Bebida vegetal de almendra original - 1 Litro - Silk",
+	"Descripción": "eu massa donec dapibus duis at velit eu est congue",
+	"Precio": "$294.93",
+	"Imagen": "Leches.jpg",
+	"Categoria": "Leches",
+	"Descuento": 20,
+	"Tipo": "Nuevo"
+  },
+   {
+	"id": 49,
+	"Nombre": "Bebida vegetal de Almendra Sabor Vainilla",
+	"Descripción": null,
+	"Precio": "$224.77",
+	"Imagen": "Leches.jpg",
+	"Categoria": "Leches",
+	"Descuento": 18,
+	"Tipo": "Más vendido"
+  }, 
+  {
+	"id": 50,
+	"Nombre": "Sin Azúcar - 1 Litro - Silk",
+	"Descripción": null,
+	"Precio": "$163.60",
+	"Imagen": "Leches.jpg",
+	"Categoria": "Leches",
+	"Descuento": 20,
+	"Tipo": "En oferta"
+  }, 
+  {
+	"id": 51,
+	"Nombre": "Bebida vegetal de Almendras Original",
+	"Descripción": null,
+	"Precio": "$226.37",
+	"Imagen": "Leches.jpg",
+	"Categoria": "Leches",
+	"Descuento": 16,
+	"Tipo": "Más vendido"
+  },
+   {
+	"id": 52,
+	"Nombre": "Sin azúcar - 1 Litro - Silk",
+	"Descripción": "a odio in hac habitasse platea dictumst maecenas ut massa",
+	"Precio": "$165.93",
+	"Imagen": "Leches.jpg",
+	"Categoria": "Leches",
+	"Descuento": 14,
+	"Tipo": "Nuevo"
+  }, 
+  {
+	"id": 53,
+	"Nombre": "Bebida vegetal de Almendras Sabor Chocolate - 1 Litro - Silk",
+	"Descripción": "nisl duis ac nibh fusce lacus purus aliquet at feugiat non pretium quis",
+	"Precio": "$214.40",
+	"Imagen": "Leches.jpg",
+	"Categoria": "Leches",
+	"Descuento": 18,
+	"Tipo": "Nuevo"
+  }]
+//  
