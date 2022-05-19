@@ -9,22 +9,21 @@
         <%- include("./partials/header") %>
 
             <main>
-
                 <section class="detalles">
                     <h2>
-                        <%=products[req.params.id].titulo%>
+                        <%=product.titulo%>
                     </h2>
 
                     <div class="product-details">
 
-                        <img src="<%= products[req.params.id].img %> " alt="mielLiquida">
+                        <img src="<%= product.img %> " alt="mielLiquida">
 
                         <div class="info-product-details">
                             <p class="descrip">
-                                <%= products[req.params.id].descripcion %>
+                                <%= product.descripcion %>
                             </p>
                             <p class="precio">
-                                <%= products[req.params.id].precio %>
+                                <%= product.precio %>
                             </p>
                             <a href="/carrito">
                                 <button class="boton-agregar">Agregar al carrito</button>

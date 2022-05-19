@@ -21,9 +21,6 @@ const controller = {
     carrito: (req, res) => {
         res.render("carrito");
     },
-    productCreate: (req, res) => {
-        res.render("product-create-form");
-    },
 };
 
 
