@@ -40,5 +40,144 @@
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": "$1000",
 		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "7",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "8",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "9",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "10",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "11",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "12",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "13",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "14",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "15",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "16",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "17",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	}{
+		"id": "18",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "19",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "20",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "21",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "22",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "23",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "24",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "25",
+		"titulo": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+	},
+	{
+		"id": "26",
+		"nombre": "Tostaditas de arroz sin Tacc",
+		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
+		"precio": "$1000",
+		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
 	}
 ]
