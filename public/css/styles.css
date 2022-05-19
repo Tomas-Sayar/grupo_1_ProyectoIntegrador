@@ -12,30 +12,29 @@ a {
 /*!------------------------------ home ------------------------------*/
 /** header */
 /** inicio*/
-.menu-usuario{
+.menu-usuario {
 	display: flex;
 	max-width: 100%;
 	margin-bottom: -4%;
 	margin-top: -5%;
-	
 }
 .menu {
 	width: 50%;
 	margin: 6% 0% 6% 2%;
 }
 
-	.menu-login {
-		color: orange;
-		width: 50%;
-		margin: 6% 0% 6% 82%;
-		flex-wrap: wrap;
+.menu-login {
+	color: orange;
+	width: 50%;
+	margin: 6% 0% 6% 82%;
+	flex-wrap: wrap;
 }
 .fa-user-circle {
-    font-size: 200%;
-    color: orange;	
+	font-size: 200%;
+	color: orange;
 }
-.fa-user-circle:hover{
-transform: scale(1.5);
+.fa-user-circle:hover {
+	transform: scale(1.5);
 }
 .menu .fa-bars {
 	color: #ff740a;
@@ -62,10 +61,9 @@ transform: scale(1.5);
 	justify-content: space-around;
 	text-align: center;
 }
-.menu-principal :hover{
-transform: scale(1.3);
+.menu-principal :hover {
+	transform: scale(1.3);
 }
-
 
 .menu-principal .inicio {
 	font-size: 0.3em;
@@ -101,10 +99,10 @@ span {
 
 a.logo-carrot {
 	border-radius: 100%;
-    width: 28%;
-    vertical-align: middle;
-    float: left;
-    margin: -2% -8% -3% 23%;
+	width: 28%;
+	vertical-align: middle;
+	float: left;
+	margin: -2% -8% -3% 23%;
 }
 .carrot {
 	padding-top: 6%;
@@ -118,11 +116,10 @@ a.logo-carrot {
 }
 
 .carrot .eslogan {
-    color: lightgreen;
-    padding: 0% 8%;
-    margin-bottom: -37%;
+	color: lightgreen;
+	padding: 0% 8%;
+	margin-bottom: -37%;
 }
-
 
 /**main*/
 main {
@@ -226,7 +223,7 @@ article .info .precio {
 	background-color: #ffb300;
 	border: lightgray solid 1px;
 	padding: 3%;
-transform: rotate;
+	transform: rotate;
 }
 
 /**footer*/
@@ -242,11 +239,11 @@ footer {
 	background-image: url('../img/fondozana2.jpg');
 	background-size: 40%;
 }
-footer div :hover{
+footer div :hover {
 	color: white;
 	background-color: orange;
 	cursor: pointer;
-	}
+}
 
 h6 {
 	margin-top: 3%;
@@ -280,7 +277,6 @@ h2 {
 	color: black;
 }
 
-
 .product-details {
 	width: 100%;
 	margin-left: 5%;
@@ -294,7 +290,7 @@ h2 {
 	border-radius: 10%;
 	transition: all 1s;
 }
-.product-details img:hover{
+.product-details img:hover {
 	transform: rotate(-360deg);
 }
 
@@ -315,7 +311,6 @@ h2 {
 	text-align: center;
 	width: 100%;
 	color: orange;
-
 }
 
 .boton-compartir {
@@ -329,7 +324,6 @@ h2 {
 	margin-top: 1%;
 	width: 35%;
 	margin-left: 7%;
-	
 }
 
 .compartir .fa-instagram {
@@ -371,7 +365,7 @@ h2 {
 	margin-bottom: 6%;
 	border-radius: 10%;
 }
-.articulo-relacionado:hover{
+.articulo-relacionado:hover {
 	transform: scale(1.3);
 }
 .articulo-relacionado img {
@@ -415,14 +409,14 @@ h2 {
 
 h1.Crear-Cuenta {
 	background-color: orange;
-    font-size: 200%;
-    box-sizing: border-box;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    margin-bottom: revert;
-    margin-top: 16%;
-    justify-content: center;
+	font-size: 200%;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	margin-bottom: revert;
+	margin-top: 16%;
+	justify-content: center;
 }
 
 label {
@@ -445,16 +439,15 @@ label {
 }
 
 
-
 /* login*/
 h1.login {
 	background-color: orange;
-    font-size: 200%;
-    box-sizing: border-box;
-    padding: 1%;
-    margin-top: 13%;
-    display: flex;
-    justify-content: center;
+	font-size: 200%;
+	box-sizing: border-box;
+	padding: 1%;
+	margin-top: 13%;
+	display: flex;
+	justify-content: center;
 }
 
 label {
@@ -471,9 +464,9 @@ input {
 	margin: solid black 1%;
 	display: flex;
 	justify-content: center;
-	margin:1% 4%;
+	margin: 1% 4%;
 }
-div.button{
+div.button {
 	display: flex;
 	justify-content: center;
 }
@@ -486,7 +479,7 @@ button {
 	justify-content: space-around;
 	padding: 2%;
 	border-radius: 1rem;
-    box-sizing: border-box;
+	box-sizing: border-box;
 	margin-top: 3%;
 }
 
@@ -497,8 +490,8 @@ a {
 }
 
 /*carrito*/
-h2.carrito{
-	color:white;
+h2.carrito {
+	color: white;
 	font-size: 2.4rem;
 	width: 100%;
 	height: auto;
@@ -507,74 +500,71 @@ h2.carrito{
 	margin-left: 0%;
 	margin-top: 11%;
 }
-.sub-carrito{
-    color: gray;
+.sub-carrito {
+	color: gray;
 	display: none;
 }
 
 .sub-carrito p {
-    font-size: 1.8rem;
-    padding: 5px -3px;
-    margin-left: 6%;
+	font-size: 1.8rem;
+	padding: 5px -3px;
+	margin-left: 6%;
 	display: none;
 	width: 100%;
 }
-ul.carro img{
+ul.carro img {
 	width: 33%;
 	height: 10%;
 }
-.info-carro{
+.info-carro {
 	color: orange;
 	width: 100%;
 	margin-top: 6%;
-	font-size:1.2rem;
+	font-size: 1.2rem;
 }
-.sub-precio{
+.sub-precio {
 	display: flex;
 	color: black;
 	margin-top: 25%;
 	font-size: small;
 	width: 100%;
 	text-align: center;
-
 }
-input.number{
+input.number {
 	padding: 0% 5%;
-    margin: 0px;
-    margin-top: 3%;
+	margin: 0px;
+	margin-top: 3%;
 }
-.carrito-precio{
-	color:black;
+.carrito-precio {
+	color: black;
 	font-size: small;
 	width: 100%;
 	text-align: center;
 	margin-top: 32%;
-    margin-left: -35%;
-
+	margin-left: -35%;
 }
-.menos-mas{
-color: black;
-display: flex;
-max-width: 33%;
-margin: -6%;
+.menos-mas {
+	color: black;
+	display: flex;
+	max-width: 33%;
+	margin: -6%;
 }
-.fa-minus{
+.fa-minus {
 	color: white;
-    margin-left: 37%;
+	margin-left: 37%;
 }
-.sub-carrito-precio{
+.sub-carrito-precio {
 	font-size: small;
 	font-size: 18px;
 	width: 50%;
-
 }
-.Subtotal{
+.Subtotal {
 	font-size: 1.5rem;
-    margin-top: 1%;
+	margin-top: 1%;
 	color: black;
 	width: 50%;
 }
-.finalizar{
+.finalizar {
 	background-color: orange;
 	color: white;
 	margin-top: 20%;
@@ -582,60 +572,51 @@ margin: -6%;
 	display: inline-block;
 }
 
-li{
+li {
 	display: flex;
 }
-.fa-trash-alt{
+.fa-trash-alt {
 	color: orange;
 	margin-top: 28%;
-    font-size: 200%;
-width: 100%;
-background-color: white;
+	font-size: 200%;
+	width: 100%;
+	background-color: white;
 }
-a{
+a {
 	display: flex;
-    justify-content: center;
+	justify-content: center;
 }
 /*-----------------PRODUCT-CREATE-FORM--------------------------------------------------*/
 
-h2.products-title{
+h2.products-title {
 	margin-top: 15%;
 	text-align: center;
-    margin-left: 0%;
+	margin-left: 0%;
 }
-textarea#description.form-input{
+textarea#description.form-input {
 	margin-top: 5%;
-    width: 50%;
-    height: 13rem;
-    padding: 1%;
-    text-align: -webkit-match-parent;
-    display: inline-table;
+	width: 50%;
+	height: 13rem;
+	padding: 1%;
+	text-align: -webkit-match-parent;
+	display: inline-table;
 }
-.section-button{
+.section-button {
 	display: flex;
 	justify-content: center;
 }
 
-
-
-
-
-
-
 /*!Media Querys*/
 
 @media (min-width: 480px) {
-	article:hover{
+	article:hover {
 		transform: scale(1.3);
-		}
-		footer{
-			display: flex;
-			justify-content: space-around;
-			line-height: 240%;
-		}
-
-
-
+	}
+	footer {
+		display: flex;
+		justify-content: space-around;
+		line-height: 240%;
+	}
 }
 
 @media (min-width: 768px) {
@@ -648,19 +629,19 @@ textarea#description.form-input{
 	.carrusel1 img {
 		height: 36em;
 	}
-	.circulos{
+	.circulos {
 		padding-bottom: 5%;
 	}
-article{
-	width: 20%;
-	margin: 1%;
-}
-
-/*product*/
-.boton-agregar {
-	margin: 12% 30%;
+	article {
+		width: 20%;
+		margin: 1%;
 	}
-	.product-details{
+
+	/*product*/
+	.boton-agregar {
+		margin: 12% 30%;
+	}
+	.product-details {
 		display: flex;
 	}
 	.info-product-details {
@@ -669,37 +650,34 @@ article{
 	}
 	.product-details img {
 		width: 50%;
-}
-/*carrito*/
-ul.carro img {
+	}
+	/*carrito*/
+	ul.carro img {
 		width: 10%;
 		height: 10%;
 	}
 
-.sub-carrito{
-	display: flex;
-    justify-content: space-between;
-}
-.sub-carrito p{
-	color: grey;
-	display: block;
-	justify-content: space-between;
+	.sub-carrito {
+		display: flex;
+		justify-content: space-between;
+	}
+	.sub-carrito p {
+		color: grey;
+		display: block;
+		justify-content: space-between;
+	}
 
-}
-h2.carrito {
-	/*text-align: justify;*/
-}
-.menos-mas {
-	width: 9%;
-    margin-top: -24%;
-    margin-left: -1%;
-}
-.info-carro{
-	color: orange;
-	width: 20%;
-	margin-top: 2%;
-	font-size:1.2rem;
-}
+	.menos-mas {
+		width: 9%;
+		margin-top: -24%;
+		margin-left: -1%;
+	}
+	.info-carro {
+		color: orange;
+		width: 20%;
+		margin-top: 2%;
+		font-size: 1.2rem;
+	}
 }
 @media (min-width: 1024px) {
 	h2.carrito {
