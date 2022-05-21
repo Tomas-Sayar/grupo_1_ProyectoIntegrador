@@ -1,44 +1,44 @@
 [
 	{
 		"id": "1",
-		"titulo": "Frutos secos: almendras",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/frutos-secos-image.jpg"
+		"name": "Frutos secos: almendras",
+		"price": "$1000",
+		"img": "/img/products/frutos-secos-image.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies mauris at est porttitor fringilla. Maecenas id hendrerit libero. Nullam ut tellus pellentesque, porta risus quis, porta erat. Proin sed massa nec libero viverra mattis. Maecenas cursus suscipit viverra. Donec non sagittis arcu. Maecenas consectetur feugiat lorem, at ullamcorper lacus pharetra nec. Duis sed nisi sed justo commodo vulputate. Morbi at mauris et nisi hendrerit finibus. Ut sit amet tincidunt est, quis lobortis dolor. Nulla."
 	},
 	{
 		"id": "2",
-		"titulo": "Miel liquida 'Beepture' de 500g",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/miel-liquida-image.jpg"
+		"name": "Miel liquida 'Beepture' de 500g",
+		"price": "$1000",
+		"img": "/img/products/miel-liquida-image.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies mauris at est porttitor fringilla. Maecenas id hendrerit libero. Nullam ut tellus pellentesque, porta risus quis, porta erat. Proin sed massa nec libero viverra mattis. Maecenas cursus suscipit viverra. Donec non sagittis arcu. Maecenas consectetur feugiat lorem, at ullamcorper lacus pharetra nec. Duis sed nisi sed justo commodo vulputate. Morbi at mauris et nisi hendrerit finibus. Ut sit amet tincidunt est, quis lobortis dolor. Nulla."
 	},
 	{
 		"id": "3",
-		"titulo": "6x Latas Scotch antares",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/scotch-6latas-antares.jpg"
+		"name": "6x Latas Scotch antares",
+		"price": "$1000",
+		"img": "/img/products/scotch-6latas-antares.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies mauris at est porttitor fringilla. Maecenas id hendrerit libero. Nullam ut tellus pellentesque, porta risus quis, porta erat. Proin sed massa nec libero viverra mattis. Maecenas cursus suscipit viverra. Donec non sagittis arcu. Maecenas consectetur feugiat lorem, at ullamcorper lacus pharetra nec. Duis sed nisi sed justo commodo vulputate. Morbi at mauris et nisi hendrerit finibus. Ut sit amet tincidunt est, quis lobortis dolor. Nulla."
 	},
 	{
 		"id": "4",
-		"titulo": "Pan mix de semillas",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/pan-mix-semillas.jpg"
+		"name": "Pan mix de semillas",
+		"price": "$1000",
+		"img": "/img/products/pan-mix-semillas.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies mauris at est porttitor fringilla. Maecenas id hendrerit libero. Nullam ut tellus pellentesque, porta risus quis, porta erat. Proin sed massa nec libero viverra mattis. Maecenas cursus suscipit viverra. Donec non sagittis arcu. Maecenas consectetur feugiat lorem, at ullamcorper lacus pharetra nec. Duis sed nisi sed justo commodo vulputate. Morbi at mauris et nisi hendrerit finibus. Ut sit amet tincidunt est, quis lobortis dolor. Nulla."
 	},
 	{
 		"id": "5",
-		"titulo": "Quinua 'Molicusco'",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/quinua-image.jpg"
+		"name": "Quinua 'Molicusco'",
+		"price": "$1000",
+		"img": "/img/products/quinua-image.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies mauris at est porttitor fringilla. Maecenas id hendrerit libero. Nullam ut tellus pellentesque, porta risus quis, porta erat. Proin sed massa nec libero viverra mattis. Maecenas cursus suscipit viverra. Donec non sagittis arcu. Maecenas consectetur feugiat lorem, at ullamcorper lacus pharetra nec. Duis sed nisi sed justo commodo vulputate. Morbi at mauris et nisi hendrerit finibus. Ut sit amet tincidunt est, quis lobortis dolor. Nulla."
 	},
 	{
 		"id": "6",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"name": "Tostaditas de arroz sin Tacc",
+		"price": "$1000",
+		"img": "/img/products/tostaditas-arroz-sin-tacc.jpg",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies mauris at est porttitor fringilla. Maecenas id hendrerit libero. Nullam ut tellus pellentesque, porta risus quis, porta erat. Proin sed massa nec libero viverra mattis. Maecenas cursus suscipit viverra. Donec non sagittis arcu. Maecenas consectetur feugiat lorem, at ullamcorper lacus pharetra nec. Duis sed nisi sed justo commodo vulputate. Morbi at mauris et nisi hendrerit finibus. Ut sit amet tincidunt est, quis lobortis dolor. Nulla."
 	}
 ]

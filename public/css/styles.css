@@ -299,6 +299,7 @@ h2 {
 	text-align: justify;
 	margin-bottom: 5%;
 	color: black;
+	margin-right: 10%;
 }
 
 .product-details .info-product-details .descrip::first-letter {
@@ -323,7 +324,7 @@ h2 {
 .compartir {
 	margin-top: 1%;
 	width: 35%;
-	margin-left: 7%;
+	margin-left: 6%;
 }
 
 .compartir .fa-instagram {
@@ -428,16 +429,13 @@ label {
 	display: flex;
 	justify-content: center;
 }
-.tipoUsuario {
-	
-}
+
 .minorista {
 	width: 5%;
 }
 .mayorista {
 	width: 5%;
 }
-
 
 /* login*/
 h1.login {

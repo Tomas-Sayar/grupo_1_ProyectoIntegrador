@@ -11,6 +11,8 @@ const productsRouter = require('./routers/products');
 // APP CONFIG 
 app.use(express.static(publicPath));
 app.set('view engine', 'ejs');
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
 
 // SERVER
@@ -21,6 +23,5 @@ app.listen(3000, () => {
 
 // ROUTERS
 app.use('/', mainRouter);
-
 // POR AHORA SOLO PARA EL PRODUCT-DETAILS, FALTA HACERLO PARA LA VISTA DE TODOS LOS PRODUCTOS
 app.use('/product', productsRouter);

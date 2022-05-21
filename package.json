@@ -19,6 +19,7 @@
 	"homepage": "https://github.com/Tomas-Sayar/grupo_1_ProyectoIntegrador#readme",
 	"dependencies": {
 		"ejs": "^3.1.7",
-		"express": "^4.17.3"
+		"express": "^4.17.3",
+		"multer": "^1.4.4"
 	}
 }
