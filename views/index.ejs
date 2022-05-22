@@ -24,20 +24,20 @@
 					<h1 class="titulo">Destacados</h1>
 
 					<section class="products">
-						<% products.forEach(products=> { %>
+						<% featuredProducts.forEach(products=> { %>
 							<article>
 								<a href="/product">
-									<img src="<%= products.img %>" alt="frutos-secos">
+									<img src="img/products <%= featuredProducts.img %>" alt="frutos-secos">
 								</a>
 								<div class="info">
 									<h1>
-										<%= products.name %>
+										<%= featuredProducts.name %>
 									</h1>
 									<p class="descripcion">
-										<%= products.decription %>
+										<%= featuredProducts.decription %>
 									</p>
 									<p class="precio">
-										<%= products.price %>
+										<%= featuredProducts.price %>
 									</p>
 								</div>
 							</article>
