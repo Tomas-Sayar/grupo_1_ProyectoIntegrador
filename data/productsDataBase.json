@@ -3,35 +3,35 @@
 		"id": 1,
 		"name": "Frutos secos: almendras",
 		"price": 1000,
-		"img": "/frutos-secos-image.jpg",
+		"img": "frutos-secos-image.jpg",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies mauris at est porttitor fringilla. Maecenas id hendrerit libero. Nullam ut tellus pellentesque, porta risus quis, porta erat. Proin sed massa nec libero viverra mattis. Maecenas cursus suscipit viverra. Donec non sagittis arcu. Maecenas consectetur feugiat lorem, at ullamcorper lacus pharetra nec. Duis sed nisi sed justo commodo vulputate. Morbi at mauris et nisi hendrerit finibus. Ut sit amet tincidunt est, quis lobortis dolor. Nulla."
 	},
 	{
 		"id": 2,
 		"name": "Miel liquida 'Beepture' de 500g",
 		"price": 1000,
-		"img": "/miel-liquida-image.jpg",
+		"img": "miel-liquida-image.jpg",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies mauris at est porttitor fringilla. Maecenas id hendrerit libero. Nullam ut tellus pellentesque, porta risus quis, porta erat. Proin sed massa nec libero viverra mattis. Maecenas cursus suscipit viverra. Donec non sagittis arcu. Maecenas consectetur feugiat lorem, at ullamcorper lacus pharetra nec. Duis sed nisi sed justo commodo vulputate. Morbi at mauris et nisi hendrerit finibus. Ut sit amet tincidunt est, quis lobortis dolor. Nulla."
 	},
 	{
 		"id": 3,
 		"name": "6x Latas Scotch antares",
 		"price": 1000,
-		"img": "/scotch-6latas-antares.jpg",
+		"img": "scotch-6latas-antares.jpg",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies mauris at est porttitor fringilla. Maecenas id hendrerit libero. Nullam ut tellus pellentesque, porta risus quis, porta erat. Proin sed massa nec libero viverra mattis. Maecenas cursus suscipit viverra. Donec non sagittis arcu. Maecenas consectetur feugiat lorem, at ullamcorper lacus pharetra nec. Duis sed nisi sed justo commodo vulputate. Morbi at mauris et nisi hendrerit finibus. Ut sit amet tincidunt est, quis lobortis dolor. Nulla."
 	},
 	{
 		"id": 4,
 		"name": "Pan mix de semillas",
 		"price": 1000,
-		"img": "/pan-mix-semillas.jpg",
+		"img": "pan-mix-semillas.jpg",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies mauris at est porttitor fringilla. Maecenas id hendrerit libero. Nullam ut tellus pellentesque, porta risus quis, porta erat. Proin sed massa nec libero viverra mattis. Maecenas cursus suscipit viverra. Donec non sagittis arcu. Maecenas consectetur feugiat lorem, at ullamcorper lacus pharetra nec. Duis sed nisi sed justo commodo vulputate. Morbi at mauris et nisi hendrerit finibus. Ut sit amet tincidunt est, quis lobortis dolor. Nulla."
 	},
 	{
 		"id": 5,
 		"name": "Quinua 'Molicusco'",
 		"price": 1000,
-		"img": "/quinua-image.jpg",
+		"img": "quinua-image.jpg",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ultricies mauris at est porttitor fringilla. Maecenas id hendrerit libero. Nullam ut tellus pellentesque, porta risus quis, porta erat. Proin sed massa nec libero viverra mattis. Maecenas cursus suscipit viverra. Donec non sagittis arcu. Maecenas consectetur feugiat lorem, at ullamcorper lacus pharetra nec. Duis sed nisi sed justo commodo vulputate. Morbi at mauris et nisi hendrerit finibus. Ut sit amet tincidunt est, quis lobortis dolor. Nulla."
 	},
 	{
@@ -39,147 +39,147 @@
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "/tostaditas-arroz-sin-tacc.jpg"
+		"img": "default.png"
 	},
 	{
 		"id": 7,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "/tostaditas-arroz-sin-tacc.jpg"
+		"img": "default.png"
 	},
 	{
 		"id": 8,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "/tostaditas-arroz-sin-tacc.jpg"
+		"img": "default.png"
 	},
 	{
 		"id": 9,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "default.png"
 	},
 	{
 		"id": 10,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "default.png"
 	},
 	{
 		"id": 11,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "default.png"
 	},
 	{
 		"id": 12,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "default.png"
 	},
 	{
 		"id": 13,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "default.png"
 	},
 	{
 		"id": 14,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "img/products/default.png"
 	},
 	{
 		"id": 15,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "img/products/default.png"
 	},
 	{
 		"id": 16,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "img/products/default.png"
 	},
 	{
 		"id": 17,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "img/products/default.png"
 	},
 	{
 		"id": 18,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "img/products/default.png"
 	},
 	{
 		"id": 19,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "img/products/default.png"
 	},
 	{
 		"id": 20,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "img/products/default.png"
 	},
 	{
 		"id": 21,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "img/products/default.png"
 	},
 	{
 		"id": 22,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "img/products/default.png"
 	},
 	{
 		"id": 23,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "img/products/default.png"
 	},
 	{
 		"id": 24,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "img/products/default.png"
 	},
 	{
 		"id": 25,
 		"titulo": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "img/products/default.png"
 	},
 	{
 		"id": 26,
 		"nombre": "Tostaditas de arroz sin Tacc",
 		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
 		"precio": 1000,
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
+		"img": "img/products/default.png"
 	},
 	{
 		"id": 27,
@@ -445,7 +445,5 @@
 		"Categoria": "Leches",
 		"Descuento": 18,
 		"Tipo": "Nuevo"
-	},
-	{ "id": 54 },
-	{ "id": 55 }
+	}
 ]
