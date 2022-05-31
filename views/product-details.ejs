@@ -11,19 +11,17 @@
             <main>
                 <section class="detalles">
                     <h2>
-                        <%=product.titulo%>
+                        <%=product.name%>
                     </h2>
 
                     <div class="product-details">
-
                         <img src="<%= product.img %> " alt="mielLiquida">
-
                         <div class="info-product-details">
                             <p class="descrip">
-                                <%= product.descripcion %>
+                                <%= product.description %>
                             </p>
                             <p class="precio">
-                                <%= product.precio %>
+                                <%= product.price %>
                             </p>
                             <a href="/carrito">
                                 <button class="boton-agregar">Agregar al carrito</button>
@@ -34,11 +32,9 @@
 
                 <p class="boton-compartir">Compartir</p>
                 <section class="compartir">
-
                     <i class="fab fa-instagram"></i>
                     <i class="fab fa-twitter"></i>
                     <i class="fab fa-facebook"></i>
-
                 </section>
 
                 <h4 class="titulo-art-relacionado">Articulos relacionados</h4>
