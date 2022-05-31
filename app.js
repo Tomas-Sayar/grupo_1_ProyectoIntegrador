@@ -21,9 +21,6 @@ app.listen(3000, () => {
 // ROUTERS
 app.use('/', mainRouter);
 // POR AHORA SOLO PARA EL PRODUCT-DETAILS, FALTA HACERLO PARA LA VISTA DE TODOS LOS PRODUCTOS
-<<<<<<< HEAD
-//app.use('/product', productsRouter);
+
+
 app.use('/products', productsRouter);
-=======
-app.use('/product', productsRouter);
->>>>>>> 1a10b4fad5ed221586068d6c0425fcaefbb99107
