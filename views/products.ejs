@@ -7,8 +7,32 @@
     <body>
         <!-- HEADER -->
         <%- include("./partials/header") %>
-
-
+        <main>  
+                <section class="products">
+            <% products.forEach(product=> { %>
+                <article>
+                    <a href="/product/<%=product.id%>">
+                        <img src="/img/products/<%=product.imagen%>" alt="frutos-secos">
+                    </a>
+                    <div class="info">
+                        <h1>
+                            <%= product.nombre %>
+                        </h1>
+                        <p class="descripcion">
+                            <%= product.descripcion %>
+                        </p>
+                        <p class="precio">
+                            <%= product.precio %>
+                        </p>
+                    </div>
+                </article>
+                <% }); %>
+        </section>
+        <a href="/products">
+            <button class="ver-mas-productos">Ver más productos</button>
+        </a>
+    </section>
+</main>
 
 
 

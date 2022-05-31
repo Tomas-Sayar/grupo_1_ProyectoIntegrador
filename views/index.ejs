@@ -27,17 +27,17 @@
 						<% featuredProducts.forEach(product=> { %>
 							<article>
 								<a href="/product/<%=product.id%>">
-									<img src="img/products/<%=product.img%>" alt="frutos-secos">
+									<img src="/img/products/<%=product.imagen%>" alt="frutos-secos">
 								</a>
 								<div class="info">
 									<h1>
-										<%= product.name %>
+										<%= product.nombre %>
 									</h1>
 									<p class="descripcion">
-										<%= product.decription %>
+										<%= product.descripcion %>
 									</p>
 									<p class="precio">
-										<%= product.price %>
+										<%= product.precio %>
 									</p>
 								</div>
 							</article>
