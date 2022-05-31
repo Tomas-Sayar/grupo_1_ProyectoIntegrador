@@ -24,6 +24,9 @@ let controller = {
     productCreate: (req, res) => {
         res.render("product-create-form");
     },
+    products: (req, res) => {
+        res.render("products");
+    }
 }
 
 

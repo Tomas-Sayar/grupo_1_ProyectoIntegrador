@@ -1,193 +1,10 @@
 [
 	{
-		"id": "1",
-		"titulo": "Frutos secos: almendras",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/frutos-secos-image.jpg"
-	},
-	{
-		"id": "2",
-		"titulo": "Miel liquida 'Beepture' de 500g",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/miel-liquida-image.jpg"
-	},
-	{
-		"id": "3",
-		"titulo": "6x Latas Scotch antares",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/scotch-6latas-antares.jpg"
-	},
-	{
-		"id": "4",
-		"titulo": "Pan mix de semillas",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/pan-mix-semillas.jpg"
-	},
-	{
-		"id": "5",
-		"titulo": "Quinua 'Molicusco'",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/quinua-image.jpg"
-	},
-	{
-		"id": "6",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "7",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "8",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "9",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "10",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "11",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "12",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "13",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "14",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "15",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "16",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "17",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	}{
-		"id": "18",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "19",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "20",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "21",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "22",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "23",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "24",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "25",
-		"titulo": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	},
-	{
-		"id": "26",
-		"nombre": "Tostaditas de arroz sin Tacc",
-		"descripcion": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quae nam, voluptatibus illo repellat amet laboriosam.",
-		"precio": "$1000",
-		"img": "img/products/tostaditas-arroz-sin-tacc.jpg"
-	}
-]
-//
-[{
 	"id": 1,
 	"Nombre": "Mix Clásico Con Maní - 200 gr",
 	"Descripción": "magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque",
 	"Precio": "$285.82",
-	"Imagen": "Frutos Secos.jpg",
+	"Imagen": "Frutos Secos/mix-frutos-secos-con-mani.jpg",
 	"Categoria": "Frutos Secos",
 	"Descuento": 13,
 	"Tipo": "en oferta"
@@ -197,7 +14,7 @@
 	"Nombre": "Chips de Banana - 200 gr",
 	"Descripción": "dapibus augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis",
 	"Precio": "$200.35",
-	"Imagen": "Frutos Secos.jpg",
+	"Imagen": "img/products/Frutos Secos/bananas-chips.jpg",
 	"Categoria": "Frutos Secos",
 	"Descuento": 14,
 	"Tipo": "mas-vendido"
@@ -207,7 +24,7 @@
 	"Nombre": "Mix Tropical - 200 gr",
 	"Descripción": "quis lectus suspendisse potenti in eleifend quam a odio in hac",
 	"Precio": "$193.50",
-	"Imagen": "Frutos Secos.jpg",
+	"Imagen": "img/products/Frutos Secos/mix-tropical.jpg",
 	"Categoria": "Frutos Secos",
 	"Descuento": 19,
 	"Tipo": "mas-vendido"
@@ -217,7 +34,7 @@
 	"Nombre": "Mix Nacional Con Banana - 200 gr",
 	"Descripción": "vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat",
 	"Precio": "$208.00",
-	"Imagen": "Frutos Secos.jpg",
+	"Imagen": "img/products/Frutos Secos/mix-nacional-con-banana.jpg",
 	"Categoria": "Frutos Secos",
 	"Descuento": 19,
 	"Tipo": "mas-vendido"
@@ -227,7 +44,7 @@
 	"Nombre": "Castaña de Caju Natural - 100 gr",
 	"Descripción": "lorem id ligula suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit amet sem fusce consequat",
 	"Precio": "$221.05",
-	"Imagen": "Frutos Secos.jpg",
+	"Imagen": "img/products/Frutos Secos.jpg/castanas-de-caju-natural.jpg",
 	"Categoria": "Frutos Secos",
 	"Descuento": 14,
 	"Tipo": "mas-vendido"
@@ -237,17 +54,17 @@
 	"Nombre": "Mani Pelado Tostado Con Sal - 250 gr",
 	"Descripción": "integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non",
 	"Precio": "$266.30",
-	"Imagen": "Frutos Secos.jpg",
+	"Imagen": "img/products/Frutos Secos/mani-pelado.jpg",
 	"Categoria": "Frutos Secos",
 	"Descuento": 14,
 	"Tipo": "mas-vendido"
   }, 
   {
 	"id": 7,
-	"Nombre": "Mix Clásico Con Maní - 200 gr",
+	"Nombre": "Almendras non Pareil - 100 GR",
 	"Descripción": "sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia",
 	"Precio": "$153.81",
-	"Imagen": "Frutos Secos.jpg",
+	"Imagen": "img/products/Frutos Secos/almendras.jpg",
 	"Categoria": "Frutos Secos",
 	"Descuento": 20,
 	"Tipo": "mas-vendido"
@@ -257,7 +74,7 @@
 	"Nombre": "Mani Pelado Tostado Sin Sal - 500 gr",
 	"Descripción": "duis consequat dui nec nisi volutpat eleifend donec ut dolor morbi vel lectus",
 	"Precio": "$269.64",
-	"Imagen": "Frutos Secos.jpg",
+	"Imagen": "public/img/products/Frutos Secos/mani-pelado.jpg",
 	"Categoria": "Frutos Secos",
 	"Descuento": 20,
 	"Tipo": "nuevo"
@@ -267,7 +84,7 @@
 	"Nombre": "Mani Pelado Tostado Con Sal - 500 gr",
 	"Descripción": "magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus",
 	"Precio": "$202.29",
-	"Imagen": "Frutos Secos.jpg",
+	"Imagen": "img/products/Frutos Secos/mani-pelado.jpg",
 	"Categoria": "Frutos Secos",
 	"Descuento": 11,
 	"Tipo": "nuevo"
@@ -277,7 +94,7 @@
 	"Nombre": "Mani Pelado Tostado Sin Sal - 250 gr",
 	"Descripción": "mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor",
 	"Precio": "$295.76",
-	"Imagen": "Frutos Secos.jpg",
+	"Imagen": "img/products/Frutos Secos/mani-pelado.jpg",
 	"Categoria": "Frutos Secos",
 	"Descuento": 10,
 	"Tipo": "en oferta"
@@ -287,17 +104,17 @@
 	"Nombre": "Pasas Jumbo Sin Semillas - 250 gr",
 	"Descripción": "est et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante",
 	"Precio": "$287.35",
-	"Imagen": "Frutos Secos.jpg",
+	"Imagen": "public/img/products/Frutos Secos/pasas-jumbo.jpg",
 	"Categoria": "Frutos Secos",
 	"Descuento": 12,
 	"Tipo": "en oferta"
   },
    {
 	"id": 12,
-	"Nombre": "Mani Pelado Tostado Sin Sal - 500 gr",
+	"Nombre": "Mix Compota -250gr",
 	"Descripción": "nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum",
 	"Precio": "$258.42",
-	"Imagen": "Frutos Secos.jpg",
+	"Imagen": "img/products/Frutos Secos/mix-compota.jpg",
 	"Categoria": "Frutos Secos",
 	"Descuento": 19,
 	"Tipo": "mas-vendido"
@@ -307,7 +124,7 @@
   "Nombre": "Granola Serraceno Sin TACC - 200 gr - Crudencio",
   "Descripción": "quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante",
   "Precio": "$201.39",
-  "Imagen": "Granolas.jpg",
+  "Imagen": "img/products/Granola/granola-sarraceno.jpg",
   "Categoria": null,
   "Descuento": 17,
   "Tipo": "En oferta"
@@ -317,7 +134,7 @@
   "Nombre": "Granola Original Crunch Horneada - 1 kg",
   "Descripción": null,
   "Precio": "$170.00",
-  "Imagen": "Granolas.jpg",
+  "Imagen": "img/products/Granola/granola-original-crunch.jpg",
   "Categoria": null,
   "Descuento": 17,
   "Tipo": "Nuevo"
@@ -327,7 +144,7 @@
   "Nombre": "Granola Original Crunch Horneada - 350 gr",
   "Descripción": null,
   "Precio": "$167.34",
-  "Imagen": "Granolas.jpg",
+  "Imagen": "img/products/Granola/granola-original-crunch-350-gr.jpg",
   "Categoria": null,
   "Descuento": 11,
   "Tipo": "Nuevo"
@@ -337,7 +154,7 @@
   "Nombre": "Granola Fit Crunch Horneada - 1 kg",
   "Descripción": null,
   "Precio": "$178.62",
-  "Imagen": "Granolas.jpg",
+  "Imagen": "img/products/Granola/granola-fit-crunch-1kg.jpg",
   "Categoria": null,
   "Descuento": 13,
   "Tipo": "Más vendido"
@@ -347,7 +164,7 @@
   "Nombre": "Granola Fit Crunch Horneada - 350 gr",
   "Descripción": null,
   "Precio": "$151.52",
-  "Imagen": "Granolas.jpg",
+  "Imagen": "img/products/Granola/granola-fit-crunch-350gr.jpg",
   "Categoria": null,
   "Descuento": 13,
   "Tipo": "En oferta"
@@ -357,7 +174,7 @@
   "Nombre": "Granola Taste Crunch Horneada - 1 kg",
   "Descripción": null,
   "Precio": "$214.80",
-  "Imagen": "Granolas.jpg",
+  "Imagen": "img/products/Granola/granola-taste-crunch-1kg.jpg",
   "Categoria": null,
   "Descuento": 16,
   "Tipo": "Más vendido"
@@ -367,7 +184,7 @@
   "Nombre": "Granola Vegan Horneada - 350 gr",
   "Descripción": null,
   "Precio": "$275.28",
-  "Imagen": "Granolas.jpg",
+  "Imagen": "img/products/Granola/granola-vegan-350gr.jpg",
   "Categoria": null,
   "Descuento": 11,
   "Tipo": "Más vendido"
@@ -377,7 +194,7 @@
   "Nombre": "Granola Original Bites Horneada - 200 gr",
   "Descripción": "platea dictumst maecenas ut massa quis augue luctus tincidunt nulla mollis molestie",
   "Precio": "$255.84",
-  "Imagen": "Granolas.jpg",
+  "Imagen": "img/products/Granola/granola-original-bites-200-gr.jpg",
   "Categoria": null,
   "Descuento": 18,
   "Tipo": "Más vendido"
@@ -387,27 +204,27 @@
   "Nombre": "Granola Coconut Horneada -200 gr",
   "Descripción": "in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices",
   "Precio": "$163.74",
-  "Imagen": "Granolas.jpg",
+  "Imagen": "img/products/Granola/granola-coconut-200-gr.jpg",
   "Categoria": null,
   "Descuento": 20,
   "Tipo": "Nuevo"
 },
  {
   "id": 22,
-  "Nombre": "Granola Almendras",
+  "Nombre": "Granola Almendras, avena y arándanos -1kg -integra",
   "Descripción": null,
   "Precio": "$281.94",
-  "Imagen": "Granolas.jpg",
+  "Imagen": "img/products/Granola/integra-granola-almendras-avena-y-arandanos-1kg.jpg",
   "Categoria": null,
   "Descuento": 12,
   "Tipo": "Nuevo"
 }, 
 {
   "id": 23,
-  "Nombre": "Avena y Arándanos - 240 gr - Integra",
+  "Nombre": "Granola Almendras, Avena y Arándanos - 240 gr - Integra",
   "Descripción": "luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis",
   "Precio": "$282.74",
-  "Imagen": "Granolas.jpg",
+  "Imagen": "img/products/Granola/integra-granola-almendras-avena-y-arandanos.jpg",
   "Categoria": null,
   "Descuento": 17,
   "Tipo": "En oferta"
@@ -417,17 +234,17 @@
   "Nombre": "Granola Almendras Avena Chips de Chocolate - 240 gr - Integra",
   "Descripción": "hac habitasse platea dictumst etiam faucibus cursus urna ut tellus",
   "Precio": "$282.09",
-  "Imagen": "Granolas.jpg",
+  "Imagen": "img/products/Granola/granola-almendras-avena-chips-de-chocolate1.jpg",
   "Categoria": null,
   "Descuento": 15,
   "Tipo": "En oferta"
 }, 
 {
   "id": 25,
-  "Nombre": "Granola almendras",
+  "Nombre": "Granola almendras Avena Chips de Chocolate - 1kg - Integra",
   "Descripción": "eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum",
   "Precio": "$298.34",
-  "Imagen": "Granolas.jpg",
+  "Imagen": "img/products/Granola/integra-granola-almendras-avena-chips-de-chocolate-1kg.jpg",
   "Categoria": null,
   "Descuento": 17,
   "Tipo": "Más vendido"
@@ -436,7 +253,7 @@
 	"id": 26,
 	"Nombre": "Bolitas de chocolate - 250 GR",
 	"Precio": "$178.75",
-	"Imagen": "Cereales.jpg",
+	"Imagen": "img/products/Cereales/bolitas-de-chocolate-250-gr.jpg",
 	"Categoria": "Cereales",
 	"Descuento": 17,
 	"Tipo": "Más vendido"
@@ -446,7 +263,7 @@
 	"Nombre": "Almohaditas rellenas de Frutilla - 250 gr",
 	"Descripción": "condimentum curabitur in libero ut massa volutpat convallis morbi odio odio elementum eu",
 	"Precio": "$279.16",
-	"Imagen": "Cereales.jpg",
+	"Imagen": "img/products/Cereales/almohaditas-de-frutilla-x-250gr.jpg",
 	"Categoria": "Cereales",
 	"Descuento": 14,
 	"Tipo": "En oferta"
@@ -456,7 +273,7 @@
 	"Nombre": "Almohaditas rellenas de Avellana - 250 gr",
 	"Descripción": "quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante",
 	"Precio": "$252.36",
-	"Imagen": "Cereales.jpg",
+	"Imagen": "img/products/Cereales/almohaditas-de-avellana.jpg",
 	"Categoria": "Cereales",
 	"Descuento": 14,
 	"Tipo": "Nuevo"
@@ -466,7 +283,7 @@
 	"Nombre": "Almohaditas rellenas de Limon - 250 gr",
 	"Descripción": "eu est congue elementum in hac habitasse platea dictumst morbi",
 	"Precio": "$284.01",
-	"Imagen": "Cereales.jpg",
+	"Imagen": "img/products/Cereales/almohaditas-de-limon-x-250gr.jpg",
 	"Categoria": "Cereales",
 	"Descuento": 15,
 	"Tipo": "Nuevo"
@@ -475,7 +292,7 @@
 	"id": 30,
 	"Nombre": "Copos de Maiz - 250 gr",
 	"Precio": "$258.62",
-	"Imagen": "Cereales.jpg",
+	"Imagen": "img/products/Cereales/copos-maiz-sin-azucar1.jpg",
 	"Categoria": "Cereales",
 	"Descuento": 11,
 	"Tipo": "En oferta"
@@ -485,7 +302,7 @@
 	"Nombre": "Copos de Maiz Azucarados - 250 gr",
 	"Descripción": "augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae",
 	"Precio": "$294.11",
-	"Imagen": "Cereales.jpg",
+	"Imagen": "img/products/Cereales/copos-maiz-con-azucar-250-gr.jpg",
 	"Categoria": "Cereales",
 	"Descuento": 19,
 	"Tipo": "Nuevo"
@@ -495,7 +312,7 @@
 	"Nombre": "Almohaditas Rellenas de Chocolate - 250 gr",
 	"Descripción": "commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing",
 	"Precio": "$194.73",
-	"Imagen": "Cereales.jpg",
+	"Imagen": "img/products/Cereales/almohaditas-de-chocolate-x-250gr.jpg",
 	"Categoria": "Cereales",
 	"Descuento": 17,
 	"Tipo": "Más vendido"
@@ -505,7 +322,7 @@
 	"Nombre": "Almohaditas Rellenas de Chocolate Blanco - 250 gr",
 	"Descripción": "donec ut mauris eget massa tempor convallis nulla neque libero",
 	"Precio": "$275.64",
-	"Imagen": "Cereales.jpg",
+	"Imagen": "img/products/Cereales/almohaditas-de-chocolate-blanco1.jpg",
 	"Categoria": "Cereales",
 	"Descuento": 19,
 	"Tipo": "En oferta"
@@ -515,7 +332,7 @@
 	"Nombre": "Almohaditas de Salvado - 250 gr",
 	"Descripción": "sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi",
 	"Precio": "$183.12",
-	"Imagen": "Cereales.jpg",
+	"Imagen": "img/products/Cereales/almohaditas-sin-relleno-x-250gr.jpg",
 	"Categoria": "Cereales",
 	"Descuento": 10,
 	"Tipo": "Nuevo"
@@ -524,7 +341,7 @@
 	"id": 35,
 	"Nombre": "All Bran de Salvado - 250 gr",
 	"Precio": "$159.36",
-	"Imagen": "Cereales.jpg",
+	"Imagen": "img/products/Cereales/all-bran-salvado.jpg",
 	"Categoria": "Cereales",
 	"Descuento": 19,
 	"Tipo": "Más vendido"
@@ -533,7 +350,7 @@
 	"id": 36,
 	"Nombre": "Almohaditas Rellenas de Maní - 250 gr",
 	"Precio": "$271.58",
-	"Imagen": "Cereales.jpg",
+	"Imagen": "img/products/Cereales/almohaditas-de-mani-x-250gr.jpg",
 	"Categoria": "Cereales",
 	"Descuento": 13,
 	"Tipo": "Más vendido"
@@ -543,7 +360,7 @@
 	"Nombre": "Avena Súper Instantánea - 500 gr",
 	"Descripción": "nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor",
 	"Precio": "$246.83",
-	"Imagen": "Cereales.jpg",
+	"Imagen": "img/products/Cereales/avena-super-instantanea-x500grs.jpg",
 	"Categoria": "Cereales",
 	"Descuento": 12,
 	"Tipo": "En oferta"
@@ -552,7 +369,7 @@
 	"id": 38,
 	"Nombre": "Avena Tradicional - 500 gr",
 	"Precio": "$193.91",
-	"Imagen": "Cereales.jpg",
+	"Imagen": "/public/img/products/Cereales/avena-tradicional-x500grs.jpg",
 	"Categoria": "Cereales",
 	"Descuento": 14,
 	"Tipo": "Nuevo"
@@ -562,7 +379,7 @@
 	"Nombre": "Almohaditas de Arroz rellenas de Avellana - 250 gr",
 	"Descripción": "orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras",
 	"Precio": "$258.18",
-	"Imagen": "Cereales.jpg",
+	"Imagen": "img/products/Cereales/almohaditas-de-arroz-sabor-avellana-250-gr.jpg",
 	"Categoria": "Cereales",
 	"Descuento": 13,
 	"Tipo": "Nuevo"
@@ -571,7 +388,7 @@
 	"id": 40,
 	"Nombre": "Almohaditas de Arroz Rellenas de Chocolate - 250 gr",
 	"Precio": "$155.04",
-	"Imagen": "Cereales.jpg",
+	"Imagen": "img/products/Cereales/almohaditas-de-arroz-sabor-chocolate-250-gr.jpg",
 	"Categoria": "Cereales",
 	"Descuento": 20,
 	"Tipo": "Nuevo"
@@ -581,7 +398,7 @@
 	"Nombre": "Almohaditas de Arroz Rellenas de Limon - 250 gr",
 	"Descripción": "porttitor pede justo eu massa donec dapibus duis at velit",
 	"Precio": "$171.55",
-	"Imagen": "Cereales.jpg",
+	"Imagen": "img/products/Cereales/almohaditas-de-arroz-sabor-chocolate-250-gr.jpg",
 	"Categoria": "Cereales",
 	"Descuento": 13,
 	"Tipo": "En oferta"
@@ -705,5 +522,5 @@
 	"Categoria": "Leches",
 	"Descuento": 18,
 	"Tipo": "Nuevo"
-  }]
-//  
+  }
+]

@@ -15,8 +15,7 @@ a {
 .menu-usuario {
 	display: flex;
 	max-width: 100%;
-	margin-bottom: -4%;
-	margin-top: -5%;
+	margin: 0% 1%;
 }
 .menu {
 	width: 50%;
@@ -25,13 +24,18 @@ a {
 
 .menu-login {
 	color: orange;
-	width: 50%;
-	margin: 6% 0% 6% 82%;
-	flex-wrap: wrap;
+    width: 60%;
+    display: flex;
+    justify-content: end;
+	margin: 1%;
 }
 .fa-user-circle {
 	font-size: 200%;
 	color: orange;
+	margin-right: -3%;
+    margin-top: 18.5%;
+    font-size: 213%;
+    justify-content: flex-end;
 }
 .fa-user-circle:hover {
 	transform: scale(1.5);
@@ -44,20 +48,39 @@ a {
 }
 
 .search-bar {
-	flex-wrap: wrap;
-	justify-content: flex-end;
-	margin-right: 4%;
-	margin-left: 4%;
-	padding-bottom: 3%;
-	border-bottom: orange solid 2.5px;
-	display: none;
+	color: green;
+	display: flex;
 }
 
+i.fas.fa-search{
+	font-size: 100%;
+	display: flex;
+	justify-content: center;
+}
+input.search-bar-input{
+	border-radius: 10px;
+    border-color: orange;
+	width: 70%;
+    height: 30%;
+	margin-top: 7%;
+	display: none;
+}
+.search{
+	display: flex;
+	width: 40%;
+}
+
+.search-bar-bu{
+    font-size: 1.7rem;
+    justify-content: CENTER;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    MARGIN-LEFT: 48%;
+}
 /** menu principal*/
 
 .menu-principal {
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: space-around;
 	text-align: center;
 }
@@ -99,20 +122,18 @@ span {
 
 a.logo-carrot {
 	border-radius: 100%;
-	width: 28%;
-	vertical-align: middle;
+	width: 40%;
 	float: left;
-	margin: -2% -8% -3% 23%;
 }
 .carrot {
-	padding-top: 6%;
+	padding-top: 12%;
 }
 
 .carrot .titulo {
 	font-size: 320%;
 	font-family: fantasy;
 	color: orange;
-	margin: 5%;
+	margin: -4%;
 }
 
 .carrot .eslogan {
@@ -120,7 +141,6 @@ a.logo-carrot {
 	padding: 0% 8%;
 	margin-bottom: -37%;
 }
-
 /**main*/
 main {
 	color: white;
@@ -428,14 +448,11 @@ label {
 	display: flex;
 	justify-content: center;
 }
-.tipoUsuario {
-	
-}
 .minorista {
-	width: 5%;
+	width: 2%;
 }
 .mayorista {
-	width: 5%;
+	width: 2%;
 }
 
 
@@ -444,7 +461,7 @@ h1.login {
 	background-color: orange;
 	font-size: 200%;
 	box-sizing: border-box;
-	padding: 1%;
+	padding: 1% 31%;
 	margin-top: 13%;
 	display: flex;
 	justify-content: center;
@@ -462,7 +479,6 @@ input {
 	color: black;
 	padding: 1%;
 	margin: solid black 1%;
-	display: flex;
 	justify-content: center;
 	margin: 1% 4%;
 }
@@ -489,6 +505,17 @@ a {
 	justify-content: center;
 }
 
+p.sinUsuario{
+	color: rgb(130, 121, 121);
+	display: flex;
+	justify-content: center;
+	margin-top: 1%;
+}
+.aSinUsuario{
+	margin-left: 1%;
+	font-size: 16px;
+	color: black;
+}
 /*carrito*/
 h2.carrito {
 	color: white;

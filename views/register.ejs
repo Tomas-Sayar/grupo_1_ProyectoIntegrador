@@ -9,7 +9,7 @@
 		<%- include("./partials/header") %>
 
 			<main>
-				<form action="./" method="get">
+				<form action="./login" method="get">
 
 					<div class="titulo-contenedor">
 						<h1 class="Crear-Cuenta">Crear cuenta</h1>
@@ -52,6 +52,7 @@
 								<input type="radio" name="tipoDeUsuario" value="mayorista" class="mayorista" required>
 							</label>
 							</div>
+							<br/>
 </div>
 					
 						<label>Seleccionar una imagen para el perfil:
@@ -59,13 +60,13 @@
 						</label>
 						</div>
 						<br>
+						<br>
 						<div>
 							<label for="contraseña">Contraseña:</label>
 							<input class="form-control" type="password" name="passwordDeUsuario" required
 								placeholder="ej:Palacio88">
 						</div>
 						<br>
-
 						<div>
 							<label for="contraseña">Confirmar contraseña:</label>
 							<input class="form-control" type="password" name="passwordconfirmacionDeUsuario" required
@@ -74,9 +75,9 @@
 						<br>
 						<div class="botones">
 							<button type=" submit">Crear cuenta</button>
+							<a href="http://localhost:3000/login"></a>
 						</div>
-
-
+	
 				</form>
 			</main>
 			<br>
