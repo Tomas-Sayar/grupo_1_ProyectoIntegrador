@@ -7,6 +7,10 @@ const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 let controller = {
+index: (req, res) => {
+	res.render('products', {products});
+},
+
 	detail: (req, res) => {
 		let id = req.params.id;
 		let product = null;
