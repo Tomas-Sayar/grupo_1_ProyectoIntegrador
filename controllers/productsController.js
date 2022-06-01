@@ -13,14 +13,15 @@ index: (req, res) => {
 
 	detail: (req, res) => {
 		let id = req.params.id;
-		let productDetail = null;
+		let product = null;
 		for (let i = 0; i < products.length; i++) {
-			if (id === products[i].id) {
-				productDetail = products[i];
+			if (id == products[i].id) {
+				product = products[i];
 				break;
 			}
 		}
-		res.render('product-details', { product });
+		console.log(product)
+		res.render('product-detail', {product});
 	},
 	create: (req, res) => {
 		res.render('product-create-form');
