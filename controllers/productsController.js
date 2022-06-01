@@ -13,14 +13,14 @@ index: (req, res) => {
 
 	detail: (req, res) => {
 		let id = req.params.id;
-		let product = null;
+		let productDetail = null;
 		for (let i = 0; i < products.length; i++) {
 			if (id === products[i].id) {
-				product = products[i];
+				productDetail = products[i];
 				break;
 			}
 		}
-		res.render('product-details', { product: product });
+		res.render('product-details', { product: productDetail });;
 	},
 	create: (req, res) => {
 		res.render('product-create-form');
@@ -28,11 +28,11 @@ index: (req, res) => {
 	store: (req, res) => {
 		let newProduct = {
 			id: products.length + 1,
-			name: req.body.name,
-			price: req.body.price,
-			discount: req.body.discount,
-			category: req.body.category,
-			description: req.body.description,
+			nombre: req.body.name,
+			precio: req.body.price,
+			descuento: req.body.discount,
+			categoria: req.body.category,
+			descripcion: req.body.description,
 		};
 
 		products.push(newProduct);
