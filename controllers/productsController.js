@@ -16,7 +16,7 @@ let controller = {
 				break;
 			}
 		}
-		res.render('product-details', { product: product });
+		res.render('product-details', { product });
 	},
 	create: (req, res) => {
 		res.render('product-create-form');

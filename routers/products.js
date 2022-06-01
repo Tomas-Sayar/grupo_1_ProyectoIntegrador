@@ -5,7 +5,6 @@ const router = express.Router();
 const productsController = require('../controllers/productsController');
 
 
-
 // GET ALL PRODUCTS
 //router.get('/', productsController.index);
 
@@ -16,6 +15,5 @@ router.post('/create', productsController.store);
 // GET ONE PRODUCT
 router.get('/:id/', productsController.detail);
 
-//router.get('/products', productsController.products);
 
 module.exports = router;

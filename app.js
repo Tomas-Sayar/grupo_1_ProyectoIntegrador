@@ -20,7 +20,6 @@ app.listen(3000, () => {
 
 // ROUTERS
 app.use('/', mainRouter);
+
 // POR AHORA SOLO PARA EL PRODUCT-DETAILS, FALTA HACERLO PARA LA VISTA DE TODOS LOS PRODUCTOS
-
-
-app.use('/products', productsRouter);
+app.use('/product', productsRouter);
