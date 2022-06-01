@@ -20,7 +20,7 @@ index: (req, res) => {
 				break;
 			}
 		}
-		res.render('product-details', { product: productDetail });;
+		res.render('product-details', { product });
 	},
 	create: (req, res) => {
 		res.render('product-create-form');
