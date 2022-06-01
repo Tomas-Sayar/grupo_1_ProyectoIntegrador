@@ -201,7 +201,9 @@ h1.titulo {
 	justify-content: space-around;
 	width: 100%;
 }
-
+p.descripcion{
+	display: none;
+}
 article {
 	width: 60%;
 	border: orange solid 6px;
@@ -259,7 +261,7 @@ footer {
 	background-image: url('../img/fondozana2.jpg');
 	background-size: 40%;
 }
-footer div :hover {
+footer span:hover {
 	color: white;
 	background-color: orange;
 	cursor: pointer;
@@ -271,6 +273,7 @@ h6 {
 }
 .redes-sociales {
 	font-size: 191%;
+	display: block;
 }
 .mas-info {
 	display: flex;
@@ -278,12 +281,15 @@ h6 {
 }
 .fa-instagram {
 	font-size: 100%;
+	padding: 2%;
 }
 .fa-twitter {
 	font-size: 100%;
+	padding: 2%;
 }
 .fa-facebook {
 	font-size: 100%;
+	padding: 2%;
 }
 /*!-----------------------Detalles del Producto----------------------*/
 
@@ -644,6 +650,9 @@ textarea#description.form-input {
 		justify-content: space-around;
 		line-height: 240%;
 	}
+	.redes-sociales{
+		display: flex;
+	}
 }
 
 @media (min-width: 768px) {
@@ -677,6 +686,9 @@ textarea#description.form-input {
 	}
 	.product-details img {
 		width: 50%;
+	}
+	p.descripcion{
+		display: block;
 	}
 	/*carrito*/
 	ul.carro img {
