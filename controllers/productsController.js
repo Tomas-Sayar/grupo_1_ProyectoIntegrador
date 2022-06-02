@@ -7,9 +7,9 @@ const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 let controller = {
-index: (req, res) => {
-	res.render('products', {products});
-},
+	index: (req, res) => {
+		res.render('products', { products });
+	},
 
 	detail: (req, res) => {
 		let id = req.params.id;
@@ -20,8 +20,7 @@ index: (req, res) => {
 				break;
 			}
 		}
-		console.log(product)
-		res.render('product-detail', {product});
+		res.render('product-detail', { product });
 	},
 	create: (req, res) => {
 		res.render('product-create-form');
@@ -38,7 +37,7 @@ index: (req, res) => {
 
 		products.push(newProduct);
 
-		let productsJSON = JSON.stringify(products);
+		let productsJSON = JSON.stringify(products, null, 4);
 		fs.writeFileSync(productsFilePath, productsJSON);
 
 		res.redirect('/');

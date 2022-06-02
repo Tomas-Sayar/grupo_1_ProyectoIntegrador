@@ -26,7 +26,7 @@
 					<section class="products">
 						<% featuredProducts.forEach(product=> { %>
 							<article>
-								<a href="/product/<%=product.id%>">
+								<a href="/products/<%=product.id%>">
 									<img src="/img/products/<%=product.imagen%>" alt="frutos-secos">
 								</a>
 								<div class="info">
@@ -43,7 +43,7 @@
 							</article>
 							<% }); %>
 					</section>
-					<a href="/product">
+					<a href="/products">
 						<button class="ver-mas-productos">Ver más productos</button>
 					</a>
 				</section>

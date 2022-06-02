@@ -13,7 +13,7 @@ router.get('/create', productsController.create);
 router.post('/create', productsController.store);
 
 // GET ONE PRODUCT
-router.get('/:id/', productsController.detail);
+router.get('/:id', productsController.detail);
 
 
 

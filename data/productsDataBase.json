@@ -512,13 +512,5 @@
 		"tipo": "Leches",
 		"descuento": 18,
 		"categoria": "Nuevo"
-	},
-	{
-		"id": 53,
-		"nombre": "PENDIENTE",
-		"precio": "dew",
-		"descuento": "edw",
-		"categoria": "in-sale",
-		"descripcion": "               deewdwededew                 "
 	}
 ]
