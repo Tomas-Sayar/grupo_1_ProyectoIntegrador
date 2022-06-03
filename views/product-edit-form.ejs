@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <!-- Include Head -->
-<%- include('partials/head', {title: 'Formulario de creación' }) %>
+<%- include('partials/head', {title: 'Formulario de edicion'}) %>
 
     <body>
         <!-- Header -->
@@ -12,11 +12,11 @@
             <div class="container products-wrapper">
                 <div class="row">
                     <div class="col-12">
-                        <h2 class="products-title">Formulario de creación de productos</h2>
+                        <h2 class="products-title">Formulario de edición de productos</h2>
                     </div>
                 </div>
                 <div class="col-12">
-                    <form action="/products/create" method="post" enctype="multipart/form-data">
+                    <form method="post" action="/products/:id/edit?_method=PUT" >
                         <div class="row product-detail">
                             <div class="col-12 col-md-6">
                                 <label for="name" class="form-label">Nombre del producto:</label>
