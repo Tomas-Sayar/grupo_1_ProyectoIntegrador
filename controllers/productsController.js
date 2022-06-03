@@ -33,6 +33,7 @@ let controller = {
 			descuento: req.body.discount,
 			categoria: req.body.category,
 			descripcion: req.body.description,
+			imagen: req.file,
 		};
 
 		products.push(newProduct);
@@ -43,31 +44,31 @@ let controller = {
 		res.redirect('/');
 	},
 	//edit: (req, res) => {
-		//	let id = req.params.id;
-		//	let product = null;
-		//	for (let i = 0; i < products.length; i++) {
-		//		if (id == products[i].id) {
-		//			product = products[i];
-		//			break;
-		//		}
-		//	}
-		//	res.render('product-edit-form', { product });
-		//},
-		edit: (req, res) => {
-			const idParam = req.params.id;
-			let productsSelect = null
-			products.forEach(products => {
-				if (products.id == idParam) {
-					return productsSelect = products.id;
-		}
-			})
-			res.render("product-edit-form",{productsSelect: productsSelect});
-		},
+	//	let id = req.params.id;
+	//	let product = null;
+	//	for (let i = 0; i < products.length; i++) {
+	//		if (id == products[i].id) {
+	//			product = products[i];
+	//			break;
+	//		}
+	//	}
+	//	res.render('product-edit-form', { product });
+	//},
+	edit: (req, res) => {
+		const idParam = req.params.id;
+		let productsSelect = null
+		products.forEach(products => {
+			if (products.id == idParam) {
+				return productsSelect = products.id;
+			}
+		})
+		res.render("product-edit-form", { productsSelect: productsSelect });
+	},
 
-delete: (req, res) => {
-	res.send("Tu producto fue eliminado con éxito")
+	delete: (req, res) => {
+		res.send("Tu producto fue eliminado con éxito")
 
-}
+	}
 };
 
 
