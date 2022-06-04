@@ -149,7 +149,7 @@ main {
 	width: 100%;
 }
 
-.carrusel-image2 {
+.carrusel2 {
 	display: none;
 }
 
@@ -670,10 +670,11 @@ textarea#description.form-input {
 		height: 36em;
 		display: none;
 	}
-	.carrusel-image2 {
+	.carrusel2 {
 		display: block;
-		max-height: 55vh;
-		text-align: center;
+	}
+	.carrusel2 img {
+		max-width: 100vw;
 	}
 	.circulos {
 		padding-bottom: 5%;
