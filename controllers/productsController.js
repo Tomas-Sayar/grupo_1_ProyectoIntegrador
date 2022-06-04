@@ -56,7 +56,7 @@ let controller = {
 	},
 
 	delete: (req, res) => {
-		console.log('error')
+		res.send("Eliminado con éxito");
 		res.redirect('/products')
 	}
 };

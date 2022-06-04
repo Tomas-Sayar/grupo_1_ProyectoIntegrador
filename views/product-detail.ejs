@@ -34,15 +34,13 @@
                         </a>
                     </div>
                     <div>
-                        <form action="/products/<%= product.id%>"> %> /delete" ?_method=delete method="POST">
-                            <button type="submit" class="action-button delete">ELIMINAR</button>
-                        </form>
-                        <a href="/">
-                            <form action="/products" ?_method=delete method="post" enctype="multipart/form-data">
 
-                                <button type="reset" class="delete">BORRAR</button>
+<a href="/products/<%=product.id%>/delete">
+                            <form action="/products/<%=product.id%>/delete?_method=DELETE" method="POST" enctype="multipart/form-data">
+                                <button type="submit" class="delete">BORRAR</button>
+                            </form>
                         </a>
-                        </form>
+                        
                     </div>
 
                 </section>
