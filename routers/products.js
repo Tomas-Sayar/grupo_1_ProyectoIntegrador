@@ -32,12 +32,10 @@ router.get('/:id', productsController.detail);
 
 //GET EDIT ONE PRODUCT
 router.get('/:id/edit', productsController.edit);
-
-//UPDATE ONE PRODUCT
-router.put('/:id/update', productsController.update);
+router.put('/:id/edit', productsController.edit);
 
 //DELETE PRODUCT
-router.delete('/:id', productsController.delete);
+router.delete('/:id/delete', productsController.delete);
 
 
 
