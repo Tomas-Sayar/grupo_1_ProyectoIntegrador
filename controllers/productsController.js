@@ -54,15 +54,25 @@ let controller = {
 	//	}
 	//	res.render('product-edit-form', { product });
 	//},
+	//*edit: (req, res) => {
+//		const id = req.params.id;
+//		let productsSelect = null
+//			products.forEach(products => {
+//			if (products.id == id) {
+//				return productsSelect = products.id;
+//			}
+//		})
+//		res.render("product-edit-form", { productsSelect: productsSelect });
+//	},
+
 	edit: (req, res) => {
-		const idParam = req.params.id;
-		let productsSelect = null
-		products.forEach(products => {
-			if (products.id == idParam) {
-				return productsSelect = products.id;
-			}
-		})
-		res.render("product-edit-form", { productsSelect: productsSelect });
+		const id= req.params.id;
+		let productsSelect = products[id];
+		res.render("product-edit-form", {productsSelect});
+		console.log(productsSelect);
+	},
+	update: (req, res) => {
+		res.redirect("/products")
 	},
 
 	delete: (req, res) => {

@@ -33,8 +33,8 @@ router.get('/:id', productsController.detail);
 //GET EDIT ONE PRODUCT
 router.get('/:id/edit', productsController.edit);
 
-//EDIT ONE PRODUCT
-router.put('/:id/edit', productsController.edit);
+//UPDATE ONE PRODUCT
+router.put('/:id/update', productsController.update);
 
 //DELETE PRODUCT
 router.delete('/:id', productsController.delete);
