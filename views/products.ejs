@@ -12,17 +12,17 @@
                     <% products.forEach(product=> { %>
                         <article>
                             <a href="/products/<%=product.id%>">
-                                <img src="/img/products/<%=product.imagen.filename%>" alt="frutos-secos">
+                                <img src="/img/products/<%=product.image.filename%>" alt="frutos-secos">
                             </a>
                             <div class="info">
                                 <h1>
-                                    <%= product.nombre %>
+                                    <%= product.name %>
                                 </h1>
                                 <p class="descripcion">
-                                    <%= product.descripcion %>
+                                    <%= product.description %>
                                 </p>
                                 <p class="precio">
-                                    <%= product.precio %>
+                                    <%= product.price %>
                                 </p>
                             </div>
                         </article>
@@ -31,10 +31,8 @@
                 </section>
             </main>
 
-
             <!-- FOOTER -->
             <%- include("./partials/footer") %>
-
     </body>
 
 </html>

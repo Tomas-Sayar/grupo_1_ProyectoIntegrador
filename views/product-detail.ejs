@@ -11,17 +11,17 @@
             <main>
                 <section class="detalles">
                     <h2>
-                        <%=product.nombre%>
+                        <%=product.name%>
                     </h2>
 
                     <div class="product-details">
-                        <img src="/img/products/<%=product.imagen.filename%>" alt="mielLiquida">
+                        <img src="/img/products/<%=product.image.filename%>" alt="mielLiquida">
                         <div class="info-product-details">
                             <p class="descrip">
-                                <%= product.descripcion %>
+                                <%= product.description %>
                             </p>
                             <p class="precio">
-                                <%= product.precio %>
+                                <%= product.price %>
                             </p>
                             <a href="/carrito">
                                 <button class="boton-agregar">Agregar al carrito</button>
@@ -36,7 +36,7 @@
                     <div>
 
                         <a href="/products/delete/<%=product.id%>">
-                            <form action="/products/<%=product.id%>/delete?_method=DELETE" method="POST"
+                            <form action="/products/delete/<%=product.id%>?_method=DELETE" method="POST"
                                 enctype="multipart/form-data">
                                 <button type="submit" class="delete">BORRAR</button>
                             </form>

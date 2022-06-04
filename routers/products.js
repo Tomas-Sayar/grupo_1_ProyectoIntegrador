@@ -38,7 +38,7 @@ router.get('/edit/:id', productsController.edit);
 router.put('/edit/', updatefile.single('product-image'), productsController.update);
 
 //DELETE PRODUCT
-//router.delete('/:id/delete', productsController.delete);
+router.delete('/delete/:id', productsController.delete);
 
 
 module.exports = router;

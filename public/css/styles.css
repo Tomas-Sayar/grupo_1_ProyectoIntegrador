@@ -60,7 +60,6 @@ a {
 .search:hover > input {
 	width: 200px;
 	padding: 0px 10px;
-
 }
 
 i.fas.fa-search {
@@ -691,7 +690,7 @@ textarea#description.form-input {
 		padding-bottom: 5%;
 	}
 	article {
-		width: 20%;
+		width: 45%;
 		margin: 1%;
 	}
 
@@ -743,5 +742,9 @@ textarea#description.form-input {
 @media (min-width: 1024px) {
 	h2.carrito {
 		text-align: center;
+	}
+	article {
+		width: 20%;
+		margin: 1%;
 	}
 }

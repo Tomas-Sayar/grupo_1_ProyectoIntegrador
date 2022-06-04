@@ -30,12 +30,12 @@ let controller = {
 	store: (req, res) => {
 		let newProduct = {
 			id: products.length + 1,
-			nombre: req.body.name,
-			precio: req.body.price,
-			descuento: req.body.discount,
-			categoria: req.body.category,
-			descripcion: req.body.description,
-			imagen: req.file,
+			name: req.body.name,
+			price: req.body.price,
+			discount: req.body.discount,
+			category: req.body.category,
+			description: req.body.description,
+			image: req.file,
 		}
 		products.push(newProduct);
 		let productsJSON = JSON.stringify(products, null, 4);
@@ -52,19 +52,28 @@ let controller = {
 				break;
 			}
 		}
-
 		res.render('product-edit-form', { productToEdit });
 	},
 
 	update: (req, res) => {
-		
+		let productId = req.params.id;
+		products[productId]["name"] = req.body.name;
+		products[productId]["price"] = req.body.price;
+		products[productId]["disount"] = req.body.discount;
+		products[productId]["category"] = req.body.category;
+		products[productId]["description"] = req.body.description;
+		products[productId]["image"] = req.file;
+	},
+
+	delete: (req, res) => {
+		let productId = req.params.id;
+		let deletedProduct = products.splice(1, productId);
+
+		products.push(deletedProduct);
+		let productsJSON = JSON.stringify(products, null, 4);
+		fs.writeFileSync(productsFilePath, productsJSON);
+		res.redirect('/');
 	}
-
-
-	// delete: (req, res) => {
-	// 	res.send("Eliminado con éxito");
-	// 	res.redirect('/products')
-	// }
 };
 
 
