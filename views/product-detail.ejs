@@ -28,23 +28,23 @@
                             </a>
                         </div>
                     </div>
-                        <div>
-                        <a href="/products/:id/edit">
+                    <div>
+                        <a href="/products/<%=product.id%>/edit">
                             <button class="edit">EDITAR</button>
                         </a>
                     </div>
                     <div>
-                        <form action="/products/delete" ?_method=delete method="POST" >
-							<button type="submit" class="action-button delete">ELIMINAR</button>
-						</form>
+                        <form action="/products/<%= product.id%>"> %> /delete" ?_method=delete method="POST">
+                            <button type="submit" class="action-button delete">ELIMINAR</button>
+                        </form>
                         <a href="/">
-                        <form action="/products"?_method=delete method="post" enctype="multipart/form-data">
-                            
-                            <button type="reset" class="delete">BORRAR</button>
-                             </a>
-                    </form>
+                            <form action="/products" ?_method=delete method="post" enctype="multipart/form-data">
+
+                                <button type="reset" class="delete">BORRAR</button>
+                        </a>
+                        </form>
                     </div>
-                    
+
                 </section>
 
                 <p class="boton-compartir">Compartir</p>
