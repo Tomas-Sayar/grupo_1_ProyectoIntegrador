@@ -44,21 +44,27 @@ let controller = {
 	},
 
 	edit: (req, res) => {
-		let id = req.params.id;
-		let product = null;
+		let productId = req.params.id;
+		let productToEdit = null;
 		for (let i = 0; i < products.length; i++) {
-			if (id == products[i].id) {
-				product = products[i];
+			if (productId == products[i].id) {
+				productToEdit = products[i];
 				break;
 			}
 		}
-		res.render('product-edit-form', { product });
+
+		res.render('product-edit-form', { productToEdit });
 	},
 
-	delete: (req, res) => {
-		res.send("Eliminado con éxito");
-		res.redirect('/products')
+	update: (req, res) => {
+		
 	}
+
+
+	// delete: (req, res) => {
+	// 	res.send("Eliminado con éxito");
+	// 	res.redirect('/products')
+	// }
 };
 
 
