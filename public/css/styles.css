@@ -24,18 +24,18 @@ a {
 
 .menu-login {
 	color: orange;
-    width: 60%;
-    display: flex;
-    justify-content: end;
+	width: 60%;
+	display: flex;
+	justify-content: end;
 	margin: 1%;
 }
 .fa-user-circle {
 	font-size: 200%;
 	color: orange;
 	margin-right: -3%;
-    margin-top: 18.5%;
-    font-size: 213%;
-    justify-content: flex-end;
+	margin-top: 18.5%;
+	font-size: 213%;
+	justify-content: flex-end;
 }
 .fa-user-circle:hover {
 	transform: scale(1.5);
@@ -52,30 +52,30 @@ a {
 	display: flex;
 }
 
-i.fas.fa-search{
+i.fas.fa-search {
 	font-size: 100%;
 	display: flex;
 	justify-content: center;
 }
-input.search-bar-input{
+input.search-bar-input {
 	border-radius: 10px;
-    border-color: orange;
+	border-color: orange;
 	width: 70%;
-    height: 30%;
+	height: 30%;
 	margin-top: 7%;
 	display: none;
 }
-.search{
+.search {
 	display: flex;
 	width: 40%;
 }
 
-.search-bar-bu{
-    font-size: 1.7rem;
-    justify-content: CENTER;
-    border-radius: 1rem;
-    box-sizing: border-box;
-    MARGIN-LEFT: 48%;
+.search-bar-bu {
+	font-size: 1.7rem;
+	justify-content: CENTER;
+	border-radius: 1rem;
+	box-sizing: border-box;
+	margin-left: 48%;
 }
 /** menu principal*/
 
@@ -149,6 +149,10 @@ main {
 	width: 100%;
 }
 
+.carrusel-image2 {
+	display: none;
+}
+
 h1.titulo {
 	background-color: orange;
 }
@@ -201,7 +205,7 @@ h1.titulo {
 	justify-content: space-around;
 	width: 100%;
 }
-p.descripcion{
+p.descripcion {
 	display: none;
 }
 article {
@@ -511,13 +515,13 @@ a {
 	justify-content: center;
 }
 
-p.sinUsuario{
+p.sinUsuario {
 	color: rgb(130, 121, 121);
 	display: flex;
 	justify-content: center;
 	margin-top: 1%;
 }
-.aSinUsuario{
+.aSinUsuario {
 	margin-left: 1%;
 	font-size: 16px;
 	color: black;
@@ -650,7 +654,7 @@ textarea#description.form-input {
 		justify-content: space-around;
 		line-height: 240%;
 	}
-	.redes-sociales{
+	.redes-sociales {
 		display: flex;
 	}
 }
@@ -664,6 +668,12 @@ textarea#description.form-input {
 	}
 	.carrusel1 img {
 		height: 36em;
+		display: none;
+	}
+	.carrusel-image2 {
+		display: block;
+		max-height: 55vh;
+		text-align: center;
 	}
 	.circulos {
 		padding-bottom: 5%;
@@ -687,7 +697,7 @@ textarea#description.form-input {
 	.product-details img {
 		width: 50%;
 	}
-	p.descripcion{
+	p.descripcion {
 		display: block;
 	}
 	/*carrito*/

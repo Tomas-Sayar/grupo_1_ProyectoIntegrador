@@ -10,8 +10,11 @@
 
 			<main>
 				<div class="carrusel1">
-					<img src="img/carrusel-image1.jpg" alt="carrusel1">
+					<img src="img/carrusel-image1.jpg">
 				</div>
+
+				<img class="carrusel-image2" src="img/carrusel-image2.jpg">
+
 				<div class="circulos">
 					<div class="circulo"></div>
 					<div class="circulo-relleno"></div>
@@ -27,7 +30,7 @@
 						<% featuredProducts.forEach(product=> { %>
 							<article>
 								<a href="/products/<%=product.id%>">
-									<img src="/img/products/<%=product.imagen%>" alt="frutos-secos">
+									<img src="/img/products/<%=product.imagen.filename%>" alt="frutos-secos">
 								</a>
 								<div class="info">
 									<h1>

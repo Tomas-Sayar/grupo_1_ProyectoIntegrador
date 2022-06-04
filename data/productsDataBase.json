@@ -616,23 +616,5 @@
 		"tipo": "Leches",
 		"descuento": 18,
 		"categoria": "Nuevo"
-	},
-	{
-		"id": 53,
-		"nombre": "tigre",
-		"precio": "dasd",
-		"descuento": "dsad",
-		"categoria": "in-sale",
-		"descripcion": "sdadas",
-		"imagen": {
-			"fieldname": "product-image",
-			"originalname": "tigre.jpg",
-			"encoding": "7bit",
-			"mimetype": "image/jpeg",
-			"destination": "T:\\Trabajo\\Codes\\Curso Full Stack\\Carrot-mercado-natural\\public\\img\\products",
-			"filename": "product-1654301958555.jpg",
-			"path": "T:\\Trabajo\\Codes\\Curso Full Stack\\Carrot-mercado-natural\\public\\img\\products\\product-1654301958555.jpg",
-			"size": 2134863
-		}
 	}
 ]
