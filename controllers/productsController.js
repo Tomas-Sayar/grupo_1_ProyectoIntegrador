@@ -12,6 +12,7 @@ let controller = {
 	},
 
 	detail: (req, res) => {
+		//======= Para encontrar el pruducto a mostrar =======//
 		let id = req.params.id;
 		let product = null;
 		for (let i = 0; i < products.length; i++) {
@@ -20,7 +21,14 @@ let controller = {
 				break;
 			}
 		}
-		res.render('product-detail', { product });
+		//======= Para encontrar los productos relacionados =======//
+		let relatedProducts = [];
+		for (let i = 0; i < products.length; i++) {
+			if (i < 6) {
+				relatedProducts.push(products[i]);
+			}
+		}
+		res.render('product-detail', { product, relatedProducts });
 	},
 
 	create: (req, res) => {
@@ -68,8 +76,6 @@ let controller = {
 	delete: (req, res) => {
 		let productId = req.params.id;
 		let deletedProduct = products.splice(1, productId);
-
-		products.push(deletedProduct);
 		let productsJSON = JSON.stringify(products, null, 4);
 		fs.writeFileSync(productsFilePath, productsJSON);
 		res.redirect('/');

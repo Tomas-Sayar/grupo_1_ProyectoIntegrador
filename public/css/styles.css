@@ -400,10 +400,12 @@ h2 {
 }
 
 .articulo-relacionado {
-	width: 40%;
+	width: 25%;
 	border: orange solid 3px;
 	background-color: orange;
 	margin-bottom: 6%;
+	margin-right: 2%;
+	margin-left: 2%;
 	border-radius: 10%;
 }
 .articulo-relacionado:hover {
