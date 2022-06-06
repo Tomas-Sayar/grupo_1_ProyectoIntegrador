@@ -56,9 +56,15 @@ let controller = {
 	},
 
 	delete: (req, res) => {
+		let id = req.params.id;
+		let product = null;
+		products.filter(
+			(product => product.id !== products));
 		res.send("Eliminado con éxito");
-		res.redirect('/products')
-	}
+		//res.redirect('/products')
+	},
+
+	
 };
 
 
