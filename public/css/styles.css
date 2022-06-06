@@ -60,7 +60,6 @@ a {
 .search:hover > input {
 	width: 200px;
 	padding: 0px 10px;
-
 }
 
 i.fas.fa-search {
@@ -401,10 +400,12 @@ h2 {
 }
 
 .articulo-relacionado {
-	width: 40%;
+	width: 25%;
 	border: orange solid 3px;
 	background-color: orange;
 	margin-bottom: 6%;
+	margin-right: 2%;
+	margin-left: 2%;
 	border-radius: 10%;
 }
 .articulo-relacionado:hover {
@@ -691,7 +692,7 @@ textarea#description.form-input {
 		padding-bottom: 5%;
 	}
 	article {
-		width: 20%;
+		width: 45%;
 		margin: 1%;
 	}
 
@@ -743,5 +744,9 @@ textarea#description.form-input {
 @media (min-width: 1024px) {
 	h2.carrito {
 		text-align: center;
+	}
+	article {
+		width: 20%;
+		margin: 1%;
 	}
 }

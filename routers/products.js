@@ -20,6 +20,9 @@ const storage = multer.diskStorage({
 let updatefile = multer({ storage });
 
 
+
+//########################### RUTAS ##############################//
+
 // GET ALL PRODUCTS
 router.get('/', productsController.index);
 
@@ -30,14 +33,12 @@ router.post('/create', updatefile.single('product-image'), productsController.st
 // GET ONE PRODUCT
 router.get('/:id', productsController.detail);
 
-//GET EDIT ONE PRODUCT
-router.get('/:id/edit', productsController.edit);
-router.put('/:id/edit', productsController.edit);
+// EDIT ONE PRODUCT
+router.get('/edit/:id', productsController.edit);
+router.put('/edit/', updatefile.single('product-image'), productsController.update);
 
 //DELETE PRODUCT
-router.delete('/:id/delete', productsController.delete);
-
-
+router.delete('/delete/:id', productsController.delete);
 
 
 module.exports = router;

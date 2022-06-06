@@ -11,17 +11,17 @@
             <main>
                 <section class="detalles">
                     <h2>
-                        <%=product.nombre%>
+                        <%=product.name%>
                     </h2>
 
                     <div class="product-details">
-                        <img src="/img/products/<%=product.imagen.filename%>" alt="mielLiquida">
+                        <img src="/img/products/<%=product.image.filename%>" alt="mielLiquida">
                         <div class="info-product-details">
                             <p class="descrip">
-                                <%= product.descripcion %>
+                                <%= product.description %>
                             </p>
                             <p class="precio">
-                                <%= product.precio %>
+                                <%= product.price %>
                             </p>
                             <a href="/carrito">
                                 <button class="boton-agregar">Agregar al carrito</button>
@@ -29,17 +29,25 @@
                         </div>
                     </div>
                     <div>
-                        <a href="/products/<%=product.id%>/edit">
+                        <a href="/products/edit/<%=product.id%>">
                             <button class="edit">EDITAR</button>
                         </a>
                     </div>
-                    <div>
-                        <a href="/products/<%=product.id%>/delete">
+               <div>
+                     <a href="/products/<%=product.id%>/delete">
                             <form action="/products/<%=product.id%>/delete?_method=DELETE" method="POST" enctype="multipart/form-data">
                                 <button type="submit" class="delete">BORRAR</button>
                             </form>
+                      
                         
-                        
+
+                       <!--   <a href="/products/delete/<%=product.id%>">
+                            <form action="/products/delete/<%=product.id%>?_method=DELETE" method="POST"
+                                enctype="multipart/form-data">
+                                <button type="submit" class="delete">BORRAR</button>
+                            </form>
+                        </a>
+  -->
                     </div>
 
                 </section>
@@ -55,23 +63,25 @@
 
                 <section class="productos-relacionados">
 
-                    <div class="articulo-relacionado">
-                        <a href="">
-                            <img src="<%  %> ">
-                        </a>
-                        <div class="info">
-                            <h1>
-                                <% %>
-                            </h1>
-                            <p class="descripcion">
-                                <% %>
-                            </p>
-                            <p class="precio">
-                                <% %>
-                            </p>
-                            <p class="agregar">Agregar al carrito</p>
+                    <% relatedProducts.forEach(product=> { %>
+                        <div class="articulo-relacionado">
+                            <a href="/products/<%=product.id%> ">
+                                <img src="/img/products/<%=product.image.filename%>">
+                            </a>
+                            <div class="info">
+                                <h1>
+                                    <%=product.name%>
+                                </h1>
+                                <p class="descripcion">
+                                    <%=product.description%>
+                                </p>
+                                <p class="precio">
+                                    <%=product.price%>
+                                </p>
+                                <p class="agregar">Agregar al carrito</p>
+                            </div>
                         </div>
-                    </div>
+                        <% }) %>
 
                 </section>
 

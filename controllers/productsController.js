@@ -12,6 +12,7 @@ let controller = {
 	},
 
 	detail: (req, res) => {
+		//======= Para encontrar el pruducto a mostrar =======//
 		let id = req.params.id;
 		let product = null;
 		for (let i = 0; i < products.length; i++) {
@@ -20,7 +21,14 @@ let controller = {
 				break;
 			}
 		}
-		res.render('product-detail', { product });
+		//======= Para encontrar los productos relacionados =======//
+		let relatedProducts = [];
+		for (let i = 0; i < products.length; i++) {
+			if (i < 6) {
+				relatedProducts.push(products[i]);
+			}
+		}
+		res.render('product-detail', { product, relatedProducts });
 	},
 
 	create: (req, res) => {
@@ -30,12 +38,12 @@ let controller = {
 	store: (req, res) => {
 		let newProduct = {
 			id: products.length + 1,
-			nombre: req.body.name,
-			precio: req.body.price,
-			descuento: req.body.discount,
-			categoria: req.body.category,
-			descripcion: req.body.description,
-			imagen: req.file,
+			name: req.body.name,
+			price: req.body.price,
+			discount: req.body.discount,
+			category: req.body.category,
+			description: req.body.description,
+			image: req.file,
 		}
 		products.push(newProduct);
 		let productsJSON = JSON.stringify(products, null, 4);
@@ -44,27 +52,44 @@ let controller = {
 	},
 
 	edit: (req, res) => {
-		let id = req.params.id;
-		let product = null;
+		let productId = req.params.id;
+		let productToEdit = null;
 		for (let i = 0; i < products.length; i++) {
-			if (id == products[i].id) {
-				product = products[i];
+			if (productId == products[i].id) {
+				productToEdit = products[i];
 				break;
 			}
 		}
-		res.render('product-edit-form', { product });
+		res.render('product-edit-form', { productToEdit });
 	},
 
+	update: (req, res) => {
+		let productId = req.params.id;
+		products[productId]["name"] = req.body.name;
+		products[productId]["price"] = req.body.price;
+		products[productId]["disount"] = req.body.discount;
+		products[productId]["category"] = req.body.category;
+		products[productId]["description"] = req.body.description;
+		products[productId]["image"] = req.file;
+	},
+//FER
+	//delete: (req, res) => {
+	//	let id = req.params.id;
+	//	let product = null;
+	//	products.filter(
+	//	(product => product.id != products));
+	//	res.send("Eliminado con éxito");
+	//	res.redirect('/products')
+	//},
+
+//tomy	
 	delete: (req, res) => {
-		let id = req.params.id;
-		let product = null;
-		products.filter(
-			(product => product.id != products));
-		res.send("Eliminado con éxito");
-		//res.redirect('/products')
-	},
-
-	
+		let productId = req.params.id;
+		let deletedProduct = products.splice(1, productId);
+	let productsJSON = JSON.stringify(products, null, 4);
+		fs.writeFileSync(productsFilePath, productsJSON);
+		res.redirect('/');
+	}
 };
 
 
