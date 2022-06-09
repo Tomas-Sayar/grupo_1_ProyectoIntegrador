@@ -8,10 +8,12 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 let controller = {
 	index: (req, res) => {
-		res.render('products', { products });
-	},
+const indexProductsFilePath = path.join(__dirname, '../data/productsDataBase.json');
+const productsIndex = JSON.parse(fs.readFileSync(indexProductsFilePath, 'utf-8'));
+		res.render('products', {products: productsIndex});
+},
 
-	detail: (req, res) => {
+	detail:(req, res) => {
 		//======= Para encontrar el pruducto a mostrar =======//
 		let id = req.params.id;
 		let product = null;
@@ -36,6 +38,7 @@ let controller = {
 	},
 
 	store: (req, res) => {
+		console.log(req.file.filename)
 		let newProduct = {
 			id: products.length + 1,
 			name: req.body.name,
@@ -43,7 +46,7 @@ let controller = {
 			discount: req.body.discount,
 			category: req.body.category,
 			description: req.body.description,
-			image: req.file,
+			image: req.file.filename,
 		}
 		products.push(newProduct);
 		let productsJSON = JSON.stringify(products, null, 4);
@@ -73,23 +76,25 @@ let controller = {
 		products[productId]["image"] = req.file;
 	},
 //FER
-	//delete: (req, res) => {
-	//	let id = req.params.id;
-	//	let product = null;
-	//	products.filter(
-	//	(product => product.id != products));
+	delete: (req, res) => {
+		let id = req.params.id;
+		let productsBorrar= products.filter(
+	(product => product.id != id));
+	let productsJSON = JSON.stringify(productsBorrar, null, 4);
+	fs.writeFileSync(productsFilePath, productsJSON);
 	//	res.send("Eliminado con éxito");
-	//	res.redirect('/products')
-	//},
+		res.redirect('/products');
+
+	},
 
 //tomy	
-	delete: (req, res) => {
-		let productId = req.params.id;
-		let deletedProduct = products.splice(1, productId);
-	let productsJSON = JSON.stringify(products, null, 4);
-		fs.writeFileSync(productsFilePath, productsJSON);
-		res.redirect('/');
-	}
+	//delete: (req, res) => {
+	//	let productId = req.params.id;
+	//	let deletedProduct = products.splice(1, productId);
+	//let productsJSON = JSON.stringify(products, null, 4);
+	//	fs.writeFileSync(productsFilePath, productsJSON);
+	//	res.redirect('/');
+	//}
 };
 
 
