@@ -8,12 +8,12 @@ const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 let controller = {
 	index: (req, res) => {
-const indexProductsFilePath = path.join(__dirname, '../data/productsDataBase.json');
-const productsIndex = JSON.parse(fs.readFileSync(indexProductsFilePath, 'utf-8'));
-		res.render('products', {products: productsIndex});
-},
+		const indexProductsFilePath = path.join(__dirname, '../data/productsDataBase.json');
+		const productsIndex = JSON.parse(fs.readFileSync(indexProductsFilePath, 'utf-8'));
+		res.render('products', { products: productsIndex });
+	},
 
-	detail:(req, res) => {
+	detail: (req, res) => {
 		//======= Para encontrar el pruducto a mostrar =======//
 		let id = req.params.id;
 		let product = null;
@@ -38,9 +38,8 @@ const productsIndex = JSON.parse(fs.readFileSync(indexProductsFilePath, 'utf-8')
 	},
 
 	store: (req, res) => {
-		console.log(req.file.filename)
 		let newProduct = {
-			id: products.length + 1,
+			id: Date.now(),
 			name: req.body.name,
 			price: req.body.price,
 			discount: req.body.discount,
@@ -67,34 +66,40 @@ const productsIndex = JSON.parse(fs.readFileSync(indexProductsFilePath, 'utf-8')
 	},
 
 	update: (req, res) => {
-		let productId = req.params.id;
-		products[productId]["name"] = req.body.name;
-		products[productId]["price"] = req.body.price;
-		products[productId]["disount"] = req.body.discount;
-		products[productId]["category"] = req.body.category;
-		products[productId]["description"] = req.body.description;
-		products[productId]["image"] = req.file;
+		// let productId = req.params.id;
+		// products[productId]["name"] = req.body.name;
+		// products[productId]["price"] = req.body.price;
+		// products[productId]["disount"] = req.body.discount;
+		// products[productId]["category"] = req.body.category;
+		// products[productId]["description"] = req.body.description;
+		// products[productId]["image"] = req.fil.filename;
+		// let productsJSON = JSON.stringify(productsBorrar, null, 4);
+		// fs.writeFileSync(productsFilePath, productsJSON);
+
+		for (let i = 0; i < products.length; i++) {
+			if (req.params.id == products[i].id) {
+				products[i].name = req.body.name;
+				products[i].price = req.body.price;
+				products[i].discount = req.body.discount;
+				products[i].category = req.body.category;
+				products[i].description = req.body.description;
+				//products[i].image = req.file.filename;
+			}
+		}
+		let productsJSON = JSON.stringify(products, null, 4);
+		fs.writeFileSync(productsFilePath, productsJSON);
+		res.redirect('/products');
 	},
-//FER
+
 	delete: (req, res) => {
 		let id = req.params.id;
-		let productsBorrar= products.filter(
-	(product => product.id != id));
-	let productsJSON = JSON.stringify(productsBorrar, null, 4);
-	fs.writeFileSync(productsFilePath, productsJSON);
-	//	res.send("Eliminado con éxito");
+		let productsBorrar = products.filter(
+			(product => product.id != id));
+		let productsJSON = JSON.stringify(productsBorrar, null, 4);
+		fs.writeFileSync(productsFilePath, productsJSON);
+		//	res.send("Eliminado con éxito");
 		res.redirect('/products');
-
-	},
-
-//tomy	
-	//delete: (req, res) => {
-	//	let productId = req.params.id;
-	//	let deletedProduct = products.splice(1, productId);
-	//let productsJSON = JSON.stringify(products, null, 4);
-	//	fs.writeFileSync(productsFilePath, productsJSON);
-	//	res.redirect('/');
-	//}
+	}
 };
 
 

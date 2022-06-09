@@ -474,33 +474,11 @@
         "category": "Nuevo"
     },
     {
-        "id": 49,
-        "name": "Bebida vegetal de Almendra Sabor Vainilla, Sin Azúcar",
-        "description": null,
-        "price": "$224.77",
-        "image": "leches/silk-alm-vainilla-sin-azucar1-.png",
-        "type": "Leches",
-        "discount": 18,
-        "category": "Más vendido"
-    },
-    {
-        "id": 50,
-        "name": "Sin Azúcar - 1 Litro - Silk",
-        "description": null,
-        "price": "$163.60",
-        "image": "leches/bebida_de_almendra_sin_endulzar_litro_.jpg",
-        "type": "Leches",
-        "discount": 20,
-        "category": "En oferta"
-    },
-    
-    {
-        "id": 53,
-        "name": "PENDIENTE",
-        "price": "56",
-        "discount": "efr",
+        "id": 1654782131852,
+        "name": "tigre rojo",
+        "price": "fdfd",
+        "discount": "fdfd",
         "category": "in-sale",
-        "description": "huhu7ju7",
-        "image": "product-1654744428774.jpg"
+        "description": "fdfdfdfdfdf"
     }
 ]
