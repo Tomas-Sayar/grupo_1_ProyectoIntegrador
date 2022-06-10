@@ -20,6 +20,8 @@ app.use(methodOverride('_method'));
 
 
 
+
+
 // SERVER
 app.listen(3000, () => {
 	console.log('el servidor esta corriendo en el puerto 3000');
@@ -30,3 +32,9 @@ app.use('/', mainRouter);
 
 // POR AHORA SOLO PARA EL PRODUCT-DETAILS, FALTA HACERLO PARA LA VISTA DE TODOS LOS PRODUCTOS
 app.use('/products', productsRouter);
+
+
+//ERROR 404
+app.use((req, res, next) => { 
+	res.status(404).render("not-found")
+	});
