@@ -19,10 +19,23 @@
                     <form action="/products/create" method="post" enctype="multipart/form-data">
                         <div class="row product-detail">
                             <div class="col-12 col-md-6">
-                                <label for="name" class="form-label">Nombre del producto:</label>
+                            <label for="name" class="form-label">Nombre del producto:</label>
                                 <input type="text" id="name" name="name" placeholder="Ej: Pan de semillas"
                                     class="form-input">
                             </div>
+<br>
+                            <div class="col-12 col-md-6">
+                                <label for="type" class="form-label">Tipo de Producto:</label>
+                                <select name="type" class="form-control" id="type" class="form-input">
+                                    <option value="">Elegí</option>
+                                    <option value="in-sale">Leches</option>
+                                    <option value="visited">Cereales</option>
+                                    <option value="new">Frutos Secos</option>
+                                    <option value="new">Granola</option>
+                                </select>
+                            </div>
+                            <br>
+                            
                             <div class="col-12 col-md-6">
                                 <label for="price" class="form-label">Precio del producto:</label>
                                 <input type="text" id="price" name="price" placeholder="Ej: $300" class="form-input">
@@ -37,7 +50,8 @@
                                 <select name="category" id="category" class="form-input">
                                     <option value="">Elegí</option>
                                     <option value="in-sale">En oferta</option>
-                                    <option value="visited">Últimos agregados</option>
+                                    <option value="visited">Destacados</option>
+                                    <option value="new">Nuevo</option>
                                 </select>
                             </div>
                             <div class="col-12">
@@ -51,15 +65,10 @@
                                 <input type="file" id="product-image" name="product-image" class="form-input" accept=".jpg" multiple
                                     required>
                             </div>
-                            <div class="section-button">
+                            
                                 <div class="button">
                                     <button type="submit" class="buy-now-button">Guardar</button>
                                 </div>
-                                <div class="button">
-                                    <button type="submit" class="edit-button">Editar</button>
-                                </div>
-                            </div>
-                        </div>
                     </form>
                 </div>
             </div>

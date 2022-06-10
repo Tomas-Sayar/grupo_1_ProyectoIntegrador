@@ -638,10 +638,14 @@ a {
 /*-----------------PRODUCT-CREATE-FORM--------------------------------------------------*/
 
 h2.products-title {
-	margin-top: 15%;
-	text-align: center;
 	margin-left: 0%;
+	margin-top: 20%;
+    color: white;
+    background-color: orange;
+	font-size: 200%;
+	padding: 2%;
 }
+
 textarea#description.form-input {
 	margin-top: 5%;
 	width: 50%;
@@ -650,15 +654,12 @@ textarea#description.form-input {
 	text-align: -webkit-match-parent;
 	display: inline-table;
 }
-.section-button {
-	display: flex;
-	justify-content: center;
+.buy-now-button{
+    display: flex;
+    justify-content: center;
+	font-size: 190%;
 }
-.create-product {
-	margin-top: 15%;
-    padding: 4%;
 
-}
 /*!Media Querys*/
 
 @media (min-width: 480px) {
