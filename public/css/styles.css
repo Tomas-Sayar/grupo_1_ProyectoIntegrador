@@ -654,7 +654,11 @@ textarea#description.form-input {
 	display: flex;
 	justify-content: center;
 }
+.create-product {
+	margin-top: 15%;
+    padding: 4%;
 
+}
 /*!Media Querys*/
 
 @media (min-width: 480px) {
