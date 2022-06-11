@@ -5,8 +5,12 @@ const app = express();
 const path = require('path');
 const publicPath = path.resolve(__dirname, './public');
 
+const logMiddleware = require('./middlewares/logMiddleware');
 const mainRouter = require('./routers/main');
 const productsRouter = require('./routers/products');
+const usersRouter = require('./routers/users');
+//const session = require('express-session');
+
 
 // APP CONFIG CARPETA ESTATICA 
 app.use(express.static(publicPath));
@@ -18,7 +22,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(methodOverride('_method'));
 
-
+//LOGIN SESSION CONFIG
+//app.use(session({secret:"carrotTommyFer"}));
+app.use(logMiddleware);
 
 
 
@@ -32,6 +38,7 @@ app.use('/', mainRouter);
 
 // POR AHORA SOLO PARA EL PRODUCT-DETAILS, FALTA HACERLO PARA LA VISTA DE TODOS LOS PRODUCTOS
 app.use('/products', productsRouter);
+app.use('/', usersRouter);
 
 
 //ERROR 404

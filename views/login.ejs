@@ -9,12 +9,12 @@
         <%- include("./partials/header") %>
 
             <main>
-                <form action="./" method="get">
+                <form action="/users/login" method="post">
                     <h1 class="login">Login de usuario</h1>
                     <br>
                     <br>
                     <div>
-                        <label for="usuario">Nombre de Usuario</label>
+                        <label for="usuario">Nombre de Usuario/Email</label>
                         <br>
                         <input type="text" name="usuario" id="usuario" required>
                         <span class="feedback"></span>
