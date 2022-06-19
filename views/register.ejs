@@ -9,28 +9,27 @@
 		<%- include("./partials/header") %>
 
 			<main>
-				<form action="./login" method="get">
-
-					<div class="titulo-contenedor">
+				<form action="/users/register" method="post">
+                    <div class="titulo-contenedor">
 						<h1 class="Crear-Cuenta">Crear cuenta</h1>
 					</div>
 
 					<class="formgroup">
 						<div>
-							<label for="nombre y apellido">Nombre y Apellido:</label>
+							<label for="nombreApellido">Nombre y Apellido:</label>
 							<input class="form-control" type="text" name="nombreApellido" id="nombreApellido"
 								required placeholder="ej:Fernanda Sánchez">
 						</div>
 						<br>
 						<div>
-							<label for="nombre de usuari@">Nombre de Usuario:</label>
-							<input class="form-control" type="text" name="Nombre de usuari@" id="nombre de usuari@"
+							<label for="nombreDeUsuari@">Nombre de Usuario:</label>
+							<input class="form-control" type="text" name="nombreDeUsuari@" id="nombreDeUsuari@"
 								required placeholder="ej:Ferchu">
 						</div>
 						<br>
 						<div>
-							<label for="fecha de nacimiento">Fecha de nacimiento:</label>
-							<input class="form-control" type="date" name="fecha de nacimiento" id="fecha de nacimiento"
+							<label for="fechaDeNacimiento">Fecha de nacimiento:</label>
+							<input class="form-control" type="date" name="fechaDeNacimiento" id="fechaDeNacimiento"
 								required placeholder="ej:26/08/1988">
 						</div>
 						<br>
@@ -56,7 +55,7 @@
 </div>
 					
 						<label>Seleccionar una imagen para el perfil:
-							<input class="form-control" type="file" name="Foto de Perfil" accept=".jpg" required>
+							<input class="form-control" type="file" name="FotoDePerfil" accept=".jpg" required>
 						</label>
 						</div>
 						<br>
@@ -74,7 +73,7 @@
 						</div>
 						<br>
 						<div class="botones">
-							<button type=" submit">Crear cuenta</button>
+							<button type="submit">Crear cuenta</button>
 							<a href="http://localhost:3000/login"></a>
 						</div>
 	

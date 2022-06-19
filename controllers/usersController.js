@@ -1,10 +1,8 @@
+const { json } = require('express/lib/response');
 const res = require('express/lib/response');
 const fs = require('fs');
 const path = require('path');
-
-
-const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
-const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+const {validationResult}= require('express-validator');
 // ALL USERS
 const usersFilePath = path.join(__dirname, '../data/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
@@ -21,13 +19,25 @@ const controller = {
 
  store: (req,res) => {
 let newUsers = {
-   nombre: req.body.nombreApellido, 
-}
-   },
+	    id: Date.now(),
+		name: req.body.nombreApellido,
+		usuario: req.body.nombreDeUsuario,
+		fechaDeNacimiento: req.body.fechaDeNacimiento,
+		domicilio: req.body.domicilio,
+		tipoDeUsuario: req.body.tipoDeUsuario,
+		contraseña: req.body.passwordDeUsuario,
+		image: req.file.filename,
+	}
+	users.push(newUsers);
+     let usersJSON = JSON.stringify(users, null, 4);
+	fs.writeFileSync(usersFilePath, usersJSON);
+	res.redirect('/');
+},
 
-    login: (req, res) => {
+ login: (req, res) => {
 		res.render('login');
 },
+
 processLogin: (req, res) => {
 let errors = validationResult(req);
 if (errors.isEmpty()) {
@@ -38,7 +48,7 @@ users = [];
 } else {
     users = JSON.parse(usersJson);
     for (let i = 0; i < users.length; i++) {
-        if (users[i].email == req.body.email) {
+    if (users[i].email == req.body.email) {
 if(bcrypt.compareSync(req.body.password, users[i].password));
 let usuarioALoguearse = users[i];
         }
