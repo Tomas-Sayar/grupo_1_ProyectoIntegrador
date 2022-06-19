@@ -42,6 +42,6 @@ app.use('/', usersRouter);
 
 
 //ERROR 404
-app.use((req, res, next) => { 
+app.use((req, res, next) => {
 	res.status(404).render("not-found")
-	});
+});

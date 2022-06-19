@@ -4,6 +4,7 @@ const router = express.Router();
 const multer = require('multer');
 const path = require('path');
 const productsController = require('../controllers/productsController');
+const logDBMiddleware = require("../middlewares/logDBMiddleware")
 
 //###########################  MULTER ##############################//
 const storage = multer.diskStorage({
@@ -27,7 +28,7 @@ router.get('/', productsController.index);
 
 // CREATE ONE PRODUCT
 router.get('/create', productsController.create);
-router.post('/create', updatefile.single('product-image'), productsController.store);
+router.post('/create', updatefile.single('product-image'), logDBMiddleware, productsController.store);
 
 // GET ONE PRODUCT
 router.get('/:id', productsController.detail);

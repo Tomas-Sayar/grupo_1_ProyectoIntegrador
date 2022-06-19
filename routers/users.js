@@ -3,10 +3,12 @@ const res = require('express/lib/response');
 const router = express.Router();
 const multer = require('multer');
 const path = require('path');
-const {check} = require('express-validator');
-const {body} = require('express-validator') ;
+const { check } = require('express-validator');
+const { body } = require('express-validator');
 const usersController = require('../controllers/usersController');
-const logDBMiddleware= require('../middlewares/logDBMiddleware');
+const logDBMiddleware = require('../middlewares/logDBMiddleware');
+
+
 //###########################  MULTER ##############################//
 const storage = multer.diskStorage({
     destination: (req, file, callback) => {
@@ -22,12 +24,11 @@ let updatefile = multer({ storage });
 
 
 //########################### RUTAS ##############################//
-router.get('/', usersController.index);
-
+//router.get('/', usersController.index);
 router.get('/login', usersController.login);
-router.post('/login',usersController.processLogin)
+router.post('/login', usersController.processLogin)
 router.get('/register', usersController.register);
-router.post('/register', logDBMiddleware, usersController.store);
+router.post('/register', updatefile.single("FotoDePerfil"), usersController.store);
 //[ check('usuario').isEmail().withMessage("Email incorrecto"),
 //check('contraseña').isLength({min:8}).withMessage("La contraseña debe tener al menos 8 carácteres")
 //]
