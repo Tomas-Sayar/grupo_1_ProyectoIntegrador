@@ -18,25 +18,33 @@
 						<div>
 							<label for="nombreApellido">Nombre y Apellido:</label>
 							<input class="form-control" type="text" name="nombreApellido" id="nombreApellido"
-								required placeholder="ej:Fernanda Sánchez">
+								required placeholder="ej:Fernanda Sánchez" value="<%= locals.old && old.nombreApellido %>">
 						</div>
 						<br>
 						<div>
 							<label for="nombreDeUsuario">Nombre de Usuario:</label>
 							<input class="form-control" type="text" name="nombreDeUsuario" id="nombreDeUsuario"
-								required placeholder="ej:Ferchu">
+								required placeholder="ej:Ferchu" value="<%= locals.old && old.nombreDeUsuario %>">
 						</div>
 						<br>
 						<div>
+							<label for="email">Email:</label>
+							<input class="form-control" type="email" name="email" id="email" placeholder="ej:mfernanda@gmail.com" required
+							value="<%= locals.old && old.email %>">
+							<% if (locals.errors && errors.name) { %>
+								<p class="feedback"><%= errors.name %></p>
+							<% } %>
+						</div>
+						<div>
 							<label for="fechaDeNacimiento">Fecha de nacimiento:</label>
 							<input class="form-control" type="date" name="fechaDeNacimiento" id="fechaDeNacimiento"
-								required placeholder="ej:26/08/1988">
+								required placeholder="ej:26/08/1988" value="<%= locals.old && old.fechaDeNacimiento %>">>
 						</div>
 						<br>
 						<div>
 							<label for="domicilio">Domicilio:</label>
 							<input class="form-control" type="text" name="domicilio" id="domicilio" required
-								placeholder="ej:Av.Santa Fe 999">
+								placeholder="ej:Av.Santa Fe 999" value="<%= locals.old && old.domicilio %>">
 						</div>
 						<br>
 						<div>
@@ -61,13 +69,13 @@
 						<div>
 							<label for="contraseña">Contraseña:</label>
 							<input class="form-control" type="password" name="passwordDeUsuario" required
-								placeholder="ej:Palacio88">
+								placeholder="ej:Palacio88" value="<%= locals.old && old.passwordDeUsuario %>">>
 						</div>
 						<br>
 						<div>
 							<label for="contraseña">Confirmar contraseña:</label>
 							<input class="form-control" type="password" name="passwordconfirmacionDeUsuario" required
-								placeholder="ej:Palacio88">
+								placeholder="ej:Palacio88" value="<%= locals.old && old.passwordconfirmacionDeUsuario %>">
 						</div>
 						<br>
 						<div class="botones">

@@ -21,17 +21,28 @@ const storage = multer.diskStorage({
 })
 var upload = multer({ storage });
 
-
+//validaciones register//
+const validateCreateForm = [
+//body('nombreApellido').notEmpty().withMessage("Debes completar el campo de Nombre y Apellido"),
+//body('nombreDeUsuario').notEmpty().withMessage("Debes completar el campo de Usuario"),
+//body('email').isEmail().withMessage("Debes completar con un email válido"),
+//body('fechaDeNacimiento').notEmpty().withMessage("Debes completar con tu Fecha De Nacimiento"),
+//body('contraseña').isLength({min:8}).withMessage("La contraseña debe tener al menos 8 carácteres")
+]
+//validaciones login//
+//const ValidateCreateForm = [
+//check('email').isEmail().withMessage("Email incorrecto"),
+//check('contraseña').isLength({min:8}).withMessage("La contraseña debe tener al menos 8 carácteres")
+//]
+//]
 //########################### RUTAS ##############################//
 //router.get('/', usersController.index);
 
 router.get('/login', usersController.login);
 router.post('/login', usersController.processLogin);
 router.get('/register', usersController.register);
-router.post('/register', upload.single('users-image'), usersController.store);
-//[ check('usuario').isEmail().withMessage("Email incorrecto"),
-//check('contraseña').isLength({min:8}).withMessage("La contraseña debe tener al menos 8 carácteres")
-//]
+router.post('/register', upload.single('users-image'),validateCreateForm, usersController.store);
+
 
 
 
