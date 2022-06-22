@@ -7,15 +7,15 @@ const {validationResult}= require('express-validator');
 const usersFilePath = path.join(__dirname, '../data/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
 const controller = {
-	index: (req, res) => {
-		let featuredProducts = [];
-		for (let i = 0; i < products.length; i++) {
-			if (i < 8) {
-				featuredProducts.push(products[i]);
-			}
-		}
-		res.render('index', { featuredProducts: featuredProducts });
-	},
+	//index: (req, res) => {
+	//	let featuredProducts = [];
+	//	for (let i = 0; i < products.length; i++) {
+	//		if (i < 8) {
+	//			featuredProducts.push(products[i]);
+	//		}
+	//	}
+	//	res.render('index', { featuredProducts: featuredProducts });
+	//},
 
  store: (req,res) => {
 let newUsers = {
@@ -26,12 +26,13 @@ let newUsers = {
 		domicilio: req.body.domicilio,
 		tipoDeUsuario: req.body.tipoDeUsuario,
 		contraseña: req.body.passwordDeUsuario,
-		image: req.file.filename,
-	}
+		image: req.file.filename
+		}
+	console.log(req.file)
 	users.push(newUsers);
      let usersJSON = JSON.stringify(users, null, 4);
 	fs.writeFileSync(usersFilePath, usersJSON);
-	res.redirect('/');
+	res.redirect('/users/login');
 },
 
  login: (req, res) => {

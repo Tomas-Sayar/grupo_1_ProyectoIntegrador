@@ -472,5 +472,14 @@
         "type": "Leches",
         "discount": 20,
         "category": "Nuevo"
+    },
+    {
+        "id": 1655765555504,
+        "name": "EN PROCESO",
+        "price": "56",
+        "discount": "15%",
+        "category": "in-sale",
+        "description": "defewfffew",
+        "image": "product-1655765555485.jpg"
     }
 ]

@@ -38,7 +38,7 @@ app.use('/', mainRouter);
 
 // POR AHORA SOLO PARA EL PRODUCT-DETAILS, FALTA HACERLO PARA LA VISTA DE TODOS LOS PRODUCTOS
 app.use('/products', productsRouter);
-app.use('/', usersRouter);
+app.use('/users', usersRouter);
 
 
 //ERROR 404

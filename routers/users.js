@@ -1,5 +1,4 @@
 const express = require('express');
-const res = require('express/lib/response');
 const router = express.Router();
 const multer = require('multer');
 const path = require('path');
@@ -20,16 +19,16 @@ const storage = multer.diskStorage({
         callback(null, imageName);
     }
 })
-let updatefile = multer({ storage });
+let update = multer({ storage });
 
 
 //########################### RUTAS ##############################//
-router.get('/', usersController.index);
+//router.get('/', usersController.index);
 
 router.get('/login', usersController.login);
-//router.post('/login',usersController.processLogin)
+router.post('/login',usersController.processLogin);
 router.get('/register', usersController.register);
-router.post('/register',logDBMiddleware, usersController.store);
+router.post('/register',update.single("fotoDePerfil"),logDBMiddleware, usersController.store);
 //[ check('usuario').isEmail().withMessage("Email incorrecto"),
 //check('contraseña').isLength({min:8}).withMessage("La contraseña debe tener al menos 8 carácteres")
 //]
