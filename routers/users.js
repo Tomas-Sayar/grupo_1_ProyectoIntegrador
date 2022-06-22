@@ -14,21 +14,21 @@ const storage = multer.diskStorage({
         let carpetaDestino = path.join(__dirname, '../public/img/users');
         callback(null, carpetaDestino);
     },
-    filename: (req, file, callback) => {
+    filename: (req, file, cb) => {
         let imageName = 'users-' + Date.now() + path.extname(file.originalname);
-        callback(null, imageName);
+        cb(null, imageName);
     }
 })
-let update = multer({ storage });
+var upload = multer({ storage });
 
 
 //########################### RUTAS ##############################//
 //router.get('/', usersController.index);
 
 router.get('/login', usersController.login);
-router.post('/login',usersController.processLogin);
+router.post('/login', usersController.processLogin);
 router.get('/register', usersController.register);
-router.post('/register',update.single("fotoDePerfil"),logDBMiddleware, usersController.store);
+router.post('/register', upload.single('users-image'), usersController.store);
 //[ check('usuario').isEmail().withMessage("Email incorrecto"),
 //check('contraseña').isLength({min:8}).withMessage("La contraseña debe tener al menos 8 carácteres")
 //]

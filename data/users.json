@@ -182,7 +182,7 @@
         "fechaDeNacimiento": "9/1/2004",
         "domicilio": "0900 Forest Dale Point",
         "tipoDeUsuario": null,
-        "imagen": "user-minorista-17.jpg",
+        "fotoDePerfil": "user-minorista-17.jpg",
         "email": "rclausewitzg@people.com.cn",
         "contraseña": "GJSPd8UZW"
     },
@@ -277,5 +277,42 @@
         "domicilio": "fewf",
         "tipoDeUsuario": "minorista",
         "contraseña": "cds"
+    },
+    {
+        "id": 1655919734249,
+        "name": "Nicolas",
+        "usuario": "Nico90",
+        "fechaDeNacimiento": "1975-02-22",
+        "domicilio": "Av.Luis Maria campos 457",
+        "tipoDeUsuario": "mayorista",
+        "contraseña": "1234"
+    },
+    {
+        "id": 1655919771881,
+        "name": "Fernanda",
+        "usuario": "Ferchu",
+        "fechaDeNacimiento": "1988-08-26",
+        "domicilio": "armenia 1234",
+        "tipoDeUsuario": "minorista",
+        "contraseña": "1234"
+    },
+    {
+        "id": 1655921032787,
+        "name": "Silvia Sanchez",
+        "usuario": "PITA",
+        "fechaDeNacimiento": "1876-01-22",
+        "domicilio": "superi 5643",
+        "tipoDeUsuario": "mayorista",
+        "contraseña": "1234"
+    },
+    {
+        "id": 1655924104091,
+        "name": "carlos",
+        "usuario": "chipy",
+        "fechaDeNacimiento": "1985-06-15",
+        "domicilio": "cabildo 765",
+        "tipoDeUsuario": "mayorista",
+        "contraseña": "12345",
+        "image": "users-1655924104041.jpg"
     }
 ]

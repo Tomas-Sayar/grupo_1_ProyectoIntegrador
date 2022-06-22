@@ -1,5 +1,4 @@
-const { json } = require('express/lib/response');
-const res = require('express/lib/response');
+
 const fs = require('fs');
 const path = require('path');
 const {validationResult}= require('express-validator');
@@ -26,9 +25,8 @@ let newUsers = {
 		domicilio: req.body.domicilio,
 		tipoDeUsuario: req.body.tipoDeUsuario,
 		contraseña: req.body.passwordDeUsuario,
-		image: req.file.filename
+		image: req.file.filename,
 		}
-	console.log(req.file)
 	users.push(newUsers);
      let usersJSON = JSON.stringify(users, null, 4);
 	fs.writeFileSync(usersFilePath, usersJSON);
