@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include("./partials/head") %>
+
+    <body>
+        <%- include("./partials/header") %>
+
+            <main>
+
+                <section class="profile-container">
+
+                    <div class="image-container">
+                        <img class="profile-image" src="/img/users/<%= user.imagen %> ">
+                    </div>
+                    <div class="data-container">
+                        <p class="data-titles">Nombre y apellido:</p>
+                        <p class="user-data"><%= user.nombreYApellido %></p>
+                        <p class="data-titles">Nombre de usuario:</p>
+                        <p class="user-data"><%= user.nombreDeUsuario %></p>
+                        <p class="data-titles">Fecha de nacimiento:</p>
+                        <p class="user-data"><%= user.fechaDeNacimiento %></p>
+                        <p class="data-titles">Domicilio:</p>
+                        <p class="user-data"><%= user.domicilio %></p>
+                        <p class="data-titles">Tipo de usuario:</p>
+
+                        <% if (user.tipoDeUsuario == null) { %>
+                            <p class="user-data">Sin tipo de usuario existente</p>
+                        <% } else { %>
+                            <p class="user-data"><%= user.tipoDeUsuario %></p>
+                        <% } %> 
+                        <p class="data-titles">Correo electronico:</p>
+                        <p class="user-data"><%= user.email %></p>
+                    </div>
+
+                </section>
+
+            </main>
+
+            <%- include("./partials/footer") %>
+    </body>
+
+</html>
