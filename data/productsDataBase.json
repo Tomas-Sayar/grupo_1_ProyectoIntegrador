@@ -499,5 +499,23 @@
         "category": "in-sale",
         "description": "torta marquise de oreo",
         "image": "product-1655922988969.jpg"
+    },
+    {
+        "id": 1655940246710,
+        "name": "torta",
+        "price": "450",
+        "discount": "10%",
+        "category": "in-sale",
+        "description": "probando",
+        "image": "product-1655940246688.jpg"
+    },
+    {
+        "id": 1655940675469,
+        "name": "ñoquis",
+        "price": "450",
+        "discount": "10%",
+        "category": "new",
+        "description": "noquis c salsa",
+        "image": "products-1655940675367.jpg"
     }
 ]
