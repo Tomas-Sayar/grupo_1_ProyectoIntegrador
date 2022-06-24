@@ -7,7 +7,7 @@ const {body} = require('express-validator') ;
 const {validationResult} = require('express-validator');
 const usersController = require('../controllers/usersController');
 const logDBMiddleware= require('../middlewares/logDBMiddleware');
-const multerMiddleware = require('../middlewares/multerMiddleware.js');
+const multerMiddleware = require('../middlewares/multerMiddleware');
 
 
 //validaciones register//
@@ -16,7 +16,7 @@ body('nombreApellido').notEmpty().withMessage("Debes completar el campo de Nombr
 body('nombreDeUsuario').notEmpty().withMessage("Debes completar el campo de Usuario"),
 body('email').isEmail().withMessage("Debes completar con un email válido"),
 body('fechaDeNacimiento').notEmpty().withMessage("Debes completar con tu Fecha De Nacimiento"),
-body('contraseña').isLength({min:8}).withMessage("La contraseña debe tener al menos 8 carácteres")
+body('passwordDeUsuario').isLength({ min:8 }).withMessage("La contraseña debe tener al menos 8 carácteres")
 ]
 //validaciones login//
 //const ValidateCreateForm = [
@@ -30,7 +30,7 @@ body('contraseña').isLength({min:8}).withMessage("La contraseña debe tener al 
 router.get('/login', usersController.login);
 router.post('/login', usersController.processLogin);
 router.get('/register', usersController.register);
-router.post('/register', multerMiddleware('users').single('users-image'),validateCreateForm, usersController.store);
+router.post('/register', logDBMiddleware,validateCreateForm, multerMiddleware('users').single('users-image'), usersController.store);
 
 
 

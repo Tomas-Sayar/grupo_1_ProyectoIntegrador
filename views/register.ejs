@@ -10,79 +10,102 @@
 
 			<main>
 				<form action="/users/register" method="post" enctype="multipart/form-data">
-                    <div class="titulo-contenedor">
+					<div class="titulo-contenedor">
 						<h1 class="Crear-Cuenta">Crear cuenta</h1>
 					</div>
 
-					<class="formgroup">
-						<div>
-							<label for="nombreApellido">Nombre y Apellido:</label>
-							<input class="form-control" type="text" name="nombreApellido" id="nombreApellido"
-								required placeholder="ej:Fernanda Sánchez" value="<%= locals.old && old.nombreApellido %>">
-						</div>
-						<br>
-						<div>
-							<label for="nombreDeUsuario">Nombre de Usuario:</label>
-							<input class="form-control" type="text" name="nombreDeUsuario" id="nombreDeUsuario"
-								required placeholder="ej:Ferchu" value="<%= locals.old && old.nombreDeUsuario %>">
-						</div>
-						<br>
-						<div>
-							<label for="email">Email:</label>
-							<input class="form-control" type="email" name="email" id="email" placeholder="ej:mfernanda@gmail.com" required
-							value="<%= locals.old && old.email %>">
-							<% if (locals.errors && errors.name) { %>
-								<p class="feedback"><%= errors.name %></p>
-							<% } %>
-						</div>
-						<div>
-							<label for="fechaDeNacimiento">Fecha de nacimiento:</label>
-							<input class="form-control" type="date" name="fechaDeNacimiento" id="fechaDeNacimiento"
-								required placeholder="ej:26/08/1988" value="<%= locals.old && old.fechaDeNacimiento %>">>
-						</div>
-						<br>
-						<div>
-							<label for="domicilio">Domicilio:</label>
-							<input class="form-control" type="text" name="domicilio" id="domicilio" required
-								placeholder="ej:Av.Santa Fe 999" value="<%= locals.old && old.domicilio %>">
-						</div>
-						<br>
-						<div>
-							<label> Perfil del usuario:</label>
-							<br>
-							<div class="tipoUsuario">
 
-								<label for="minorista" class="minorista">Minorista
-								<input type="radio" name="tipoDeUsuario" value="minorista" class="minorista" required
+					<div>
+						<label for="nombreApellido">Nombre y Apellido:</label>
+						<input class="form-control" type="text" name="nombreApellido" id="nombreApellido"
+							placeholder="ej:Fernanda Sánchez" value="<%= locals.old && old.nombreApellido %>">
+					</div>
+					<% if (locals.errors && errors.nombreApellido) { %>
+						<p class="feedback"> <%= errors.nombreApellido.msg %>
+						</p>
+						<% } %>
+					<br>
+					<div>
+						<label for="nombreDeUsuario">Nombre de Usuario:</label>
+						<input class="form-control" type="text" name="nombreDeUsuario" id="nombreDeUsuario"
+							placeholder="ej:Ferchu" value="<%= locals.old && old.nombreDeUsuario %>">
+					</div>
+					<br>
+					<div>
+						<label for="email">Email:</label>
+						<input class="form-control" type="email" name="email" id="email"
+							placeholder="ej:mfernanda@gmail.com" value="<%= locals.old && old.email %>">
+						<% if (locals.errors && errors.email) { %>
+							<p class="feedback"> <%= errors.email.msg %>
+							</p>
+							<% } %>
+
+					</div>
+					<div>
+						<label for="fechaDeNacimiento">Fecha de nacimiento:</label>
+						<input class="form-control" type="date" name="fechaDeNacimiento" id="fechaDeNacimiento"
+							placeholder="ej:26/08/1988" value="<%= locals.old && old.fechaDeNacimiento %>">
+							<% if (locals.errors && errors.fechaDeNacimiento) { %>
+								<p class="feedback"> <%= errors.fechaDeNacimiento.msg %>
+								</p>
+								<% } %>
+					</div>
+					<br>
+					<div>
+						<label for="domicilio">Domicilio:</label>
+						<input class="form-control" type="text" name="domicilio" id="domicilio"
+							placeholder="ej:Av.Santa Fe 999" value="<%= locals.old && old.domicilio %>">
+					</div>
+					<% if (locals.errors && errors.domicilio) { %>
+						<p class="feedback"> <%= errors.domicilio.msg %>
+						</p>
+						<% } %>
+					<br>
+					<div>
+						<label> Perfil del usuario:</label>
+						<br>
+						<div class="tipoUsuario">
+
+							<label for="minorista" class="minorista">Minorista
+								<input type="radio" name="tipoDeUsuario" value="minorista" class="minorista"
 									checked></label>
-								<label for="mayorista" class="mayorista">Mayorista
-								<input type="radio" name="tipoDeUsuario" value="mayorista" class="mayorista" required>
+							<label for="mayorista" class="mayorista">Mayorista
+								<input type="radio" name="tipoDeUsuario" value="mayorista" class="mayorista">
 							</label>
-							</div>
-							<br>
-					
+						</div>
+						<br>
+
 						<label for="users-image">Seleccionar una imagen para el perfil:</label>
-							<input class="form-control" type="file" id="users-image" name="users-image" accept=".jpg" required>
-						
+						<input class="form-control" type="file" id="users-image" name="users-image" accept=".jpg">
+
 						<br>
 						<br>
 						<div>
 							<label for="contraseña">Contraseña:</label>
-							<input class="form-control" type="password" name="passwordDeUsuario" required
-								placeholder="ej:Palacio88" value="<%= locals.old && old.passwordDeUsuario %>">>
-						</div>
+							<input class="form-control" type="password" name="passwordDeUsuario"
+								placeholder="ej:Palacio88" value="<%= locals.old && old.passwordDeUsuario %>">
+								<% if (locals.errors && errors.passwordDeUsuario) { %>
+									<p class="feedback"> <%= errors.passwordDeUsuario.msg %>
+									</p>
+									<% } %>
+							</div>
+						
 						<br>
 						<div>
 							<label for="contraseña">Confirmar contraseña:</label>
-							<input class="form-control" type="password" name="passwordconfirmacionDeUsuario" required
-								placeholder="ej:Palacio88" value="<%= locals.old && old.passwordconfirmacionDeUsuario %>">
+							<input class="form-control" type="password" name="passwordconfirmacionDeUsuario"
+								placeholder="ej:Palacio88"
+								value="<%= locals.old && old.passwordconfirmacionDeUsuario %>">
 						</div>
+						<% if (locals.errors && errors.passwordconfirmacionDeUsuario) { %>
+							<p class="feedback"> <%= errors.passwordconfirmacionDeUsuario.msg %>
+							</p>
+							<% } %>
 						<br>
 						<div class="botones">
 							<button type="submit">Crear cuenta</button>
-							<a href="http://localhost:3000/login"></a>
 						</div>
-	
+
 				</form>
 			</main>
 			<br>

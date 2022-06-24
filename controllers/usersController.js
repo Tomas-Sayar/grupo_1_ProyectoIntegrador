@@ -18,10 +18,8 @@ const controller = {
 	//},
 
 	store: (req, res) => {
-		let errors = validationResult(req);
+		const errors = validationResult(req);
 		if (errors.isEmpty()) {
-			let usersJson = fs.readFileSync("users.json", { errors });
-			res.render('register', { mensajeDeError: errors.mapped(), old: req.body });
 			let newUsers = {
 				id: Date.now(),
 				name: req.body.nombreApellido,
@@ -37,8 +35,14 @@ const controller = {
 			let usersJSON = JSON.stringify(users, null, 4);
 			fs.writeFileSync(usersFilePath, usersJSON);
 			res.redirect('/users/login');
-		}
-	},
+		} else {
+			
+			res.render('register', {
+				errors: errors.mapped(),
+				old: req.body,
+			});
+			
+	}},
 
 
 	login: (req, res) => {
@@ -66,6 +70,9 @@ const controller = {
 	register: (req, res) => {
 		res.render('register');
 	},
+
+
+
 };
 
 

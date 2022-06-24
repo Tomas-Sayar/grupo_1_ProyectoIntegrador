@@ -314,5 +314,181 @@
         "tipoDeUsuario": "mayorista",
         "contraseña": "12345",
         "image": "users-1655924104041.jpg"
+    },
+    {
+        "id": 1655945024534,
+        "name": "carola",
+        "usuario": "caro",
+        "email": "carola@gmail.com",
+        "fechaDeNacimiento": "1789-07-14",
+        "domicilio": "dorrego",
+        "tipoDeUsuario": "mayorista",
+        "contraseña": "1234",
+        "image": "users-1655945024506.jpg"
+    },
+    {
+        "id": 1655945039701,
+        "name": "carola",
+        "usuario": "caro",
+        "email": "carola@gmail.com",
+        "fechaDeNacimiento": "1789-07-14",
+        "domicilio": "dorrego",
+        "tipoDeUsuario": "minorista",
+        "contraseña": "1234",
+        "image": "users-1655945039653.jpg"
+    },
+    {
+        "id": 1655945101638,
+        "name": "carola",
+        "usuario": "caro",
+        "email": "carola@gmail.com",
+        "fechaDeNacimiento": "1789-07-14",
+        "domicilio": "dorrego",
+        "tipoDeUsuario": "minorista",
+        "contraseña": "1234",
+        "image": "users-1655945101600.jpg"
+    },
+    {
+        "id": 1655945120888,
+        "name": "carola",
+        "usuario": "caro",
+        "email": "carola@gmail.com",
+        "fechaDeNacimiento": "1789-07-14",
+        "domicilio": "dorrego",
+        "tipoDeUsuario": "minorista",
+        "contraseña": "1234",
+        "image": "users-1655945120854.jpg"
+    },
+    {
+        "id": 1655945214895,
+        "name": "carola",
+        "usuario": "caro",
+        "email": "carola@gmail.com",
+        "fechaDeNacimiento": "1789-07-14",
+        "domicilio": "dorrego",
+        "tipoDeUsuario": "minorista",
+        "contraseña": "1234",
+        "image": "users-1655945214877.jpg"
+    },
+    {
+        "id": 1655945506640,
+        "name": "ewdew",
+        "usuario": "dewde",
+        "email": "carola@gmail.com",
+        "fechaDeNacimiento": "2000-08-16",
+        "domicilio": "av libertador",
+        "tipoDeUsuario": "minorista",
+        "contraseña": "144111",
+        "image": "users-1655945506622.jpg"
+    },
+    {
+        "id": 1655947999071,
+        "name": "gustavo",
+        "usuario": "frefr",
+        "email": "carola@gmail.com",
+        "fechaDeNacimiento": "2022-06-09",
+        "domicilio": "dorrego",
+        "tipoDeUsuario": "minorista",
+        "contraseña": "moo",
+        "image": "users-1655947999004.jpg"
+    },
+    {
+        "id": 1655948013791,
+        "name": "gustavo",
+        "usuario": "frefr",
+        "email": "carola@gmail.com",
+        "fechaDeNacimiento": "2022-06-09",
+        "domicilio": "dorrego",
+        "tipoDeUsuario": "minorista",
+        "contraseña": "moo",
+        "image": "users-1655948013705.jpg"
+    },
+    {
+        "id": 1655948018116,
+        "name": "gustavo",
+        "usuario": "frefr",
+        "email": "carola@gmail.com",
+        "fechaDeNacimiento": "2022-06-09",
+        "domicilio": "dorrego",
+        "tipoDeUsuario": "minorista",
+        "contraseña": "moo",
+        "image": "users-1655948018003.jpg"
+    },
+    {
+        "id": 1655948196690,
+        "name": "gustavo",
+        "usuario": "frefr",
+        "email": "carola@gmail.com",
+        "fechaDeNacimiento": "2022-06-09",
+        "domicilio": "dorrego",
+        "tipoDeUsuario": "minorista",
+        "contraseña": "moo",
+        "image": "users-1655948196633.jpg"
+    },
+    {
+        "id": 1655948201252,
+        "name": "gustavo",
+        "usuario": "frefr",
+        "email": "carola@gmail.com",
+        "fechaDeNacimiento": "2022-06-09",
+        "domicilio": "dorrego",
+        "tipoDeUsuario": "minorista",
+        "contraseña": "moo",
+        "image": "users-1655948201174.jpg"
+    },
+    {
+        "id": 1655948206330,
+        "name": "gustavo",
+        "usuario": "frefr",
+        "email": "carola@gmail.com",
+        "fechaDeNacimiento": "2022-06-09",
+        "domicilio": "dorrego",
+        "tipoDeUsuario": "minorista",
+        "contraseña": "moo",
+        "image": "users-1655948206217.jpg"
+    },
+    {
+        "id": 1655948694670,
+        "name": "gustavo",
+        "usuario": "Gula",
+        "email": "kokp@wece",
+        "fechaDeNacimiento": "2010-10-02",
+        "domicilio": "dioewjfjewfhiwehfhwoi",
+        "tipoDeUsuario": "minorista",
+        "contraseña": "1234",
+        "image": "users-1655948694659.jpg"
+    },
+    {
+        "id": 1655950136005,
+        "name": "FERCHU",
+        "usuario": "carooooo",
+        "email": "mfernandasanchez88@gmail.com",
+        "fechaDeNacimiento": "2022-06-15",
+        "domicilio": "dorrego",
+        "tipoDeUsuario": "minorista",
+        "contraseña": "12345678",
+        "image": "users-1655950135991.jpg"
+    },
+    {
+        "id": 1655950913391,
+        "name": "FERCHU",
+        "usuario": "carooooo",
+        "email": "tomasfortunato@hotmail.com",
+        "fechaDeNacimiento": "2022-06-08",
+        "domicilio": "dorrego",
+        "tipoDeUsuario": "minorista",
+        "contraseña": "12345678",
+        "image": "users-1655950913359.jpg"
+    },
+    {
+        "id": 1656028080041,
+        "name": "gustavo",
+        "usuario": "caro",
+        "email": "",
+        "fechaDeNacimiento": "2022-06-17",
+        "domicilio": "dwqd",
+        "tipoDeUsuario": "minorista",
+        "contraseña": "duwhfuhfhf",
+        "image": "users-1656028080023.jpg"
     }
 ]
