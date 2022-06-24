@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const { validationResult } = require('express-validator');
 const { response } = require('express');
+const res = require('express/lib/response');
 // ALL USERS
 const usersFilePath = path.join(__dirname, '../data/users.json');
 const users = JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
@@ -70,9 +71,17 @@ const controller = {
 	register: (req, res) => {
 		res.render('register');
 	},
-
-
-
+	profile: (req, res) => {
+		let userId = req.params.id;
+		let selectedUser = null;
+		for (let i = 0; i < users.length; i++) {
+			if (userId == users[i].id) {
+				selectedUser = users[i];
+				break;
+			}
+		}
+		res.render('user-profile', { user: selectedUser });
+	}
 };
 
 
