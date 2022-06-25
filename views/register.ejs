@@ -40,7 +40,6 @@
 									type="email" name="email" id="email" placeholder="ej:mfernanda@gmail.com"
 									value="<%= locals.oldData ? oldData.email : null %>">
 
-								<% } %>
 									<% if (locals.errors && errors.email) { %>
 										<p class="error-feedback">
 											<%= errors.email.msg %>
