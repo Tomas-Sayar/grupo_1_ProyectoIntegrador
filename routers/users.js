@@ -14,7 +14,7 @@ const multerMiddleware = require('../middlewares/multerMiddleware.js');
 const validateCreateForm = [
     body('nombreApellido').notEmpty().withMessage("Debes completar el campo de Nombre y Apellido"),
     body('nombreDeUsuario').notEmpty().withMessage("Debes completar el campo de Usuario"),
-    body('email').notEmpty().withMessage("Debes completar con un email válido").bail().isEmail,
+    body('email').notEmpty().isEmail().withMessage("Debes completar con un email válido").bail(),
     body('fechaDeNacimiento').notEmpty().withMessage("Debes completar con tu Fecha De Nacimiento"),
     body('contraseña').notEmpty().isLength({ min: 8 }).withMessage("La contraseña debe tener al menos 8 carácteres"),
     body('users-image').custom((value, {req}) => {
@@ -37,7 +37,7 @@ const validateCreateForm = [
 router.get('/login', usersController.login);
 router.post('/login', usersController.processLogin);
 router.get('/register', usersController.register);
-router.post('/register', multerMiddleware('users').single('users-image'), validateCreateForm,logDBMiddleware, usersController.store);
+router.post('/register', multerMiddleware('users').single('users-image'), validateCreateForm, logDBMiddleware, usersController.store);
 router.get('/profile/:id', usersController.profile);
 
 

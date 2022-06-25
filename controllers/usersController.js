@@ -20,29 +20,29 @@ const controller = {
 
 	store: (req, res) => {
 		const resultValidation = validationResult(req)
-        if (resultValidation.errors.length > 0) {
-        return res.render('register', {
-          errors: resultValidation.mapped(),
-		  oldData: req.body,
-        })
-      };
-    		let newUsers = {
-				id: Date.now(),
-				name: req.body.nombreApellido,
-				usuario: req.body.nombreDeUsuario,
-				email: req.body.email,
-				fechaDeNacimiento: req.body.fechaDeNacimiento,
-	        	domicilio: req.body.domicilio,
-				tipoDeUsuario: req.body.tipoDeUsuario,
-				contraseña: req.body.passwordDeUsuario,
-				image: req.file.filename,
-			}
-        users.push(newUsers)
-        let usersJSON = JSON.stringify(users, null, 4);
-	    fs.writeFileSync(usersFilePath, usersJSON);
-	    res.redirect('/users/login');
-    },
-	
+		if (resultValidation.errors.length > 0) {
+			return res.render('register', {
+				errors: resultValidation.mapped(),
+				oldData: req.body,
+			})
+		};
+		let newUsers = {
+			id: Date.now(),
+			name: req.body.nombreApellido,
+			usuario: req.body.nombreDeUsuario,
+			email: req.body.email,
+			fechaDeNacimiento: req.body.fechaDeNacimiento,
+			domicilio: req.body.domicilio,
+			tipoDeUsuario: req.body.tipoDeUsuario,
+			contraseña: req.body.passwordDeUsuario,
+			image: req.file.filename,
+		}
+		users.push(newUsers)
+		let usersJSON = JSON.stringify(users, null, 4);
+		fs.writeFileSync(usersFilePath, usersJSON);
+		res.redirect('/');
+	},
+
 	login: (req, res) => {
 		res.render('login');
 	},
