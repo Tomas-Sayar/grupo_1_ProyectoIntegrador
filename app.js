@@ -27,17 +27,17 @@ app.use(methodOverride('_method'));
 app.use(logMiddleware);
 
 
-
 // SERVER
 app.listen(3000, () => {
 	console.log('el servidor esta corriendo en el puerto 3000');
 });
 
 // ROUTERS
+// MAIN
 app.use('/', mainRouter);
-
-// POR AHORA SOLO PARA EL PRODUCT-DETAILS, FALTA HACERLO PARA LA VISTA DE TODOS LOS PRODUCTOS
+// PRODUCTS
 app.use('/products', productsRouter);
+//USERS
 app.use('/users', usersRouter);
 
 
