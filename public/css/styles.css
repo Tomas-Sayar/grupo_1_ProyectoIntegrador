@@ -538,6 +538,11 @@ p.sinUsuario {
 	font-size: 16px;
 	color: black;
 }
+.error-feedback {
+	color:red !important;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
 /*carrito*/
 h2.carrito {
 	color: white;

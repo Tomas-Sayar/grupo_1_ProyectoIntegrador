@@ -28,7 +28,7 @@ const controller = {
 				errors: resultValidation.mapped(),
 				oldData: req.body,
 			})
-		};
+		}
 
 		let newUsers = {
 			id: Date.now(),
