@@ -29,7 +29,7 @@ const controller = {
 				oldData: req.body,
 			})
 		};
-		
+
 		let newUsers = {
 			id: Date.now(),
 			name: req.body.nombreApellido,
@@ -55,24 +55,38 @@ const controller = {
 	processLogin: (req, res) => {
 		let errors = validationResult(req);
 		if (errors.isEmpty()) {
-			let usersJson = fs.readFileSync("users.json", { errors });
+			let usersJSON = fs.readFileSync('users.json', { errors });
 			let users;
-			if (usersJson == "")
+			if (usersJSON == "") {
 				users = [];
-		} else {
-			users = JSON.parse(usersJson);
+			} else {
+				users = JSON.parse(usersJSON);
+			}
+			let usuarioALoguearse
 			for (let i = 0; i < users.length; i++) {
 				if (users[i].email == req.body.email) {
 					if (bcrypt.compareSync(req.body.password, users[i].password));
-					let usuarioALoguearse = users[i];
+					usuarioALoguearse = users[i];
+					break;
 				}
 			}
-			return res.render('login', { errors });
 		}
+		if (usuarioALoguearse == undefined) {
+			return res.render('login', {errors: [
+					{msg: 'Usuario Inválido'}
+]});			
+req.session.usuarioLogueado = usuarioALoguearse;
+		res.render('sucess');
+} else {
+		return res.render('login',{errors: errors.errors});
+	}
 	},
-	register: (req, res) => {
+
+
+register: (req, res) => {
 		res.render('register');
 	},
+
 	profile: (req, res) => {
 		let userId = req.params.id;
 		let selectedUser = null;
@@ -84,7 +98,9 @@ const controller = {
 		}
 		res.render('user-profile', { user: selectedUser });
 	}
-};
+}
+
+
 
 
 module.exports = controller;
