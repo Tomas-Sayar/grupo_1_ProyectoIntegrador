@@ -95,7 +95,6 @@
 											<label for="contraseña">Contraseña:</label>
 											<input class="form-control" type="password" name="passwordDeUsuario"
 												placeholder=Palacio88
-												value="<%=locals.oldData ? oldData.passwordDeUsuario : null %>">
 											<% if (locals.errors && errors.passwordDeUsuario) { %>
 												<p class="error-feedback">
 													<%= errors.passwordDeUsuario.msg %>
@@ -107,8 +106,7 @@
 										<div>
 											<label for="contraseña">Confirmar contraseña:</label>
 											<input class="form-control" type="password"
-												name="passwordDeUsuario" placeholder=Palacio88
-												value=" <%=locals.oldData ? oldData.passwordconfirmacionDeUsuario : null %>">
+												name="confirmpasswordDeUsuario" placeholder=Palacio88
 </div>
 										<% if (locals.errors && errors.passwordconfirmacionDeUsuario) { %>
 											<p class="error-feedback">
@@ -117,8 +115,9 @@
 											<% } %>
 												<br>
 												<div class="botones">
-													
+													<a href="/login">
 														<button type="submit">Crear cuenta</button>
+													</a>
 												</div>
 
 				</form>

@@ -18,7 +18,7 @@ const validateCreateForm = [
     body('nombreDeUsuario').notEmpty().withMessage("Debes completar el campo de Usuario"),
     body('email').notEmpty().isEmail().withMessage("Debes completar con un email válido").bail(),
     body('fechaDeNacimiento').notEmpty().withMessage("Debes completar con tu Fecha De Nacimiento"),
-    body('contraseña').notEmpty().isLength({ min: 8 }).withMessage("La contraseña debe tener al menos 8 carácteres"),
+    body('passwordDeUsuario').notEmpty().isLength({ min: 8 }).withMessage("La contraseña debe tener al menos 8 carácteres"),
     body('users-image').custom((value, {req}) => {
         let file = req.file; 
         if(!file) {

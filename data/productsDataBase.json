@@ -501,12 +501,12 @@
         "image": "product-1655940246688.jpg"
     },
     {
-        "id": 1655940675469,
-        "name": "ñoquis",
-        "price": "450",
-        "discount": "10%",
-        "category": "new",
-        "description": "noquis c salsa",
-        "image": "products-1655940675367.jpg"
+        "id": 1657580396601,
+        "name": "torta",
+        "price": "56",
+        "discount": "15%",
+        "category": "visited",
+        "description": "granola probando",
+        "image": "products-1657580396596.jpg"
     }
 ]
