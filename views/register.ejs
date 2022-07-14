@@ -17,7 +17,7 @@
 					<div>
 						<label for="nombreApellido">Nombre y Apellido:</label>
 						<input class="form-control" type="text" name="nombreApellido" id="nombreApellido"
-							placeholder="ej:Fernanda Sánchez"
+							placeholder="Fernanda Sánchez"
 							value="<%= locals.oldData ? oldData.nombreApellido : null %>">
 					</div>
 					<% if (locals.errors && errors.nombreApellido) { %>
@@ -29,14 +29,14 @@
 							<div>
 								<label for="nombreDeUsuario">Nombre de Usuario:</label>
 								<input class="form-control" type="text" name="nombreDeUsuario" id="nombreDeUsuario"
-									placeholder="ej:Ferchu"
+									placeholder="Ferchu"
 									value="<%= locals.oldData ? oldData.nombreDeUsuario : null %>" >
 							</div>
 							<br>
 							<div>
 								<label for="email">Email:</label>
 								<input class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>"
-									type="email" name="email" id="email" placeholder="ej:mfernanda@gmail.com"
+									type="email" name="email" id="email" placeholder="mfernanda@gmail.com"
 									value="<%= locals.oldData ? oldData.email : null %>">
 
 									<% if (locals.errors && errors.email) { %>
@@ -61,7 +61,7 @@
 							<div>
 								<label for="domicilio">Domicilio:</label>
 								<input class="form-control" type="text" name="domicilio" id="domicilio"
-									placeholder="ej:Av.Santa Fe 999"
+									placeholder="Av.Santa Fe 999"
 									value="<%= locals.oldData ? oldData.domicilio : null %>">
 							</div>
 							<% if (locals.errors && errors.domicilio) { %>
@@ -94,8 +94,7 @@
 										<div>
 											<label for="contraseña">Contraseña:</label>
 											<input class="form-control" type="password" name="passwordDeUsuario"
-												placeholder="ej:Palacio88"
-												value=" <%=locals.oldData ? oldData.passwordDeUsuario : null %>">
+												placeholder=Palacio88
 											<% if (locals.errors && errors.passwordDeUsuario) { %>
 												<p class="error-feedback">
 													<%= errors.passwordDeUsuario.msg %>
@@ -107,10 +106,8 @@
 										<div>
 											<label for="contraseña">Confirmar contraseña:</label>
 											<input class="form-control" type="password"
-												name="passwordconfirmacionDeUsuario" placeholder="ej:Palacio88"
-												value=" <%=locals.oldData ? oldData.passwordconfirmacionDeUsuario : null %>">>
-
-										</div>
+												name="confirmpasswordDeUsuario" placeholder=Palacio88
+</div>
 										<% if (locals.errors && errors.passwordconfirmacionDeUsuario) { %>
 											<p class="error-feedback">
 												<%= errors.passwordconfirmacionDeUsuario.msg %>

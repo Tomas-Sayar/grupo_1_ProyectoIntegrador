@@ -8,6 +8,8 @@ const { validationResult } = require('express-validator');
 const usersController = require('../controllers/usersController');
 const logDBMiddleware = require('../middlewares/logDBMiddleware');
 const multerMiddleware = require('../middlewares/multerMiddleware.js');
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
 
 
 //validaciones register//
@@ -16,7 +18,7 @@ const validateCreateForm = [
     body('nombreDeUsuario').notEmpty().withMessage("Debes completar el campo de Usuario"),
     body('email').notEmpty().isEmail().withMessage("Debes completar con un email válido").bail(),
     body('fechaDeNacimiento').notEmpty().withMessage("Debes completar con tu Fecha De Nacimiento"),
-    body('contraseña').notEmpty().isLength({ min: 8 }).withMessage("La contraseña debe tener al menos 8 carácteres"),
+    body('passwordDeUsuario').notEmpty().isLength({ min: 8 }).withMessage("La contraseña debe tener al menos 8 carácteres"),
     body('users-image').custom((value, {req}) => {
         let file = req.file; 
         if(!file) {
@@ -26,17 +28,17 @@ const validateCreateForm = [
     })
 ]
 //validaciones login//
-//const ValidateCreateForm = [
-//check('email').isEmail().withMessage("Email incorrecto"),
-//check('contraseña').isLength({min:8}).withMessage("La contraseña debe tener al menos 8 carácteres")
-//]
-//]
+const validateLogin = [
+body('email').isEmail().withMessage("Email incorrecto").bail(),
+body('contraseña').isLength({min:8}).withMessage("La contraseña debe tener al menos 8 carácteres")
+]
+
 //########################### RUTAS ##############################//
 //router.get('/', usersController.index);
 
 router.get('/login', usersController.login);
-router.post('/login', usersController.processLogin);
-router.get('/register', usersController.register);
+router.post('/login',validateLogin, usersController.processLogin);
+router.get('/register', guestMiddleware,usersController.register);
 router.post('/register', multerMiddleware('users').single('users-image'), logDBMiddleware, validateCreateForm, usersController.store);
 router.get('/profile/:id', usersController.profile);
 

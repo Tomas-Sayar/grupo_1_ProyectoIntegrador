@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const { validationResult } = require('express-validator');
-const { response } = require('express');
 const res = require('express/lib/response');
 const bcrypt = require('bcryptjs');
 // ALL USERS
@@ -22,14 +21,15 @@ const controller = {
 	//},
 
 	store: (req, res) => {
+		
 		const resultValidation = validationResult(req)
 		if (resultValidation.errors.length > 0) {
 			return res.render('register', {
 				errors: resultValidation.mapped(),
 				oldData: req.body,
 			})
-		};
-		
+		}
+
 		let newUsers = {
 			id: Date.now(),
 			name: req.body.nombreApellido,
@@ -41,38 +41,59 @@ const controller = {
 			contraseña: bcrypt.hashSync(req.body.passwordDeUsuario, 10),
 			image: req.file.filename,
 		}
-
+		
 		users.push(newUsers)
+		
 		let usersJSON = JSON.stringify(users, null, 4);
+		
 		fs.writeFileSync(usersFilePath, usersJSON);
-		res.redirect('/');
+		res.redirect('/users/login');
 	},
 
 	login: (req, res) => {
 		res.render('login');
 	},
-
 	processLogin: (req, res) => {
+		//CAPTURAMOS LOS ERRORES
 		let errors = validationResult(req);
+		let usuarioALoguearse
+		
+		//SI NO HAY ERRORES VERIFICAMOS LOS DATOS
 		if (errors.isEmpty()) {
-			let usersJson = fs.readFileSync("users.json", { errors });
-			let users;
-			if (usersJson == "")
+			let usersJSON = fs.readFileSync('./data/users.json');
+			let users = JSON.parse(usersJSON)
+
+			if (usersJSON == "") {
 				users = [];
-		} else {
-			users = JSON.parse(usersJson);
+			}
+			//RECORREMOS TODOS LOS USUARIOS Y BUSCAMOS EL QUE COINCIDA CON EL EMAIL Y LA CONTRASEÑA
 			for (let i = 0; i < users.length; i++) {
+				console.log("holalaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 				if (users[i].email == req.body.email) {
-					if (bcrypt.compareSync(req.body.password, users[i].password));
-					let usuarioALoguearse = users[i];
+		
+					if (bcrypt.compareSync(req.body.contraseña, users[i].contraseña));
+					usuarioALoguearse = users[i];
+					break;
 				}
 			}
-			return res.render('login', { errors });
+		}
+		if (usuarioALoguearse == undefined) {
+			return res.render('login', {
+				errors: [
+					{ msg: 'Usuario Inválido' }
+				]
+			})
+		} else {
+			req.session.usuarioLogueado = usuarioALoguearse;
+			res.redirect('/')
 		}
 	},
+
+
 	register: (req, res) => {
 		res.render('register');
 	},
+
 	profile: (req, res) => {
 		let userId = req.params.id;
 		let selectedUser = null;
@@ -84,7 +105,9 @@ const controller = {
 		}
 		res.render('user-profile', { user: selectedUser });
 	}
-};
+}
+
+
 
 
 module.exports = controller;

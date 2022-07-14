@@ -9,7 +9,7 @@ const logMiddleware = require('./middlewares/logMiddleware');
 const mainRouter = require('./routers/main');
 const productsRouter = require('./routers/products');
 const usersRouter = require('./routers/users');
-//const session = require('express-session');
+const session = require('express-session');
 
 
 // APP CONFIG CARPETA ESTATICA 
@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(methodOverride('_method'));
 
 //LOGIN SESSION CONFIG
-//app.use(session({secret:"carrotTommyFer"}));
+app.use(session({secret:"carrotTommyFer", resave: true, saveUninitialized: true}));
 app.use(logMiddleware);
 
 
