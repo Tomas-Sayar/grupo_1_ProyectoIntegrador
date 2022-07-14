@@ -37,7 +37,7 @@ const validateCreateForm = [
 router.get('/login', usersController.login);
 router.post('/login', usersController.processLogin);
 router.get('/register', usersController.register);
-router.post('/register', multerMiddleware('users').single('users-image'), logDBMiddleware, usersController.store);
+router.post('/register', multerMiddleware('users').single('users-image'), logDBMiddleware, validateCreateForm, usersController.store);
 router.get('/profile/:id', usersController.profile);
 
 

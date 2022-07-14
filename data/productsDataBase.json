@@ -508,5 +508,14 @@
         "category": "new",
         "description": "noquis c salsa",
         "image": "products-1655940675367.jpg"
+    },
+    {
+        "id": 1657580486432,
+        "name": "dasdasd",
+        "price": "asdeadasd",
+        "discount": "dasdasda",
+        "category": "in-sale",
+        "description": "asdasdasd",
+        "image": "products-1657580486413.jpg"
     }
 ]

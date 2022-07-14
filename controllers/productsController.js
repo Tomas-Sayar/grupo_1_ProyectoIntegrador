@@ -46,6 +46,7 @@ const controller = {
 			category: req.body.category,
 			description: req.body.description,
 			image: req.file.filename,
+			type: req.file.type,
 		}
 
 		
