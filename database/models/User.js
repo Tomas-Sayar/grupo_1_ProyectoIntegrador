@@ -1,4 +1,4 @@
-Smodule.exports = (sequelize, dataTypes) => {
+module.exports = (sequelize, dataTypes) => {
     let alias = 'User'; // esto debería estar en singular
     let cols = {
         id: {
