@@ -1,39 +1,49 @@
 const express = require('express');
-const res = require('express/lib/response');
 const router = express.Router();
 const multer = require('multer');
 const path = require('path');
-const {check} = require('express-validator');
-const {body} = require('express-validator') ;
-const {validationResult} = require('express-validator');
+//const { check } = require('express-validator');
+const { body } = require('express-validator');
+const { validationResult } = require('express-validator');
 const usersController = require('../controllers/usersController');
-const logDBMiddleware= require('../middlewares/logDBMiddleware');
+const logDBMiddleware = require('../middlewares/logDBMiddleware');
+const multerMiddleware = require('../middlewares/multerMiddleware.js');
+const guestMiddleware = require('../middlewares/guestMiddleware');
+const authMiddleware = require('../middlewares/authMiddleware');
 
-//###########################  MULTER ##############################//
-const storage = multer.diskStorage({
-    destination: (req, file, callback) => {
-        let carpetaDestino = path.join(__dirname, '../public/img/users');
-        callback(null, carpetaDestino);
-    },
-    filename: (req, file, callback) => {
-        let imageName = 'users-' + Date.now() + path.extname(file.originalname);
-        callback(null, imageName);
+
+//validaciones register//
+const validateCreateForm = [
+    body('nombreApellido').notEmpty().withMessage("Debes completar el campo de Nombre y Apellido"),
+    body('nombreDeUsuario').notEmpty().withMessage("Debes completar el campo de Usuario"),
+    body('email').notEmpty().isEmail().withMessage("Debes completar con un email válido").bail(),
+    body('fechaDeNacimiento').notEmpty().withMessage("Debes completar con tu Fecha De Nacimiento"),
+    body('passwordDeUsuario').notEmpty().isLength({ min: 8 }).withMessage("La contraseña debe tener al menos 8 carácteres"),
+    body('users-image').custom((value, {req}) => {
+        let file = req.file; 
+        if(!file) {
+            throw new Error("Tienes que subir una imagen");
     }
-})
-let updatefile = multer({ storage });
-
+    return true;
+    })
+]
+//validaciones login//
+const validateLogin = [
+body('email').isEmail().withMessage("Email incorrecto").bail(),
+body('contraseña').isLength({min:8}).withMessage("La contraseña debe tener al menos 8 carácteres")
+]
 
 //########################### RUTAS ##############################//
 //router.get('/', usersController.index);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 31ff2fd8c091da5d3dbcb8c4f5de1dae5f3fb94c
 router.get('/login', usersController.login);
-//router.post('/login',usersController.processLogin)
-router.get('/register', usersController.register);
-router.post('/register',logDBMiddleware, usersController.store);
-//[ check('usuario').isEmail().withMessage("Email incorrecto"),
-//check('contraseña').isLength({min:8}).withMessage("La contraseña debe tener al menos 8 carácteres")
-//]
-
-
+router.post('/login',validateLogin, usersController.processLogin);
+router.get('/register', guestMiddleware,usersController.register);
+router.post('/register', multerMiddleware('users').single('users-image'), logDBMiddleware, validateCreateForm, usersController.store);
+router.get('/profile/:id', usersController.profile);
 
 
 

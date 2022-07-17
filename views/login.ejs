@@ -7,8 +7,10 @@
     <body>
         <!-- HEADER -->
         <%- include("./partials/header") %>
-
-            <main>
+        <br>
+        <br>
+ <main>
+<!--<video src="/img/videoLogin.mp4" autoplay muted loop class="backgroundLogin"</video>-->
                 <form action="/users/login" method="post">
                     <h1 class="login">Login de usuario</h1>
                     <br>
@@ -16,7 +18,7 @@
                     <div>
                         <label for="usuario">Nombre de Usuario/Email</label>
                         <br>
-                        <input type="text" name="usuario" id="usuario" required>
+                        <input type="text" name="email" id="usuario" required>
                         <span class="feedback"></span>
                     </div>
                     <br>
@@ -35,9 +37,8 @@
                         <span class="feedback"></span>
                     </div>
                         <p class= "sinUsuario">¿Aún no tenés un usuario?
-                        <a href= "http://localhost:3000/register" class="aSinUsuario">Registrate.</a>
+                        <a href= "/users/register" class="aSinUsuario">Registrate.</a>
                     </p>
-                    views\register.ejs
                 </form>
             </main>
 

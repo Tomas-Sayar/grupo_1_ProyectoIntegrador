@@ -9,6 +9,7 @@
 a {
 	text-decoration: none;
 }
+
 /*!------------------------------ home ------------------------------*/
 /** header */
 /** inicio*/
@@ -488,7 +489,10 @@ h1.login {
 	display: flex;
 	justify-content: center;
 }
-
+.videoLogin{
+	width: 50%;
+	justify-content: left;
+}
 label {
 	width: 100%;
 	font-size: solid 158%;
@@ -504,6 +508,7 @@ input {
 	justify-content: center;
 	margin: 1% 4%;
 }
+
 div.button {
 	display: flex;
 	justify-content: center;
@@ -537,6 +542,11 @@ p.sinUsuario {
 	margin-left: 1%;
 	font-size: 16px;
 	color: black;
+}
+.error-feedback {
+	color:red !important;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
 }
 /*carrito*/
 h2.carrito {
@@ -640,8 +650,8 @@ a {
 h2.products-title {
 	margin-left: 0%;
 	margin-top: 20%;
-    color: white;
-    background-color: orange;
+	color: white;
+	background-color: orange;
 	font-size: 200%;
 	padding: 2%;
 }
@@ -654,11 +664,48 @@ textarea#description.form-input {
 	text-align: -webkit-match-parent;
 	display: inline-table;
 }
-.buy-now-button{
-    display: flex;
-    justify-content: center;
+.buy-now-button {
+	display: flex;
+	justify-content: center;
 	font-size: 190%;
 }
+
+/* PERFIL DE USUARIO */
+
+.profile-container {
+	display: flex;
+	margin-top: 16%;
+}
+
+.profile-container .image-container {
+	display: flex;
+	justify-content: left;
+	width: 30%;
+	margin-right: 5%;
+}
+
+.profile-image {
+	width: 100%;
+	border: #ff740a solid 2px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.data-container {
+	font-size: 2rem;
+}
+
+.data-container .data-titles {
+	color: #ff740a;
+	font-size: 2rem;
+}
+
+.data-container .user-data {
+	color: black;
+	font-size: 1.2rem;
+}
+
+
 
 /*!Media Querys*/
 
