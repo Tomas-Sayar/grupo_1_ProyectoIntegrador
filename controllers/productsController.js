@@ -1,4 +1,4 @@
-const res = require('express/lib/response');
+
 const fs = require('fs');
 const path = require('path');
 
@@ -6,7 +6,7 @@ const path = require('path');
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
-let controller = {
+const controller = {
 	index: (req, res) => {
 		const indexProductsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 		const productsIndex = JSON.parse(fs.readFileSync(indexProductsFilePath, 'utf-8'));
@@ -46,7 +46,10 @@ let controller = {
 			category: req.body.category,
 			description: req.body.description,
 			image: req.file.filename,
+			type: req.file.type,
 		}
+
+		
 		products.push(newProduct);
 		let productsJSON = JSON.stringify(products, null, 4);
 		fs.writeFileSync(productsFilePath, productsJSON);

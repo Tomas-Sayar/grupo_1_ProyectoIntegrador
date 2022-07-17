@@ -9,11 +9,16 @@
 		<%- include("./partials/header") %>
 
 			<main>
+<<<<<<< HEAD
 				<form action="/users/register" method="post">
+=======
+				<form action="/users/register" method="post" enctype="multipart/form-data">
+>>>>>>> 31ff2fd8c091da5d3dbcb8c4f5de1dae5f3fb94c
 					<div class="titulo-contenedor">
 						<h1 class="Crear-Cuenta">Crear cuenta</h1>
 					</div>
 
+<<<<<<< HEAD
 					<class="formgroup">
 						<div>
 							<label for="nombreApellido">Nombre y Apellido:</label>
@@ -84,6 +89,113 @@
 							<button type="submit">Crear cuenta</button>
 							<a href="http://localhost:3000/login"></a>
 						</div>
+=======
+					<div>
+						<label for="nombreApellido">Nombre y Apellido:</label>
+						<input class="form-control" type="text" name="nombreApellido" id="nombreApellido"
+							placeholder="Fernanda Sánchez"
+							value="<%= locals.oldData ? oldData.nombreApellido : null %>">
+					</div>
+					<% if (locals.errors && errors.nombreApellido) { %>
+						<p class="error-feedback">
+							<%= errors.nombreApellido.msg %>
+						</p>
+						<% } %>
+							<br>
+							<div>
+								<label for="nombreDeUsuario">Nombre de Usuario:</label>
+								<input class="form-control" type="text" name="nombreDeUsuario" id="nombreDeUsuario"
+									placeholder="Ferchu"
+									value="<%= locals.oldData ? oldData.nombreDeUsuario : null %>" >
+							</div>
+							<br>
+							<div>
+								<label for="email">Email:</label>
+								<input class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>"
+									type="email" name="email" id="email" placeholder="mfernanda@gmail.com"
+									value="<%= locals.oldData ? oldData.email : null %>">
+
+									<% if (locals.errors && errors.email) { %>
+										<p class="error-feedback">
+											<%= errors.email.msg %>
+										</p>
+										<% } %>
+							</div>
+
+							<div>
+								<label for="fechaDeNacimiento">Fecha de nacimiento:</label>
+								<input class="form-control" type="date" name="fechaDeNacimiento" id="fechaDeNacimiento"
+									placeholder="26/08/1988"
+									value="<%= locals.oldData ? oldData.fechaDeNacimiento : null %>">
+								<% if (locals.errors && errors.fechaDeNacimiento) { %>
+									<p class="error-feedback">
+										<%= errors.fechaDeNacimiento.msg %>
+									</p>
+									<% } %>
+							</div>
+							<br>
+							<div>
+								<label for="domicilio">Domicilio:</label>
+								<input class="form-control" type="text" name="domicilio" id="domicilio"
+									placeholder="Av.Santa Fe 999"
+									value="<%= locals.oldData ? oldData.domicilio : null %>">
+							</div>
+							<% if (locals.errors && errors.domicilio) { %>
+								<p class="error-feedback">
+									<%= errors.domicilio.msg %>
+								</p>
+								<% } %>
+									<br>
+									<div>
+										<label> Perfil del usuario:</label>
+										<br>
+										<div class="tipoUsuario">
+
+											<label for="minorista" class="minorista">Minorista
+												<input type="radio" name="tipoDeUsuario" value="minorista"
+													class="minorista" checked></label>
+											<label for="mayorista" class="mayorista">Mayorista
+												<input type="radio" name="tipoDeUsuario" value="mayorista"
+													class="mayorista">
+											</label>
+										</div>
+										<br>
+
+										<label for="users-image">Seleccionar una imagen para el perfil:</label>
+										<input class="form-control" type="file" id="users-image" name="users-image"
+											accept=".jpg">
+
+										<br>
+										<br>
+										<div>
+											<label for="contraseña">Contraseña:</label>
+											<input class="form-control" type="password" name="passwordDeUsuario"
+												placeholder=Palacio88
+											<% if (locals.errors && errors.passwordDeUsuario) { %>
+												<p class="error-feedback">
+													<%= errors.passwordDeUsuario.msg %>
+												</p>
+												<% } %>
+										</div>
+
+										<br>
+										<div>
+											<label for="contraseña">Confirmar contraseña:</label>
+											<input class="form-control" type="password"
+												name="confirmpasswordDeUsuario" placeholder=Palacio88
+</div>
+										<% if (locals.errors && errors.passwordconfirmacionDeUsuario) { %>
+											<p class="error-feedback">
+												<%= errors.passwordconfirmacionDeUsuario.msg %>
+											</p>
+											<% } %>
+												<br>
+												<div class="botones">
+													<a href="/login">
+														<button type="submit">Crear cuenta</button>
+													</a>
+												</div>
+>>>>>>> 31ff2fd8c091da5d3dbcb8c4f5de1dae5f3fb94c
 
 				</form>
 			</main>
