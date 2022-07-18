@@ -1,4 +1,4 @@
-const fs = require('fs');
+//const fs = require('fs');
 function guestMiddleware(req, res, next) {
 if (req.session.usuarioLogueado == undefined) {
     next();

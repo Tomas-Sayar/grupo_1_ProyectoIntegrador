@@ -37,7 +37,7 @@ body('contraseña').isLength({min:8}).withMessage("La contraseña debe tener al 
 //router.get('/', usersController.index);
 
 router.get('/login', usersController.login);
-router.post('/login',validateLogin, usersController.processLogin);
+router.post('/login',authMiddleware,validateLogin, usersController.processLogin);
 router.get('/register', guestMiddleware,usersController.register);
 router.post('/register', multerMiddleware('users').single('users-image'), logDBMiddleware, validateCreateForm, usersController.store);
 router.get('/profile/:id', usersController.profile);

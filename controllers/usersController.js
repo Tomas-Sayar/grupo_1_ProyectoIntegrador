@@ -68,7 +68,6 @@ const controller = {
 			}
 			//RECORREMOS TODOS LOS USUARIOS Y BUSCAMOS EL QUE COINCIDA CON EL EMAIL Y LA CONTRASEÑA
 			for (let i = 0; i < users.length; i++) {
-				console.log("holalaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 				if (users[i].email == req.body.email) {
 		
 					if (bcrypt.compareSync(req.body.contraseña, users[i].contraseña));
