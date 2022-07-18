@@ -88,7 +88,6 @@ const controller = {
 		}
 	},
 
-
 	register: (req, res) => {
 		res.render('register');
 	},

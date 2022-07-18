@@ -9,11 +9,87 @@
 		<%- include("./partials/header") %>
 
 			<main>
+<<<<<<< HEAD
+				<form action="/users/register" method="post">
+=======
 				<form action="/users/register" method="post" enctype="multipart/form-data">
+>>>>>>> 31ff2fd8c091da5d3dbcb8c4f5de1dae5f3fb94c
 					<div class="titulo-contenedor">
 						<h1 class="Crear-Cuenta">Crear cuenta</h1>
 					</div>
 
+<<<<<<< HEAD
+					<class="formgroup">
+						<div>
+							<label for="nombreApellido">Nombre y Apellido:</label>
+							<input class="form-control" type="text" name="nombreApellido" id="nombreApellido" required
+								placeholder="ej:Fernanda Sánchez">
+						</div>
+						<br>
+						<div>
+							<<<<<<< HEAD <label for="nombre de usuari@">Nombre de Usuario:</label>
+								<input class="form-control" type="text" name="nombreDeUsuario"
+									id="nombre de usuari@"=======<label for="nombreDeUsuari@">Nombre de Usuario:</label>
+								<input class="form-control" type="text" name="nombreDeUsuari@"
+									id="nombreDeUsuari@">>>>>>> c775d1629c23053832209aa12b9492034e8c7aa7
+								required placeholder="ej:Ferchu">
+						</div>
+						<br>
+						<div>
+							<<<<<<< HEAD <label for="fecha de nacimiento">Fecha de nacimiento:</label>
+								<input class="form-control" type="date" name="fechaDeNacimiento"
+									id="fecha de nacimiento"=======<label for="fechaDeNacimiento">Fecha de
+								nacimiento:</label>
+								<input class="form-control" type="date" name="fechaDeNacimiento"
+									id="fechaDeNacimiento">>>>>>> c775d1629c23053832209aa12b9492034e8c7aa7
+								required placeholder="ej:26/08/1988">
+						</div>
+						<br>
+						<div>
+							<label for="domicilio">Domicilio:</label>
+							<input class="form-control" type="text" name="domicilio" id="domicilio" required
+								placeholder="ej:Av.Santa Fe 999">
+						</div>
+						<br>
+						<div>
+							<label> Perfil del usuario:</label>
+							<br>
+							<div class="tipoUsuario">
+
+								<label for="minorista" class="minorista">Minorista
+									<input type="radio" name="tipoDeUsuario" value="minorista" class="minorista"
+										required checked></label>
+								<label for="mayorista" class="mayorista">Mayorista
+									<input type="radio" name="tipoDeUsuario" value="mayorista" class="mayorista"
+										required>
+								</label>
+							</div>
+							<br />
+						</div>
+
+						<label>Seleccionar una imagen para el perfil:
+							<input class="form-control" type="file" name="FotoDePerfil" accept=".jpg" required>
+						</label>
+						</div>
+						<br>
+						<br>
+						<div>
+							<label for="contraseña">Contraseña:</label>
+							<input class="form-control" type="password" name="passwordDeUsuario" required
+								placeholder="ej:Palacio88">
+						</div>
+						<br>
+						<div>
+							<label for="contraseña">Confirmar contraseña:</label>
+							<input class="form-control" type="password" name="passwordconfirmacionDeUsuario" required
+								placeholder="ej:Palacio88">
+						</div>
+						<br>
+						<div class="botones">
+							<button type="submit">Crear cuenta</button>
+							<a href="http://localhost:3000/login"></a>
+						</div>
+=======
 					<div>
 						<label for="nombreApellido">Nombre y Apellido:</label>
 						<input class="form-control" type="text" name="nombreApellido" id="nombreApellido"
@@ -119,6 +195,7 @@
 														<button type="submit">Crear cuenta</button>
 													</a>
 												</div>
+>>>>>>> 31ff2fd8c091da5d3dbcb8c4f5de1dae5f3fb94c
 
 				</form>
 			</main>

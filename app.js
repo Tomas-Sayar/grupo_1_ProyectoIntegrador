@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(methodOverride('_method'));
 
 //LOGIN SESSION CONFIG
-app.use(session({secret:"carrotTommyFer", resave: true, saveUninitialized: true}));
+app.use(session({ secret: "carrotTommyFer", resave: true, saveUninitialized: true }));
 app.use(logMiddleware);
 
 
@@ -42,6 +42,6 @@ app.use('/users', usersRouter);
 
 
 //ERROR 404
-app.use((req, res, next) => { 
+app.use((req, res, next) => {
 	res.status(404).render("not-found")
-	});
+});
