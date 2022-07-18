@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(methodOverride('_method'));
 
 //LOGIN SESSION CONFIG
-app.use(session({secret:"carrotTommyFer", resave: true, saveUninitialized: true}));
+app.use(session({ secret: "carrotTommyFer", resave: true, saveUninitialized: true }));
 app.use(logMiddleware);
 
 
