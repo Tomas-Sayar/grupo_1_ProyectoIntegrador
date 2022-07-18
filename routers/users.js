@@ -35,10 +35,6 @@ body('contraseña').isLength({min:8}).withMessage("La contraseña debe tener al 
 
 //########################### RUTAS ##############################//
 //router.get('/', usersController.index);
-<<<<<<< HEAD
-=======
-
->>>>>>> 31ff2fd8c091da5d3dbcb8c4f5de1dae5f3fb94c
 router.get('/login', usersController.login);
 router.post('/login',authMiddleware,validateLogin, usersController.processLogin);
 router.get('/register', guestMiddleware,usersController.register);
