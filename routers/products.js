@@ -4,9 +4,6 @@ const router = express.Router();
 const path = require('path');
 const productsController = require('../controllers/productsController');
 const multerMiddleware = require('../middlewares/multerMiddleware.js');
-//###########################  MULTER ##############################//
-
-
 
 
 //########################### RUTAS ##############################//

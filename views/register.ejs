@@ -9,11 +9,7 @@
 		<%- include("./partials/header") %>
 
 			<main>
-<<<<<<< HEAD
-				<form action="/users/register" method="post">
-=======
 				<form action="/users/register" method="post" enctype="multipart/form-data">
->>>>>>> 31ff2fd8c091da5d3dbcb8c4f5de1dae5f3fb94c
 					<div class="titulo-contenedor">
 						<h1 class="Crear-Cuenta">Crear cuenta</h1>
 					</div>
@@ -183,7 +179,7 @@
 											<label for="contraseña">Confirmar contraseña:</label>
 											<input class="form-control" type="password"
 												name="confirmpasswordDeUsuario" placeholder=Palacio88
-</div>
+										</div>
 										<% if (locals.errors && errors.passwordconfirmacionDeUsuario) { %>
 											<p class="error-feedback">
 												<%= errors.passwordconfirmacionDeUsuario.msg %>

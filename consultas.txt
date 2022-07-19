@@ -1,0 +1,6 @@
+
+- Tipo de dato para guardar imagenes en mySql y sequelize
+
+RTA: lo guardamos en un string/varchar 
+( conviene guardar toda la ruta de la imagen antes q solo el nombre )
+

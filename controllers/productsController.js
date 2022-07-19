@@ -45,8 +45,9 @@ const controller = {
 			discount: req.body.discount,
 			category: req.body.category,
 			description: req.body.description,
+			type: req.body.type,
 			image: req.file.filename,
-			type: req.file.type,
+			// image: '/' + this.category + '/' + req.file.filename,
 		}
 
 		

@@ -781,3 +781,52 @@ Se ingresó a la página/users/login
 =======
 
 >>>>>>> 862ca6038f708264045d0d87e59d640a533c82ae
+
+Se ingresó a la página/
+Se ingresó a la página/favicon.ico
+Se ingresó a la página/products
+Se ingresó a la página/products/create
+Se ingresó a la página/products/create
+Se ingresó a la página/
+Se ingresó a la página/products
+Se ingresó a la página/products/create
+Se ingresó a la página/products/create
+Se ingresó a la página/
+Se ingresó a la página/products
+Se ingresó a la página/products/create
+Se ingresó a la página/products/create
+Se ingresó a la página/products/create
+Se ingresó a la página/
+Se ingresó a la página/products
+Se ingresó a la página/img/products/products-1658195762559.jpg
+Se ingresó a la página/products/create
+Se ingresó a la página/products/create
+Se ingresó a la página/products/create
+Se ingresó a la página/products/create
+Se ingresó a la página/products/create
+Se ingresó a la página/products/4
+Se ingresó a la página/img/products/Frutos%20Secos/frutosSecos/mix-nacional-con-banana.jpg
+Se ingresó a la página/products/4
+Se ingresó a la página/img/products/Frutos%20Secos/mix-nacional-con-banana.jpg
+Se ingresó a la página/img/products/mix-nacional-con-banana.jpg
+Se ingresó a la página/products
+Se ingresó a la página/img/products/mix-nacional-con-banana.jpg
+Se ingresó a la página/img/products/products-1658195762559.jpg
+Se ingresó a la página/products/create
+Se ingresó a la página/products/create
+Se ingresó a la página/
+Se ingresó a la página/img/products/mix-nacional-con-banana.jpg
+Se ingresó a la página/products
+Se ingresó a la página/img/products/mix-nacional-con-banana.jpg
+Se ingresó a la página/img/products/products-1658195762559.jpg
+Se ingresó a la página/img/products/products-1658196516229.jpg
+Se ingresó a la página/products/create
+Se ingresó a la página/products/create
+Se ingresó a la página/
+Se ingresó a la página/img/products/mix-nacional-con-banana.jpg
+Se ingresó a la página/products/1658196597503
+Se ingresó a la página/img/products/mix-nacional-con-banana.jpg
+Se ingresó a la página/users/login
+Se ingresó a la página/users/register
+Se ingresó a la página/users/register
+Se ingresó a la página/users/register
