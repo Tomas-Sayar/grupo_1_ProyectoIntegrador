@@ -20,3 +20,14 @@ Keep doing: Seguir comunicandonos constantemente para ver que estamos haciendo, 
 Less of: Tardar menos en hacer cada cosa asi podemos llegar bien a la entrega del trabajo.
 
 Stop doing: Nada creo que estamos trabajando bien.
+
+======================== SPRINT 6 ========================
+Start doing: practicar más.
+
+More of:
+
+Keep doing:
+
+Less of:
+
+Stop doing:

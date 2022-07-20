@@ -781,3 +781,12 @@ Se ingresó a la página/users/login
 =======
 
 >>>>>>> 862ca6038f708264045d0d87e59d640a533c82ae
+
+Se ingresó a la página/
+Se ingresó a la página/favicon.ico
+Se ingresó a la página/carrito
+Se ingresó a la página/users/login
+Se ingresó a la página/users/register
+Se ingresó a la página/users/register
+Se ingresó a la página/users/register
+Se ingresó a la página/users/register

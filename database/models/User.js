@@ -44,9 +44,9 @@ module.exports = (sequelize, dataTypes) => {
     const User = sequelize.define(alias,cols,config);
 
     User.associate = function (models) {
-        User.belongsTo(models.Genre, { // models.Genre -> Genres es el valor de alias en genres.js
-            as: "genre",
-            foreignKey: "genre_id"
+        User.belongsTo(models.TypeOfUser, { // models.Genre -> Genres es el valor de alias en genres.js
+            as: "types",
+            foreignKey: "typeOfUser_id",
         })
 
         User.belongsToMany(models.Actor, { // models.Actor -> Actors es el valor de alias en actor.js
@@ -60,5 +60,5 @@ module.exports = (sequelize, dataTypes) => {
         })
     }
 
-    return product;
+    return User;
 };
