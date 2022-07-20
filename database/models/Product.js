@@ -36,20 +36,23 @@ module.exports = (sequelize, dataTypes) => {
     const Product = sequelize.define(alias,cols,config);
 
     Product.associate = function (models) {
+
         Product.belongsTo(models.category, { 
-            as: "category",
+            
+            as: "categories",
+            
             foreignKey: "category_id",
+        
+        })
+        
+        Product.belongsTo(models.type, { 
+        
+            as: "types",
+        
+            foreignKey: "type_id",
+        
         })
 
-        // Product.belongsToMany(models.Actor, { 
-        //     as: "actors",
-        //     through: 'actor_movie',
-        //     foreignKey: 'movie_id',
-        //     foreignKeyConstraint: true,
-        //     otherKey: 'actor_id',
-        //     timestamps: false,
-        //     onDelete: 'cascade'
-        // })
     }
 
     return Product;
