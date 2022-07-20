@@ -30,7 +30,7 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         Image: {
-            type: dataTypes.FLOAT
+            type: dataTypes.STRING(150)
         },
         typeOfUser_id: dataTypes.BIGINT(10),
     };

@@ -34,7 +34,7 @@
         "name": "Mix Nacional Con Banana - 200 gr",
         "description": "vitae nisl aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat",
         "price": "$208.00",
-        "image": "frutosSecos/mix-nacional-con-banana.jpg",
+        "image": "mix-nacional-con-banana.jpg",
         "type": "Frutos Secos",
         "discount": 19,
         "category": "mas-vendido"
@@ -508,6 +508,42 @@
         "category": "visited",
         "description": "granola probando",
         "image": "products-1657580396596.jpg"
+    },
+    {
+        "id": 1658195554744,
+        "name": "asdasd",
+        "price": "dasdasdasd",
+        "discount": "sadasdasd",
+        "category": "in-sale",
+        "description": "asdasdasdasdas",
+        "image": "products-1658195554712.jpg"
+    },
+    {
+        "id": 1658195762616,
+        "name": "sadasd",
+        "price": "34",
+        "discount": "asdasd",
+        "category": "in-sale",
+        "description": "dfasdasdasdas",
+        "image": "products-1658195762559.jpg"
+    },
+    {
+        "id": 1658196516246,
+        "name": "asdadada",
+        "price": "asdadadasd",
+        "discount": "asdadadasdas",
+        "category": "visited",
+        "description": "asdadasdas",
+        "image": "products-1658196516229.jpg"
+    },
+    {
+        "id": 1658196597503,
+        "name": "hola",
+        "price": "asdasdasd",
+        "discount": "sad",
+        "category": "visited",
+        "description": "jkdfbnjkaffb",
+        "type": "FrutosSecos",
+        "image": "products-1658196597478.jpg"
     }
 ]
-

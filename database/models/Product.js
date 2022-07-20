@@ -7,8 +7,6 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false,
             autoIncrement: true
         },
-        // created_at: dataTypes.TIMESTAMP,
-        // updated_at: dataTypes.TIMESTAMP,
         name: {
             type: dataTypes.STRING(100),
             allowNull: false
@@ -23,12 +21,10 @@ module.exports = (sequelize, dataTypes) => {
         description: {
             type: dataTypes.STRING(500),
         },
-        Image: {
-            type: dataTypes.FLOAT
+        image: {
+            type: dataTypes.STRING(150),
         },
         category_id: dataTypes.BIGINT(10),
-        length: dataTypes.BIGINT(10),
-        genre_id: dataTypes.BIGINT(10)
     };
     let config = {
         timestamps: true,
@@ -40,21 +36,24 @@ module.exports = (sequelize, dataTypes) => {
     const Product = sequelize.define(alias,cols,config);
 
     Product.associate = function (models) {
-        Product.belongsTo(models.Genre, { // models.Genre -> Genres es el valor de alias en genres.js
-            as: "genre",
-            foreignKey: "genre_id"
+
+        Product.belongsTo(models.category, { 
+            
+            as: "categories",
+            
+            foreignKey: "category_id",
+        
+        })
+        
+        Product.belongsTo(models.type, { 
+        
+            as: "types",
+        
+            foreignKey: "type_id",
+        
         })
 
-        Product.belongsToMany(models.Actor, { // models.Actor -> Actors es el valor de alias en actor.js
-            as: "actors",
-            through: 'actor_movie',
-            foreignKey: 'movie_id',
-            foreignKeyConstraint: true,
-            otherKey: 'actor_id',
-            timestamps: false,
-            onDelete: 'cascade'
-        })
     }
 
-    return product;
+    return Product;
 };
