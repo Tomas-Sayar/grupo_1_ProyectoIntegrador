@@ -1,2 +1,88 @@
+<<<<<<< HEAD
 
 - Crear contenido de los modelos
+=======
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+
+                
+                
+                ESTE SE PEGA EN LA LINEA 63 DEL PRODUCT DETAIL
+
+                ENTRE "ARTICULOS RELACIONADOS" Y </MAIN>
+
+                
+                <!-- <section class="productos-relacionados">
+
+                    //<% relatedProducts.forEach(product=> { %>
+                        <div class="articulo-relacionado">
+                            //<a href="/products/<%=product.id%> ">
+                                //<img src="/img/products/<%=product.image%>">
+                            </a>
+                            <div class="info">
+                                <h1>
+                                    //<%=product.name%>
+                                </h1>
+                                <p class="descripcion">
+                                    //<%=product.description%>
+                                </p>
+                                <p class="precio">
+                                    //<%=product.price%>
+                                </p>
+                                <p class="agregar">Agregar al carrito</p>
+                            </div>
+                        </div>
+                        //<% }) %>
+
+                </section> -->
+
+        #######################################################################################################
+
+        EN LA PRACTICA DE LA CLASE 33 FIJARSE COMO HACER EL PRODUCTOS DESTACADOS PARA EL HOME
+
+        ########################################################################################################
+
+        EN LA PRACTICA DE LA CLASE 33 FIJARSE COMO HACER EL PRODUCTOS RELACIONADOS PARA EL DETALLE DEL PRODUCTO
+
+        ########################################################################################################
+
+        AGREGAR UN CAMPO DE SELECCION DE MARCA EN EL PRODUCT CREATE FORM
+
+        
+
+        function multerMiddleware(type) {
+const storage = multer.diskStorage({
+        destination: (req, file, callback) => {
+            let carpetaDestino;
+            if ( req.body.type ) {
+                carpetaDestino = path.join(__dirname, '../public/img/' + type + '/' + req.body.type);
+            } else {
+                carpetaDestino = path.join(__dirname, '../public/img/' + type);
+            }
+            callback(null, carpetaDestino);
+        },
+        filename: (req, file, callback) => {
+            let imageName = type + '-' + Date.now() + path.extname(file.originalname);
+            callback(null, imageName);
+        },
+        
+    })
+    let updatefile = multer({ storage });
+    return updatefile;
+}
+
+module.exports = multerMiddleware;
+>>>>>>> 733403ab3c338cc0ebf307cb5a0b3a9ca0d1587f

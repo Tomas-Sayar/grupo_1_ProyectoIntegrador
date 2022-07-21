@@ -61,31 +61,6 @@
 
                 <h4 class="titulo-art-relacionado">Articulos relacionados</h4>
 
-                <section class="productos-relacionados">
-
-                    <% relatedProducts.forEach(product=> { %>
-                        <div class="articulo-relacionado">
-                            <a href="/products/<%=product.id%> ">
-                                <img src="/img/products/<%=product.image%>">
-                            </a>
-                            <div class="info">
-                                <h1>
-                                    <%=product.name%>
-                                </h1>
-                                <p class="descripcion">
-                                    <%=product.description%>
-                                </p>
-                                <p class="precio">
-                                    <%=product.price%>
-                                </p>
-                                <p class="agregar">Agregar al carrito</p>
-                            </div>
-                        </div>
-                        <% }) %>
-
-                </section>
-
-
             </main>
 
             <!-- FOOTER -->

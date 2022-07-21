@@ -479,5 +479,16 @@
         "tipoDeUsuario": "mayorista",
         "contraseña": "$2a$10$nZKC2oexFdnTnXp7mV1Bt.WlEmTr4/yYp07wZ5dNMYus2KvrLLvuK",
         "image": "users-1657761911016.jpg"
+    },
+    {
+        "id": 1658365270344,
+        "name": "Tomas Sayar",
+        "usuario": "Tommy",
+        "email": "sayartomas@gmail.com",
+        "fechaDeNacimiento": "2022-06-28",
+        "domicilio": "santa fe",
+        "tipoDeUsuario": "mayorista",
+        "contraseña": "$2a$10$5BqIt4Q5CQyE7vYSRAMKKOl.q95/8wHGoG6cQZ.4WOQQwKgC1NInq",
+        "image": "users-1658365270292.jpg"
     }
 ]

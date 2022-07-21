@@ -1,36 +1,35 @@
 
 const fs = require('fs');
 const path = require('path');
+const db = require('../database/models/index.js');
 
 // ALL PRODUCTS
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const controller = {
-	index: (req, res) => {
-		const indexProductsFilePath = path.join(__dirname, '../data/productsDataBase.json');
-		const productsIndex = JSON.parse(fs.readFileSync(indexProductsFilePath, 'utf-8'));
-		res.render('products', { products: productsIndex });
+	list: (req, res) => {
+		//========== Listar todos los products ============//
+		db.Product.findAll()
+			.then((resultados) => {
+				res.render('products', { products: resultados });
+			});
+
 	},
 
 	detail: (req, res) => {
 		//======= Para encontrar el pruducto a mostrar =======//
-		let id = req.params.id;
-		let product = null;
-		for (let i = 0; i < products.length; i++) {
-			if (id == products[i].id) {
-				product = products[i];
-				break;
-			}
-		}
-		//======= Para encontrar los productos relacionados =======//
-		let relatedProducts = [];
-		for (let i = 0; i < products.length; i++) {
-			if (i < 6) {
-				relatedProducts.push(products[i]);
-			}
-		}
-		res.render('product-detail', { product, relatedProducts });
+		db.Product.findByPk(req.params.id)
+            .then( product => {
+                res.render( 'product-detail', { product } );
+            });
+		// //======= Para encontrar los productos relacionados =======//
+		// db.Product.findAll()
+        //     .then( relatedProducts => {
+		// 		console.log(relatedProducts);
+        //         res.render( 'product-detail', { relatedProducts } );
+        //     });
+		
 	},
 
 	create: (req, res) => {
@@ -38,60 +37,55 @@ const controller = {
 	},
 
 	store: (req, res) => {
-		let newProduct = {
-			id: Date.now(),
+		//TODO: agregar promesa xq es un pedido asincronico
+		let typeOfProduct = db.Product.findOne({ where: { type: req.body.type } })
+
+		db.Product.create({
 			name: req.body.name,
 			price: req.body.price,
 			discount: req.body.discount,
-			category: req.body.category,
 			description: req.body.description,
-			type: req.body.type,
 			image: req.file.filename,
-			// image: '/' + this.category + '/' + req.file.filename,
-		}
-
-		
-		products.push(newProduct);
-		let productsJSON = JSON.stringify(products, null, 4);
-		fs.writeFileSync(productsFilePath, productsJSON);
-		res.redirect('/');
+			category: req.body.category,
+			type: typeOfProduct.id,
+			// TODO: brand: req.body.brand,
+		});
+        res.redirect('/products')
+		.catch(error => res.send(error))
 	},
 
 	edit: (req, res) => {
-		let productId = req.params.id;
-		let productToEdit = null;
-		for (let i = 0; i < products.length; i++) {
-			if (productId == products[i].id) {
-				productToEdit = products[i];
-				break;
-			}
-		}
-		res.render('product-edit-form', { productToEdit });
+		db.Product.findByPk(req.params.id)
+            .then( productToEdit => {
+                res.render( 'product-edit-form', { productToEdit } );
+            });
 	},
 
 	update: (req, res) => {
-		// let productId = req.params.id;
-		// products[productId]["name"] = req.body.name;
-		// products[productId]["price"] = req.body.price;
-		// products[productId]["disount"] = req.body.discount;
-		// products[productId]["category"] = req.body.category;
-		// products[productId]["description"] = req.body.description;
-		// products[productId]["image"] = req.fil.filename;
-		// let productsJSON = JSON.stringify(productsBorrar, null, 4);
-		// fs.writeFileSync(productsFilePath, productsJSON);
+		//TODO: agregar promesa xq es un pedido asincronico
+		let typeOfProduct = db.Product.findOne({ where: { type: req.body.type } })
 
-		for (let i = 0; i < products.length; i++) {
-			if (req.params.id == products[i].id) {
-				products[i].name = req.body.name;
-				products[i].price = req.body.price;
-				products[i].discount = req.body.discount;
-				products[i].category = req.body.category;
-				products[i].description = req.body.description;
-				//products[i].image = req.file.filename;
-			}
-		}
-		let productsJSON = JSON.stringify(products, null, 4);
-		fs.writeFileSync(productsFilePath, productsJSON);
+		let productId = req.params.id;
+
+		db.Product.update(
+			{
+				name: req.body.name,
+				price: req.body.price,
+				discount: req.body.discount,
+				description: req.body.description,
+				image: req.file.filename,
+				category: req.body.category,
+				type: typeOfProduct,
+				// TODO: brand: req.body.brand,
+			},
+			{ where: { id: productId } }
+		)
+		.then(() => {
+
+			return res.redirect( '/products/' + productId )
+			.catch(error => res.send(error))
+		})
+
 		res.redirect('/products');
 	},
 

@@ -27,7 +27,7 @@ module.exports = (sequelize, dataTypes) => {
         category_id: dataTypes.BIGINT(10),
     };
     let config = {
-        timestamps: true,
+        timestamps: false,
         createdAt: 'created_at',
         updatedAt: 'updated_at',
         deletedAt: false
@@ -37,7 +37,7 @@ module.exports = (sequelize, dataTypes) => {
 
     Product.associate = function (models) {
 
-        Product.belongsTo(models.category, { 
+        Product.belongsTo(models.Category, { 
             
             as: "categories",
             
@@ -45,11 +45,19 @@ module.exports = (sequelize, dataTypes) => {
         
         })
         
-        Product.belongsTo(models.type, { 
+        Product.belongsTo(models.Type, { 
         
             as: "types",
         
             foreignKey: "type_id",
+        
+        })
+
+        Product.belongsTo(models.Brand, { 
+        
+            as: "brands",
+        
+            foreignKey: "brand_id",
         
         })
 
