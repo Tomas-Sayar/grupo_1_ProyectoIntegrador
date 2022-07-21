@@ -7,8 +7,6 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false,
             autoIncrement: true
         },
-        // created_at: dataTypes.TIMESTAMP,
-        // updated_at: dataTypes.TIMESTAMP,
         name: {
             type: dataTypes.STRING(100),
             allowNull: false
@@ -44,12 +42,17 @@ module.exports = (sequelize, dataTypes) => {
     const User = sequelize.define(alias,cols,config);
 
     User.associate = function (models) {
-        User.belongsTo(models.Genre, { // models.Genre -> Genres es el valor de alias en genres.js
+
+        User.belongsTo(models.Genre, {
+
             as: "genre",
+
             foreignKey: "genre_id"
+
         })
 
-        User.belongsToMany(models.Actor, { // models.Actor -> Actors es el valor de alias en actor.js
+        User.belongsToMany(models.Actor, {
+
             as: "actors",
             through: 'actor_movie',
             foreignKey: 'movie_id',
@@ -57,7 +60,9 @@ module.exports = (sequelize, dataTypes) => {
             otherKey: 'actor_id',
             timestamps: false,
             onDelete: 'cascade'
+
         })
+
     }
 
     return User;
