@@ -5,3 +5,6 @@
 RTA: lo guardamos en un string/varchar 
 ( conviene guardar toda la ruta de la imagen antes q solo el nombre )
 ########################################################################
+
+ en textarea para que nos traiga la descripcion para poder editarla
+ en producst create edit
