@@ -43,27 +43,15 @@ module.exports = (sequelize, dataTypes) => {
 
     User.associate = function (models) {
 
-        User.belongsTo(models.Genre, {
+        User.belongsTo(models.TypeOfUser, {
 
-            as: "genre",
+            as: "typesOfUsers",
 
-            foreignKey: "genre_id"
-
-        })
-
-        User.belongsToMany(models.Actor, {
-
-            as: "actors",
-            through: 'actor_movie',
-            foreignKey: 'movie_id',
-            foreignKeyConstraint: true,
-            otherKey: 'actor_id',
-            timestamps: false,
-            onDelete: 'cascade'
+            foreignKey: "typeOfUser_id",
 
         })
 
-    }
+   }
 
     return User;
 };

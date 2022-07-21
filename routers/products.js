@@ -9,7 +9,7 @@ const multerMiddleware = require('../middlewares/multerMiddleware.js');
 //########################### RUTAS ##############################//
 
 // GET ALL PRODUCTS
-router.get('/', productsController.index);
+router.get('/', productsController.list);
 
 // CREATE ONE PRODUCT
 router.get('/create', productsController.create);
