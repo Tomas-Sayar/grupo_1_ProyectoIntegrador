@@ -49,7 +49,7 @@ module.exports = (sequelize, dataTypes) => {
             foreignKey: "typeOfUser_id",
         })
 
-        User.belongsToMany(models.Actor, { // models.Actor -> Actors es el valor de alias en actor.js
+  /*    User.belongsToMany(models.Actor, { // models.Actor -> Actors es el valor de alias en actor.js
             as: "actors",
             through: 'actor_movie',
             foreignKey: 'movie_id',
@@ -57,8 +57,8 @@ module.exports = (sequelize, dataTypes) => {
             otherKey: 'actor_id',
             timestamps: false,
             onDelete: 'cascade'
-        })
-    }
+        })*/
+   }
 
     return User;
 };
