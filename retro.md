@@ -25,6 +25,17 @@ Stop doing: Nada creo que estamos trabajando bien.
 ======================== SPRINT 6 ========================
 Start doing: practicar más.
 
+More of: reuniones de equipo para trabajar en el momento sobre el proyecto.
+
+Keep doing: trabajar en conjunto.
+
+Less of: demorarnos en la entrega del trabajo.
+
+Stop doing: subir cambios sin avisarnos.
+
+======================== SPRINT 7 ========================
+Start doing: 
+
 More of:
 
 Keep doing:
@@ -32,3 +43,19 @@ Keep doing:
 Less of:
 
 Stop doing:
+
+======================== SPRINT 8 ========================
+
+Start doing: 
+
+More of:
+
+Keep doing:
+
+Less of:
+
+Stop doing:
+
+
+
+
