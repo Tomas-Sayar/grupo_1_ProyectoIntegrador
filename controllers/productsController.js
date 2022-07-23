@@ -91,13 +91,28 @@ const controller = {
 
 	delete: (req, res) => {
 		let id = req.params.id;
-		let productsBorrar = products.filter(
-			(product => product.id != id));
-		let productsJSON = JSON.stringify(productsBorrar, null, 4);
-		fs.writeFileSync(productsFilePath, productsJSON);
+Product
+.findByPk(id)
+.then(Product => {
+	return res.render(path.resolve(__dirname, '..', 'views', 'products'), {Product})})
+	.catch(error => res.send(error))
+},
+destroy: function (req,res) {
+	let productId = req.params.id;
+	Products
+	.destroy({where: {id: productId}, force: true}) // force: true es para asegurar que se ejecute la acción
+	.then(()=>{
+		return res.redirect('/products')})
+	.catch(error => res.send(error)) 
+}
+
+		//let productsBorrar = products.filter(
+		//	(product => product.id != id));
+		//let productsJSON = JSON.stringify(productsBorrar, null, 4);
+		//fs.writeFileSync(productsFilePath, productsJSON);
 		//	res.send("Eliminado con éxito");
-		res.redirect('/products');
-	}
+	//	res.redirect('/products');
+	
 };
 
 

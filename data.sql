@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 19-07-2022 a las 02:27:06
+-- Tiempo de generación: 21-07-2022 a las 02:20:51
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -29,10 +29,17 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `brands` (
   `id` int(11) NOT NULL,
-  `olibo` varchar(45) DEFAULT NULL,
-  `vrink` varchar(45) DEFAULT NULL,
-  `godBlessYou` varchar(45) DEFAULT NULL
+  `brand` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `brands`
+--
+
+INSERT INTO `brands` (`id`, `brand`) VALUES
+(1, 'olibo'),
+(2, 'vrink'),
+(3, 'god bless you');
 
 -- --------------------------------------------------------
 
@@ -42,10 +49,17 @@ CREATE TABLE `brands` (
 
 CREATE TABLE `categories` (
   `id` int(11) NOT NULL,
-  `new` varchar(45) DEFAULT NULL,
-  `inSale` varchar(45) DEFAULT NULL,
-  `featured` varchar(45) DEFAULT NULL
+  `category` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `categories`
+--
+
+INSERT INTO `categories` (`id`, `category`) VALUES
+(1, 'new'),
+(2, 'in-sale'),
+(3, 'featured');
 
 -- --------------------------------------------------------
 
@@ -68,26 +82,22 @@ CREATE TABLE `products` (
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `typeofclients`
---
-
-CREATE TABLE `typeofclients` (
-  `id` int(11) NOT NULL,
-  `minorista` varchar(45) DEFAULT NULL,
-  `mayorista` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
---
 -- Estructura de tabla para la tabla `typeofusers`
 --
 
 CREATE TABLE `typeofusers` (
   `id` int(11) NOT NULL,
-  `administrator` varchar(50) DEFAULT NULL,
-  `typeOfClients_id` int(11) DEFAULT NULL
+  `type` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `typeofusers`
+--
+
+INSERT INTO `typeofusers` (`id`, `type`) VALUES
+(1, 'administrator'),
+(2, 'mayorista'),
+(3, 'minorista');
 
 -- --------------------------------------------------------
 
@@ -97,10 +107,18 @@ CREATE TABLE `typeofusers` (
 
 CREATE TABLE `types` (
   `id` int(11) NOT NULL,
-  `lacteos` varchar(45) DEFAULT NULL,
-  `cereales` varchar(45) DEFAULT NULL,
-  `frutosSecos` varchar(45) DEFAULT NULL
+  `type` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `types`
+--
+
+INSERT INTO `types` (`id`, `type`) VALUES
+(1, 'leches'),
+(2, 'cereales'),
+(3, 'frutos-secos'),
+(4, 'granolas');
 
 -- --------------------------------------------------------
 
@@ -142,12 +160,6 @@ ALTER TABLE `products`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indices de la tabla `typeofclients`
---
-ALTER TABLE `typeofclients`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Indices de la tabla `typeofusers`
 --
 ALTER TABLE `typeofusers`
@@ -173,13 +185,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de la tabla `brands`
 --
 ALTER TABLE `brands`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `products`
@@ -191,13 +203,13 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT de la tabla `typeofusers`
 --
 ALTER TABLE `typeofusers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `types`
 --
 ALTER TABLE `types`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
