@@ -33,13 +33,13 @@ module.exports = (sequelize, dataTypes) => {
         typeOfUser_id: dataTypes.BIGINT(10),
     };
     let config = {
-        timestamps: true,
+        timestamps: false,
         createdAt: 'created_at',
         updatedAt: 'updated_at',
         deletedAt: false
     }
 
-    const User = sequelize.define(alias,cols,config);
+    const User = sequelize.define(alias, cols, config);
 
     User.associate = function (models) {
 
@@ -51,7 +51,7 @@ module.exports = (sequelize, dataTypes) => {
 
         })
 
-   }
+    }
 
     return User;
 };

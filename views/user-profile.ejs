@@ -11,26 +11,46 @@
                 <section class="profile-container">
 
                     <div class="image-container">
-                        <img class="profile-image" src="/img/users/<%= user.imagen %>">
+                        <img class="profile-image" src="/img/<%= user.imagen %>">
                     </div>
                     <div class="data-container">
                         <p class="data-titles">Nombre y apellido:</p>
-                        <p class="user-data"><%= user.nombreYApellido %></p>
+                        <p class="user-data">
+                            <%= user.name %>
+                        </p>
                         <p class="data-titles">Nombre de usuario:</p>
-                        <p class="user-data"><%= user.nombreDeUsuario %></p>
+                        <p class="user-data">
+                            <%= user.username %>
+                        </p>
                         <p class="data-titles">Fecha de nacimiento:</p>
-                        <p class="user-data"><%= user.fechaDeNacimiento %></p>
+                        <p class="user-data">
+                            <%= user.dateOfBirth %>
+                        </p>
                         <p class="data-titles">Domicilio:</p>
-                        <p class="user-data"><%= user.domicilio %></p>
+                        <p class="user-data">
+                            <%= user.adress %>
+                        </p>
                         <p class="data-titles">Tipo de usuario:</p>
 
-                        <% if (user.tipoDeUsuario == null) { %>
-                            <p class="user-data">Sin tipo de usuario existente</p>
-                        <% } else { %>
-                            <p class="user-data"><%= user.tipoDeUsuario %></p>
-                        <% } %> 
-                        <p class="data-titles">Correo electronico:</p>
-                        <p class="user-data"><%= user.email %></p>
+                        <% if ( user.typeOfUser_id==1 ) { %>
+                            <p class="user-data">
+                                Administador
+                            </p>
+                            <% } else if ( user.typeOfUser_id==2 ) { %>
+                                <p class="user-data">
+                                    Mayorista
+                                </p>
+                                <% } else {%>
+                                    <p class="user-data">
+                                        Minorista
+                                    </p>
+                                    <% } %>
+
+
+                                        <p class="data-titles">Correo electronico:</p>
+                                        <p class="user-data">
+                                            <%= user.email %>
+                                        </p>
                     </div>
 
                 </section>
