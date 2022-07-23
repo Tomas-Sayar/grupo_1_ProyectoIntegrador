@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 21-07-2022 a las 02:20:51
+-- Tiempo de generación: 23-07-2022 a las 07:22:26
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -79,6 +79,21 @@ CREATE TABLE `products` (
   `brand_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Volcado de datos para la tabla `products`
+--
+
+INSERT INTO `products` (`id`, `name`, `price`, `discount`, `description`, `image`, `category_id`, `type_id`, `brand_id`) VALUES
+(3, 'Mix Clásico Con Maní - 200 gr', '286', 13, 'magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque', 'frutosSecos/mix-frutos-secos-con-mani.jpg', 1, 2, 3),
+(4, 'Mix Clásico Con Maní - 200 gr', '286', 13, 'magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque', 'frutosSecos/mix-frutos-secos-con-mani.jpg', 1, 2, 3),
+(5, 'Mix Clásico Con Maní - 200 gr', '286', 13, 'magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoquemagnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum soci', 'frutosSecos/mix-frutos-secos-con-mani.jpg', 1, 2, 3),
+(6, 'Mix Clásico Con Maní - 200 gr', '286', 13, 'magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque', 'frutosSecos/mix-frutos-secos-con-mani.jpg', 1, 2, 3),
+(7, 'Mix Clásico Con Maní - 200 gr', '286', 13, 'magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque', 'frutosSecos/mix-frutos-secos-con-mani.jpg', 1, 2, 3),
+(8, 'Mix Clásico Con Maní - 200 gr', '286', 13, 'magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque', 'frutosSecos/mix-frutos-secos-con-mani.jpg', 1, 2, 3),
+(9, 'Mix Clásico Con Maní - 200 gr', '286', 13, 'magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque', 'frutosSecos/mix-frutos-secos-con-mani.jpg', 1, 2, 3),
+(10, 'Mix Clásico Con Maní - 200 gr', '286', 13, 'magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque', 'frutosSecos/mix-frutos-secos-con-mani.jpg', 1, 2, 3),
+(16, 'Tomas', '0', 123, 'ae1e12321312', 'products-1658553571208-category2.jpg', 2, 2, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -132,10 +147,26 @@ CREATE TABLE `users` (
   `username` varchar(50) NOT NULL,
   `email` varchar(75) NOT NULL,
   `dateOfBirth` date NOT NULL,
+  `adress` varchar(200) NOT NULL,
   `password` varchar(30) NOT NULL,
   `image` varchar(200) DEFAULT NULL,
   `typeOfUser_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `username`, `email`, `dateOfBirth`, `adress`, `password`, `image`, `typeOfUser_id`) VALUES
+(1, 'lucas', 'lulu', 'lulu@gmail.com', '2022-06-27', '', '$2a$10$nZKC2oexFdnTnXp7mV1Bt.W', 'users/default.jpg', 2),
+(2, 'lucas', 'lulu', 'lulu@gmail.com', '2022-06-27', '', '$2a$10$nZKC2oexFdnTnXp7mV1Bt.W', 'users/default.jpg', 2),
+(3, 'lucas', 'lulu', 'lulu@gmail.com', '2022-06-27', '', '$2a$10$nZKC2oexFdnTnXp7mV1Bt.W', 'users/default.jpg', 2),
+(4, 'lucas', 'lulu', 'lulu@gmail.com', '2022-06-27', '', '$2a$10$nZKC2oexFdnTnXp7mV1Bt.W', 'users/default.jpg', 2),
+(5, 'lucas', 'lulu', 'lulu@gmail.com', '2022-06-27', '', '$2a$10$nZKC2oexFdnTnXp7mV1Bt.W', 'users/default.jpg', 2),
+(6, 'lucas', 'lulu', 'lulu@gmail.com', '2022-06-27', '', '$2a$10$nZKC2oexFdnTnXp7mV1Bt.W', 'users/default.jpg', 2),
+(7, 'lucas', 'lulu', 'lulu@gmail.com', '2022-06-27', '', '$2a$10$nZKC2oexFdnTnXp7mV1Bt.W', 'users/default.jpg', 2),
+(8, 'lucas', 'lulu', 'lulu@gmail.com', '2022-06-27', '', '$2a$10$nZKC2oexFdnTnXp7mV1Bt.W', 'users/default.jpg', 2),
+(9, 'Tomas Sayar', 'Tommy', 'lautaro.t.sayar@gmail.com', '2022-07-26', '', '12345678', NULL, 0);
 
 --
 -- Índices para tablas volcadas
@@ -197,7 +228,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT de la tabla `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT de la tabla `typeofusers`
@@ -215,7 +246,7 @@ ALTER TABLE `types`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

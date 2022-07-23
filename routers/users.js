@@ -19,7 +19,7 @@ const validateCreateForm = [
     body('email').notEmpty().isEmail().withMessage("Debes completar con un email válido").bail(),
     body('fechaDeNacimiento').notEmpty().withMessage("Debes completar con tu Fecha De Nacimiento"),
     body('passwordDeUsuario').notEmpty().isLength({ min: 8 }).withMessage("La contraseña debe tener al menos 8 carácteres"),
-    body('users-image').custom((value, {req}) => {
+    body('usersImage').custom((value, {req}) => {
         let file = req.file; 
         if(!file) {
             throw new Error("Tienes que subir una imagen");
@@ -38,7 +38,7 @@ body('contraseña').isLength({min:8}).withMessage("La contraseña debe tener al 
 router.get('/login', usersController.login);
 router.post('/login',authMiddleware,validateLogin, usersController.processLogin);
 router.get('/register', guestMiddleware,usersController.register);
-router.post('/register', multerMiddleware('users').single('users-image'), logDBMiddleware, validateCreateForm, usersController.store);
+router.post('/register', multerMiddleware('users').single('usersImage'), logDBMiddleware, validateCreateForm, usersController.store);
 router.get('/:id', usersController.profile);
 
 

@@ -1,4 +1,5 @@
 
+const { promiseImpl } = require('ejs');
 const fs = require('fs');
 const path = require('path');
 const db = require('../database/models/index.js');
@@ -20,16 +21,16 @@ const controller = {
 	detail: (req, res) => {
 		//======= Para encontrar el pruducto a mostrar =======//
 		db.Product.findByPk(req.params.id)
-            .then( product => {
-                res.render( 'product-detail', { product } );
-            });
+			.then(product => {
+				res.render('product-detail', { product });
+			});
 		// //======= Para encontrar los productos relacionados =======//
 		// db.Product.findAll()
-        //     .then( relatedProducts => {
+		//     .then( relatedProducts => {
 		// 		console.log(relatedProducts);
-        //         res.render( 'product-detail', { relatedProducts } );
-        //     });
-		
+		//         res.render( 'product-detail', { relatedProducts } );
+		//     });
+
 	},
 
 	create: (req, res) => {
@@ -37,8 +38,6 @@ const controller = {
 	},
 
 	store: (req, res) => {
-		//TODO: agregar promesa xq es un pedido asincronico
-		let typeOfProduct = db.Product.findOne({ where: { type: req.body.type } })
 
 		db.Product.create({
 			name: req.body.name,
@@ -46,24 +45,27 @@ const controller = {
 			discount: req.body.discount,
 			description: req.body.description,
 			image: req.file.filename,
-			category: req.body.category,
-			type: typeOfProduct.id,
-			// TODO: brand: req.body.brand,
-		});
-        res.redirect('/products')
+			category_id: req.body.category,
+			type_id: req.body.type,
+			brand_id: req.body.brand,
+		})
+		.then(() => {
+			res.redirect('/products')
+		})
 		.catch(error => res.send(error))
+
 	},
 
 	edit: (req, res) => {
+
 		db.Product.findByPk(req.params.id)
-            .then( productToEdit => {
-                res.render( 'product-edit-form', { productToEdit } );
-            });
+			.then(productToEdit => {
+				res.render('product-edit-form', { productToEdit });
+			})
+
 	},
 
 	update: (req, res) => {
-		//TODO: agregar promesa xq es un pedido asincronico
-		let typeOfProduct = db.Product.findOne({ where: { type: req.body.type } })
 
 		let productId = req.params.id;
 
@@ -74,45 +76,28 @@ const controller = {
 				discount: req.body.discount,
 				description: req.body.description,
 				image: req.file.filename,
-				category: req.body.category,
-				type: typeOfProduct,
-				// TODO: brand: req.body.brand,
+				category_id: req.body.category,
+				type_id: req.body.type,
+				brand_id: req.body.brand,
 			},
 			{ where: { id: productId } }
 		)
-		.then(() => {
-
-			return res.redirect( '/products/' + productId )
-			.catch(error => res.send(error))
-		})
-
-		res.redirect('/products');
+			.then(() => {
+				return res.redirect('/products/' + productId)
+					.catch(error => res.send(error))
+			})
+			
 	},
 
-	delete: (req, res) => {
-		let id = req.params.id;
-Product
-.findByPk(id)
-.then(Product => {
-	return res.render(path.resolve(__dirname, '..', 'views', 'products'), {Product})})
-	.catch(error => res.send(error))
-},
-destroy: function (req,res) {
-	let productId = req.params.id;
-	Products
-	.destroy({where: {id: productId}, force: true}) // force: true es para asegurar que se ejecute la acción
-	.then(()=>{
-		return res.redirect('/products')})
-	.catch(error => res.send(error)) 
-}
+	destroy: function (req, res) {
+		let productId = req.params.id;
+		db.Product.destroy({ where: { id: productId }, force: true }) // force: true es para asegurar que se ejecute la acción
+			.then(() => {
+				return res.redirect('/products')
+			})
+			.catch(error => res.send(error))
+	}
 
-		//let productsBorrar = products.filter(
-		//	(product => product.id != id));
-		//let productsJSON = JSON.stringify(productsBorrar, null, 4);
-		//fs.writeFileSync(productsFilePath, productsJSON);
-		//	res.send("Eliminado con éxito");
-	//	res.redirect('/products');
-	
 };
 
 

@@ -28,32 +28,20 @@ const controller = {
 
 	store: (req, res) => {
 
-		// const resultValidation = validationResult(req)
-		// if (resultValidation.errors.length > 0) {
-		// 	return res.render('register', {
-		// 		errors: resultValidation.mapped(),
-		// 		oldData: req.body,
-		// 	})
-		// }
-
-		// let newUsers = {
-		// 	id: Date.now(),
-		// 	name: req.body.nombreApellido,
-		// 	usuario: req.body.nombreDeUsuario,
-		// 	email: req.body.email,
-		// 	fechaDeNacimiento: req.body.fechaDeNacimiento,
-		// 	domicilio: req.body.domicilio,
-		// 	tipoDeUsuario: req.body.tipoDeUsuario,
-		// 	contraseña: bcrypt.hashSync(req.body.passwordDeUsuario, 10),
-		// 	image: req.file.filename,
-		// }
-
-		// users.push(newUsers)
-
-		// let usersJSON = JSON.stringify(users, null, 4);
-
-		// fs.writeFileSync(usersFilePath, usersJSON);
-		// res.redirect('/users/login');
+		db.User.create({
+			name: req.body.nombreApellido,
+			username: req.body.nombreDeUsuario,
+			email: req.body.email,
+			dateOfBirth: req.body.fechaDeNacimiento,
+			adress: req.body.domicilio,
+			password: req.body.passwordDeUsuario,
+			image: req.file.filename,
+			typeOfUser_id: req.body.type,
+		})
+		.then(() => {
+			res.redirect('/')
+		})
+		.catch(error => res.send(error))
 	},
 
 	login: (req, res) => {

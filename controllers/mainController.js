@@ -1,19 +1,19 @@
 const res = require('express/lib/response');
 const fs = require('fs');
 const path = require('path');
+const db = require('../database/models/index.js');
 
 const productsFilePath = path.join(__dirname, '../data/productsDataBase.json');
 const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const controller = {
 	index: (req, res) => {
-		let featuredProducts = [];
-		for (let i = 0; i < products.length; i++) {
-			if (i < 8) {
-				featuredProducts.push(products[i]);
-			}
-		}
-		res.render('index', { featuredProducts: featuredProducts });
+		db.Product.findAll()
+			.then((resultados) => {
+				let featuredProducts = resultados.slice( 0, 8 );
+				res.render('index', { featuredProducts: featuredProducts });
+			});
+		
 	},
 	
 	carrito: (req, res) => {

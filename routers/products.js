@@ -23,7 +23,7 @@ router.get('/edit/:id', productsController.edit);
 router.put('/edit/:id', multerMiddleware('products').single('product-image'), productsController.update);
 
 //DELETE PRODUCT
-router.delete('/delete/:id', productsController.delete);
+router.delete('/delete/:id', productsController.destroy);
 
 
 module.exports = router;
