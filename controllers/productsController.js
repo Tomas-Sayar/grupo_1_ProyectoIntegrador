@@ -90,17 +90,17 @@ const controller = {
 	},
 
 	delete: (req, res) => {
-		let id = req.params.id;
-Product
-.findByPk(id)
+		let borrarProductid = req.params.id;
+db.Product.findBy(borrarProductid)
+
 .then(Product => {
 	return res.render(path.resolve(__dirname, '..', 'views', 'products'), {Product})})
 	.catch(error => res.send(error))
 },
 destroy: function (req,res) {
-	let productId = req.params.id;
-	Products
-	.destroy({where: {id: productId}, force: true}) // force: true es para asegurar que se ejecute la acción
+	let productborradoId = req.params.id;
+	
+	db.Product.destroy({where: {id: productborradoId}, force: true}) // force: true es para asegurar que se ejecute la acción
 	.then(()=>{
 		return res.redirect('/products')})
 	.catch(error => res.send(error)) 
