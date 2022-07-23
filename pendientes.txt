@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+
+- Crear contenido de los modelos
+=======
                 
                 
                 
@@ -81,3 +85,4 @@ const storage = multer.diskStorage({
 }
 
 module.exports = multerMiddleware;
+>>>>>>> 733403ab3c338cc0ebf307cb5a0b3a9ca0d1587f

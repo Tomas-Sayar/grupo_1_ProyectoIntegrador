@@ -760,7 +760,6 @@ Se ingresó a la página/view/profile
 Se ingresó a la página/users/profile
 Se ingresó a la página/users/profile
 Se ingresó a la página/users/profile/1
-<<<<<<< HEAD
 Se ingresó a la página/
 Se ingresó a la página/favicon.ico
 Se ingresó a la página/users/login
@@ -778,15 +777,11 @@ Se ingresó a la página/users/login
 Se ingresó a la página/account/reset
 Se ingresó a la página/users/login
 Se ingresó a la página/users/login
-=======
 
->>>>>>> 862ca6038f708264045d0d87e59d640a533c82ae
 
 Se ingresó a la página/
 Se ingresó a la página/favicon.ico
-<<<<<<< HEAD
 Se ingresó a la página/carrito
-=======
 Se ingresó a la página/products
 Se ingresó a la página/products/create
 Se ingresó a la página/products/create
@@ -829,14 +824,11 @@ Se ingresó a la página/
 Se ingresó a la página/img/products/mix-nacional-con-banana.jpg
 Se ingresó a la página/products/1658196597503
 Se ingresó a la página/img/products/mix-nacional-con-banana.jpg
->>>>>>> 307bc7d451d95565134bfc108527e9b07641b9e2
 Se ingresó a la página/users/login
 Se ingresó a la página/users/register
 Se ingresó a la página/users/register
 Se ingresó a la página/users/register
-<<<<<<< HEAD
 Se ingresó a la página/users/register
-=======
 Se ingresó a la página/
 Se ingresó a la página/img/products/mix-nacional-con-banana.jpg
 Se ingresó a la página/products
@@ -849,7 +841,6 @@ Se ingresó a la página/img/products/mix-nacional-con-banana.jpg
 Se ingresó a la página/img/products/products-1658195762559.jpg
 Se ingresó a la página/img/products/products-1658196516229.jpg
 Se ingresó a la página/img/products/products-1658196597478.jpg
->>>>>>> 307bc7d451d95565134bfc108527e9b07641b9e2
 
 Se ingresó a la página/
 Se ingresó a la página/img/products/mix-nacional-con-banana.jpg
@@ -1015,3 +1006,7 @@ Se ingresó a la página/users/2
 Se ingresó a la página/img/
 Se ingresó a la página/users/2
 Se ingresó a la página/img/
+Se ingresó a la página/products
+Se ingresó a la página/
+Se ingresó a la página/img/products/mix-nacional-con-banana.jpg
+Se ingresó a la página/products
