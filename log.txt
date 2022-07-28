@@ -1192,3 +1192,5 @@ Se ingresó a la página/products/detail/1
 Se ingresó a la página/products/2
 Se ingresó a la página/products/3
 Se ingresó a la página/products/1
+
+Se ingresó a la página/

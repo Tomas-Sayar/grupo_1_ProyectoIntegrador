@@ -45,3 +45,7 @@ https://trello.com/invite/b/RpEFnCcy/391d2e22bd9d18c36cbc92e2495d87f5/sprint-5
 
 Enlace a nuestro tablero de trabajo sprint 6
 https://trello.com/invite/b/a9YdXEiL/2bc02d66fb1135849559a4f0e3f3bed0/sprint-6
+
+Enlace a nuestro tablero de trabajo sprint 7
+https://trello.com/invite/b/kRnnQnCV/86840a63764a395c3696a8393d9c08fa/sprint-7
+
