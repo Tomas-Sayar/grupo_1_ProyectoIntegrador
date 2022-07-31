@@ -1,5 +1,5 @@
 * {
-	font-family: cursive, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	padding: 0px;
 	margin: 0px;
@@ -13,6 +13,11 @@ a {
 /*!------------------------------ home ------------------------------*/
 /** header */
 /** inicio*/
+
+header {
+	background-color: #faedca;
+}
+
 .menu-usuario {
 	display: flex;
 	max-width: 100%;
@@ -53,7 +58,6 @@ a {
 	transform: translate (-50%, -50%);
 	height: 30px;
     border-radius: 4px;
-    background-color: #ff740a;
     display: flex;
     max-width: 100%;
     width: 100%;
@@ -173,7 +177,7 @@ a.logo-carrot {
 }
 /**main*/
 main {
-	color: white;
+	background-color: #faedca;
 }
 .carrusel1 img {
 	width: 100%;
@@ -240,10 +244,13 @@ p.descripcion {
 }
 article {
 	width: 60%;
-	border: orange solid 6px;
-	background-color: orange;
+	background-color: white;
 	margin-bottom: 6%;
 	border-radius: 10%;
+}
+
+article:hover {
+	box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 article img {
@@ -267,7 +274,6 @@ article .info h1 {
 
 article .info .precio {
 	font-size: 1.6rem;
-	color: blanchedalmond;
 	text-align: center;
 	margin-top: 5%;
 }
