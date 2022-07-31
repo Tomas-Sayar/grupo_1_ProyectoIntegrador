@@ -1366,3 +1366,6 @@ Se ingresó a la página/
 Se ingresó a la página/
 Se ingresó a la página/
 Se ingresó a la página/
+Se ingresó a la página/
+Se ingresó a la página/favicon.ico
+Se ingresó a la página/products
