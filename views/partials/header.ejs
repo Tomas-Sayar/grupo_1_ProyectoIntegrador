@@ -1,29 +1,31 @@
 <header>
     <section class="menu-usuario">
+        <div class="burger" >
         <form action="/" method="get">
             <div class="menu">
-                <i class="fas fa-bars"></i>
+                 <a href="#">
+                    <i class="fas fa-bars"></i>
+                </a>
             </div>
+        </div>
         </form>
-     <!--   <div class="search">
-         <input type="text" class="search-bar-input" placeholder="Search..."/>
-    <button type="submit" class="search-bar-bu">
-               <a href="##" class="icon"> 
-                    <i class="fas fa-search"></i>
-                </a>  
-        </button>
-    </div>-->
-    
+
+        <div class="search">
+            <form class="navbar-form navbar-left" method="GET" action="/search">
+                <input type="text" class="search-bar-input" placeholder="Buscar..." />
+                <button type="submit" class="search-bar-bu"><i class="fas fa-search"></i> </button>
+            </form>
+        </div>
+
         <div class="menu-login">
             <a href="/users/login">
                 <i class="fas fa-user-circle"></i>
             </a>
         </div>
+</section>
 
-    </section>
 
     <section class="menu-principal">
-
         <div class="inicio">
             <a href="/">
                 <i class="fas fa-home"></i>

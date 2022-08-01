@@ -1,8 +1,19 @@
 <<<<<<< HEAD
-
-- Crear contenido de los modelos
 =======
-                
+A chequear
+-llenar bases datos productos
+
+Sprint 7
+
+Validaciones Backend
+-Chequear formularios y ver que validaciones no funcionan.
+-Cambiar imagen de jpg a otros formatos (JPG, JPEG, PNG, GIF).
+-Agregarle requisitos de las validaciones según sprint.
+-Entregable: implementación de Express Validator en las rutas que reciban formularios.
+
+ Validaciones Frotend
+ -Entregable: implementación de validator.js (documentación/descarga) o validaciones
+"custom" en los formularios mencionados               
                 
                 
                 
