@@ -1192,3 +1192,15 @@ Se ingresó a la página/products/detail/1
 Se ingresó a la página/products/2
 Se ingresó a la página/products/3
 Se ingresó a la página/products/1
+
+Se ingresó a la página/
+Se ingresó a la página/products/3
+Se ingresó a la página/products/edit/3
+Se ingresó a la página/products/edit/3?_method=PUT
+Se ingresó a la página/products/edit/3
+Se ingresó a la página/favicon.ico
+Se ingresó a la página/products/edit/3?_method=PUT
+Se ingresó a la página/products/edit/3?_method=PUT
+Se ingresó a la página/products/3
+Se ingresó a la página/
+Se ingresó a la página/favicon.ico

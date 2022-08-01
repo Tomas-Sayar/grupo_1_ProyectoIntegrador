@@ -68,6 +68,7 @@ const controller = {
 	update: (req, res) => {
 
 		let productId = req.params.id;
+		
 
 		db.Product.update(
 			{
@@ -84,7 +85,6 @@ const controller = {
 		)
 			.then(() => {
 				return res.redirect('/products/' + productId)
-					.catch(error => res.send(error))
 			})
 			
 	},

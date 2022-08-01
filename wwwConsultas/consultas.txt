@@ -18,3 +18,9 @@ RTA:
 
 #########################################################################
 para guardar todos los datos que tenemos en la carpeta data a la carpeta database?
+
+
+- como hacer para que en el formulario de edicion de producto nos cargue la imagen 
+del mismo
+
+- lo mismo con los select

@@ -20,7 +20,7 @@ router.get('/:id', productsController.detail);
 
 // EDIT ONE PRODUCT
 router.get('/edit/:id', productsController.edit);
-router.put('/edit/:id', multerMiddleware('products').single('product-image'), productsController.update);
+router.put('/edit/:id', multerMiddleware('products').single('image'), productsController.update);
 
 //DELETE PRODUCT
 router.delete('/delete/:id', productsController.destroy);
